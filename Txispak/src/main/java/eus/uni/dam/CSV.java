@@ -73,7 +73,7 @@ public class CSV implements ItemDao {
 
 	@PreDestroy
 	public void destroy() {
-		String filename = "src/main/resources/Produktuak.csv";
+		String filename = "C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
 
 		try {
 			File myObj = new File("Produktuak.csv");
