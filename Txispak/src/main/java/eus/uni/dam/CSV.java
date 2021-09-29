@@ -26,8 +26,9 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class CSV implements ItemDao {
-
-	String filename = "Produktuak.csv";
+	//File izena produktuak.csv
+	String filename = "produktuak.csv";
+	// Array list bat non produktuak gordeko ditugun
 	public ArrayList<Item> produktuak = new ArrayList<>();
 
 	CSV() {
@@ -37,7 +38,10 @@ public class CSV implements ItemDao {
 	public Collection<Item> getItems() {
 		return produktuak;
 	};
-
+	/**
+	 * Datu basearekin konektatzeko
+	 * @return konekzioa
+	 */
 	public static Connection connect() {
 		Connection conn = null;
 		try {
@@ -53,7 +57,10 @@ public class CSV implements ItemDao {
 		return conn;
 
 	}
-
+	/**
+	 * Datu baseko produktuak bistaratu selectaren bidez.
+	 * Datu basearekin konektatu , selekta egin, datu baseko produktuak produktu objetuan gorde eta arrayListara gehitu
+	 */
 	@PostConstruct
 	public void init() {
 		String taula = "product_template";
@@ -67,16 +74,22 @@ public class CSV implements ItemDao {
 				produktuak.add(m);
 			}
 		} catch (Exception ex) {
+			JOptionPane.showMessageDialog(null, ex.getMessage());
 		}
 
 	}
-
+	/**
+	 * Filearen izena zehazten dugu eta non sortuko dugun -->url
+	 * File bat sortuko dugu -->produktuak.csv
+	 * FileWrite objetua sortu produktuak.csv idazteko -->Gure produktuak adibidez
+	 * FileWrite arraylisteko poduktuak (Datu baseko produktuak) idatzi
+	 */
 	@PreDestroy
 	public void destroy() {
-		String filename = "C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
+		String filename = "C:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
 
 		try {
-			File myObj = new File("Produktuak.csv");
+			File myObj = new File("produktuak.csv");
 			myObj.createNewFile();
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
