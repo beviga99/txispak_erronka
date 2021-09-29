@@ -1,0 +1,6 @@
+com/example/txipakfondo/MainActivity.java
+ com.example.txipakfondo.MainActivity
+com/example/txipakfondo/ProductSample.java
+ com.example.txipakfondo.ProductSample
+com/example/txipakfondo/BuildConfig.java
+ com.example.txipakfondo.BuildConfig
