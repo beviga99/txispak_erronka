@@ -64,7 +64,7 @@ public class CSV implements ItemDao {
 	@PostConstruct
 	public void init() {
 
-		String sql = "SELECT product_template.id, product_template.name, product_template.list_price, SUM(stock_move.product_qty) as product_qty "
+		String sql = "SELECT product_template.id, product_template.name, product_template.list_price, SUM(stock_move.product_qty) as product_qty, product_template.description "
 				+ "FROM product_template "
 				+ "INNER JOIN stock_move ON product_template.id = stock_move.product_id "
 				+ "GROUP BY product_template.id";
@@ -74,7 +74,7 @@ public class CSV implements ItemDao {
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery(sql)) {
 			while (rs.next()) {
-				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getDouble("product_qty"));
+				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getDouble("product_qty"), rs.getString("description"));
 				produktuak.add(m);
 			}
 		} catch (Exception ex) {
@@ -101,10 +101,10 @@ public class CSV implements ItemDao {
 		}
 		try {
 			FileWriter writer = new FileWriter(filename);
-			writer.write("ID PRODUKTU ; DESKRIPZIOA \n");
+			writer.write("ID; PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA \n");
 
 			for (Item p : produktuak) {
-				writer.write(p.getId() + ";" + p.getName() +";"+ p.getPrice() +";"+ p.getQty()+ ".\n");
+				writer.write(p.getId() + ";" + p.getName() +";"+ p.getPrice() +";"+ p.getQty()+ ";"+ p.getDescript()+"\n");
 			}
 
 			writer.close();
