@@ -60,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
                     }else {
                         sample.setQty(0);
                     }
+                    sample.setDescript((tokens[3]));
+                    if (tokens[4].length() > 0) {
+                        sample.setDescript((tokens[4]));
+
+                    }else {
+                        sample.setDescript("");
+                    }
 
                 productSample.add(sample);
 

@@ -5,13 +5,23 @@ public class ProductSample {
     private String name;
     private double price;
     private double qty;
+    private String descript;
 
 
-    public ProductSample(int id, String name, double price, double qty) {
+    public String getDescript() {
+        return descript;
+    }
+
+    public void setDescript(String descript) {
+        this.descript = descript;
+    }
+
+    public ProductSample(int id, String name, double price, double qty, String descript) {
         this.id = id;
         this.name = name;
         this.price=price;
         this.qty=qty;
+        this.descript=descript;
     }
 
     public ProductSample() {
@@ -51,6 +61,6 @@ public class ProductSample {
 
     @Override
     public String toString() {
-        return "Item [id=" + id + ", name=" + name + "price="+price+ "qty="+qty+"]";
+        return "Item [id=" + id + ", name=" + name + "price="+price+ "qty="+qty+"descript="+descript+"]";
     }
 }
