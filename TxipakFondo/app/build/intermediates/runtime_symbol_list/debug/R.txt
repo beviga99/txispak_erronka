@@ -1927,7 +1927,6 @@ int id bounce 0x7f08005e
 int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
-int id button 0x7f0801d9
 int id buttonPanel 0x7f080062
 int id cache_measures 0x7f080063
 int id cancel_button 0x7f080064
@@ -2062,6 +2061,7 @@ int id legacy 0x7f0800e2
 int id line1 0x7f0800e3
 int id line3 0x7f0800e4
 int id linear 0x7f0800e5
+int id linear_1 0x7f0801da
 int id listMode 0x7f0800e6
 int id list_item 0x7f0800e7
 int id masked 0x7f0800e8

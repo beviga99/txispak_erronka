@@ -1928,7 +1928,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2063,6 +2062,7 @@ id legacy
 id line1
 id line3
 id linear
+id linear_1
 id listMode
 id list_item
 id masked
