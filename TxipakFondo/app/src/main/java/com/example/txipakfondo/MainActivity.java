@@ -4,15 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         readProductData();
     }
 
-    private List<ProductSample> productSample = new ArrayList<>();
+//    private List<ProductSample> productSample = new ArrayList<>();
     private void readProductData() {
         InputStream is = getResources().openRawResource(R.raw.produktuak);
         BufferedReader reader = new BufferedReader(
@@ -42,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         try {
             reader.readLine();
             int bot_id = 0;
-            Button button;
             while (((line = reader.readLine()) != null)){
                     String[] tokens = line.split(";");
                     ProductSample sample = new ProductSample();
@@ -55,9 +51,30 @@ public class MainActivity extends AppCompatActivity {
                     }else {
                         sample.setName("");
                     }
-                    productSample.add(sample);
+                    sample.setPrice(Double.parseDouble(tokens[2]));
+                    if (tokens[2].length() > 0) {
+                        sample.setPrice(Double.parseDouble(tokens[2]));
 
-                LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linear_1);
+                    }else {
+                        sample.setPrice(0);
+                    }
+                sample.setQty(Double.parseDouble(tokens[3]));
+                if (tokens[3].length() > 0) {
+                    sample.setQty(Double.parseDouble(tokens[3]));
+
+                }else {
+                    sample.setQty(0);
+                }
+                sample.setDesk((tokens[4]));
+                if (tokens[4].length() > 0) {
+                    sample.setDesk(tokens[4]);
+
+                }else {
+                    sample.setDesk("");
+                }
+//                    productSample.add(sample);
+
+                LinearLayout linearLayout = findViewById(R.id.linear_1);
 
                 LinearLayout hlayour = new LinearLayout(this);
 
@@ -69,7 +86,11 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent myIntent = new Intent(view.getContext(), BanakakoDatuak.class);
                         myIntent.putExtra("id", tokens[0]);
-                        startActivityForResult(myIntent, 0);
+                        myIntent.putExtra("name", tokens[1]);
+                        myIntent.putExtra("prize", tokens[2]);
+                        myIntent.putExtra("qty", tokens[3]);
+                        myIntent.putExtra("desk", tokens[4]);
+                        startActivity(myIntent);
                     }
                 });
                 bot.setId(bot_id);

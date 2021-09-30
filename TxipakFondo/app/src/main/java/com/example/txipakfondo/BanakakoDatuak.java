@@ -19,8 +19,18 @@ public class BanakakoDatuak extends AppCompatActivity {
     private void readProductData() {
         Intent myIntent = getIntent();
         String id = myIntent.getStringExtra("id");
-        TextView text = (TextView) findViewById(R.id.textView);
-        text.setText("Produktua" + id);
+        String name = myIntent.getStringExtra("name");
+        String prize = myIntent.getStringExtra("prize");
+        String qty = myIntent.getStringExtra("qty");
+        String desk = myIntent.getStringExtra("desk");
+        TextView text1 = (TextView) findViewById(R.id.textView);
+        text1.setText(id + " Produktua: " + name);
+        TextView text2 = (TextView) findViewById(R.id.textView3);
+        text2.setText("Produktua" + prize);
+        TextView text3 = (TextView) findViewById(R.id.textView4);
+        text3.setText("Produktua" + qty);
+        TextView text4 = (TextView) findViewById(R.id.textView5);
+        text4.setText("Produktua" + desk);
 
     }
 }

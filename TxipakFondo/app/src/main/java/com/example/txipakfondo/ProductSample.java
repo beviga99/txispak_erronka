@@ -3,10 +3,18 @@ package com.example.txipakfondo;
 public class ProductSample {
     private int id;
     private String name;
+    private double price;
+    private double qty;
+    private String desk;
 
-    public ProductSample(int id, String name) {
+
+
+    public ProductSample(int id, String name, double price, double qty, String desk) {
         this.id = id;
         this.name = name;
+        this.price=price;
+        this.qty=qty;
+        this.desk = desk;
     }
 
     public ProductSample() {
@@ -28,8 +36,33 @@ public class ProductSample {
         this.name = name;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getQty() {
+        return qty;
+    }
+
+    public void setQty(double qty) {
+        this.qty = qty;
+    }
+
+    public String getDesk() {
+        return desk;
+    }
+
+    public void setDesk(String desk) {
+        this.desk = desk;
+    }
+
     @Override
     public String toString() {
-        return "Item [id=" + id + ", name=" + name + "]";
+        return "Item [id=" + id + ", name=" + name + ", price="+price+ ", qty="+qty+", deskripzioa="+desk+"]";
     }
+
 }
