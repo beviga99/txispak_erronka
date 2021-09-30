@@ -37,14 +37,31 @@ public class MainActivity extends AppCompatActivity {
                     ProductSample sample = new ProductSample();
                     sample.setId(Integer.parseInt(tokens[0]));
 
+
                     sample.setName((tokens[1]));
+
                     if (tokens[1].length() > 0) {
                         sample.setName(tokens[1]);
 
                     }else {
                         sample.setName("");
                     }
-                    productSample.add(sample);
+                    sample.setPrice((Double.parseDouble(tokens[2])));
+                    if (tokens[2].length() > 0) {
+                        sample.setPrice((Double.parseDouble(tokens[2])));
+
+                    }else {
+                        sample.setPrice(0);
+                    }
+                    sample.setQty((Double.parseDouble(tokens[3])));
+                    if (tokens[3].length() > 0) {
+                        sample.setQty((Double.parseDouble(tokens[3])));
+
+                    }else {
+                        sample.setQty(0);
+                    }
+
+                productSample.add(sample);
 
                     Log.d("Produktua", sample.toString());
 

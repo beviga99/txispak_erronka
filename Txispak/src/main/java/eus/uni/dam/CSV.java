@@ -27,7 +27,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class CSV implements ItemDao {
 	//File izena produktuak.csv
-	String filename = "produktuak.csv";
+	String filename = "Produktuak.csv";
 	// Array list bat non produktuak gordeko ditugun
 	public ArrayList<Item> produktuak = new ArrayList<>();
 
@@ -45,7 +45,7 @@ public class CSV implements ItemDao {
 	public static Connection connect() {
 		Connection conn = null;
 		try {
-			String url = "jdbc:postgresql://192.168.65.11/Admin";
+			String url = "jdbc:postgresql://Localhost/Admin";
 			Properties props = new Properties();
 			props.setProperty("user", "openpg");
 			props.setProperty("password", "openpgpwd");
@@ -63,14 +63,18 @@ public class CSV implements ItemDao {
 	 */
 	@PostConstruct
 	public void init() {
-		String taula = "product_template";
-		String sql = "SELECT id, name FROM " + taula;
+
+		String sql = "SELECT product_template.id, product_template.name, product_template.list_price, SUM(stock_move.product_qty) as product_qty "
+				+ "FROM product_template "
+				+ "INNER JOIN stock_move ON product_template.id = stock_move.product_id "
+				+ "GROUP BY product_template.id";
+		
 
 		try (Connection conn = connect();
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery(sql)) {
 			while (rs.next()) {
-				Item m = new Item(rs.getInt("id"), rs.getString("name"));
+				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getDouble("product_qty"));
 				produktuak.add(m);
 			}
 		} catch (Exception ex) {
@@ -86,7 +90,7 @@ public class CSV implements ItemDao {
 	 */
 	@PreDestroy
 	public void destroy() {
-		String filename = "C:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
+		String filename = "C:/Users/arambarri.oihana/Desktop/txispakOndo/txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
 
 		try {
 			File myObj = new File("produktuak.csv");
@@ -100,7 +104,7 @@ public class CSV implements ItemDao {
 			writer.write("ID PRODUKTU ; DESKRIPZIOA \n");
 
 			for (Item p : produktuak) {
-				writer.write(p.getId() + ";" + p.getName() + ".\n");
+				writer.write(p.getId() + ";" + p.getName() +";"+ p.getPrice() +";"+ p.getQty()+ ".\n");
 			}
 
 			writer.close();

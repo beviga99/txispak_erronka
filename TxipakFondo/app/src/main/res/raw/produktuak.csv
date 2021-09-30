@@ -1,6 +1,6 @@
 ID PRODUKTU ; DESKRIPZIOA 
-2;RAM txartela 8GB 2400Ghz DDR5 HYPERx.
-3;Txartel Grafikoa NVIDIA GeForce RTX 2080 8GB DDR6.
-4;Intel i7 10th generazioa.
-1;Radeon RX 580 6GB.
-5;Potato.
+1;Radeon RX 580 6GB;5.0;10.0.
+2;RAM txartela 8GB 2400Ghz DDR5 HYPERx;75.0;10.0.
+3;Txartel Grafikoa NVIDIA GeForce RTX 2080 8GB DDR6;500.0;10.0.
+4;Intel i7 10th generazioa;250.0;13.0.
+5;Potato;45.0;10.0.
