@@ -1928,6 +1928,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2020,6 +2021,7 @@ id flip
 id floating
 id forever
 id form_1
+id form_2
 id fragment_container_view_tag
 id frost
 id ghost_view
@@ -2043,6 +2045,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id info
@@ -2251,6 +2254,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2366,6 +2370,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout banakakodatuak
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

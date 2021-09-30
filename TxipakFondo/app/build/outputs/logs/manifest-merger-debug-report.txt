@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\603d5b366cec0e2b4f7a40320b7dc059\transformed\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\tubia.ane\.gradle\caches\transforms-3\4ecd700c773cf5624732e3577602f1ea\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
@@ -39,25 +39,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tubia.ane\.gradl
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\8ca7186ef83368b8549809152ed428ce\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\485578c608519582fc751ff2f7c88476\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:5:5-22:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\603d5b366cec0e2b4f7a40320b7dc059\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
@@ -69,37 +69,41 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tu
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:11:9-49
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:11:9-49
 activity#com.example.txipakfondo.MainActivity
-ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:12:9-20:20
+ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:12:9-20:20
 	android:exported
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:14:13-36
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.txipakfondo.BanakakoDatuak
+ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:21:9-61
+	android:name
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:21:19-49
 uses-sdk
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\603d5b366cec0e2b4f7a40320b7dc059\transformed\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
@@ -170,13 +174,13 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\tubia.ane\.gradle\caches\trans
 MERGED from [androidx.print:print:1.0.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\485578c608519582fc751ff2f7c88476\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tubia.ane\Documents\Interfaze\TxipakFondo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml

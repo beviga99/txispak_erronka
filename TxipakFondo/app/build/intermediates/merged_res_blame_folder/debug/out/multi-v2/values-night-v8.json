@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tubia.ane\\Documents\\Interfaze\\TxipakFondo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tubia.ane\\.gradle\\caches\\transforms-3\\25012fcc08d4c5cf5a2844c1a21a6fbe\\transformed\\material-1.4.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -21,14 +21,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tubia.ane\\Documents\\Interfaze\\TxipakFondo\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "100",
+                        "startOffsets": "102",
                         "endLines": "14",
                         "endColumns": "12",
-                        "endOffsets": "820"
+                        "endOffsets": "834"
                     },
                     "to": {
                         "startLines": "25",

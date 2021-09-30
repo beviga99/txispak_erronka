@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tubia.ane\\Documents\\Interfaze\\TxipakFondo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tubia.ane\\.gradle\\caches\\transforms-3\\b4790aa1caca6e7d9bde0bf1adfc442a\\transformed\\recyclerview-1.1.0\\res\\values\\values.xml",
@@ -40,13 +40,13 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tubia.ane\\Documents\\Interfaze\\TxipakFondo\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "7,2,3,4,5,6,8",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "286,55,102,149,196,241,328",
+                        "startOffsets": "293,57,105,153,201,247,336",
                         "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "323,97,144,191,236,281,365"
+                        "endOffsets": "330,99,147,195,241,287,373"
                     },
                     "to": {
                         "startLines": "492,580,581,582,593,594,597",
@@ -131,22 +131,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tubia.ane\\Documents\\Interfaze\\TxipakFondo\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2",
+                        "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "820"
+                        "startOffsets": "17",
+                        "endColumns": "48",
+                        "endOffsets": "61"
                     },
                     "to": {
-                        "startLines": "4016",
+                        "startLines": "1186",
                         "startColumns": "4",
-                        "startOffsets": "265348",
-                        "endLines": "4028",
-                        "endColumns": "12",
-                        "endOffsets": "266066"
+                        "startOffsets": "68768",
+                        "endColumns": "48",
+                        "endOffsets": "68812"
                     }
                 },
                 {
@@ -207,20 +205,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tubia.ane\\Documents\\Interfaze\\TxipakFondo\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "1",
+                        "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "48",
-                        "endOffsets": "60"
+                        "startOffsets": "102",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "834"
                     },
                     "to": {
-                        "startLines": "1186",
+                        "startLines": "4016",
                         "startColumns": "4",
-                        "startOffsets": "68768",
-                        "endColumns": "48",
-                        "endOffsets": "68812"
+                        "startOffsets": "265348",
+                        "endLines": "4028",
+                        "endColumns": "12",
+                        "endOffsets": "266066"
                     }
                 },
                 {

@@ -2,8 +2,16 @@ package com.example.txipakfondo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         String line = "";
         try {
             reader.readLine();
+            Button button;
             while (((line = reader.readLine()) != null)){
                     String[] tokens = line.split(";");
                     ProductSample sample = new ProductSample();
@@ -45,6 +54,23 @@ public class MainActivity extends AppCompatActivity {
                         sample.setName("");
                     }
                     productSample.add(sample);
+                    button = new Button(this);
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent myIntent = new Intent(view.getContext(), BanakakoDatuak.class);
+                            myIntent.putExtra("id", tokens[0]);
+                            startActivityForResult(myIntent, 0);
+                        }
+                    });
+                    button.setId(Integer.parseInt(tokens[0]));
+                    button.setText("Produktua: " + tokens[0]);
+
+                    LinearLayout layout = (LinearLayout) findViewById(R.id.layout);
+                    button.setLayoutParams(new LinearLayout.LayoutParams(
+                            ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT
+                    ));
+                    layout.addView(button);
 
                     Log.d("Produktua", sample.toString());
 
