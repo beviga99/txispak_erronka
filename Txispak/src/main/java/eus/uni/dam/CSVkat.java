@@ -28,7 +28,7 @@ import org.springframework.stereotype.Repository;
 public class CSVkat implements CategoryDao {
 	//File izena produktuak.csv
 	String filename = "Kategoria.csv";
-	// Array list bat non produktuak gordeko ditugun
+	// Array list bat non kategoriak gordeko ditugun
 	public ArrayList<Category> kategoriak = new ArrayList<>();
 
 	CSVkat() {
@@ -58,8 +58,8 @@ public class CSVkat implements CategoryDao {
 
 	}
 	/**
-	 * Datu baseko produktuak bistaratu selectaren bidez.
-	 * Datu basearekin konektatu , selekta egin, datu baseko produktuak produktu objetuan gorde eta arrayListara gehitu
+	 * Datu baseko kategoriak bistaratu selectaren bidez.
+	 * Datu basearekin konektatu , selekta egin, datu baseko kategoriak kategoria objetuan gorde eta arrayListara gehitu
 	 */
 	@PostConstruct
 	public void init() {
@@ -81,9 +81,9 @@ public class CSVkat implements CategoryDao {
 	}
 	/**
 	 * Filearen izena zehazten dugu eta non sortuko dugun -->url
-	 * File bat sortuko dugu -->produktuak.csv
-	 * FileWrite objetua sortu produktuak.csv idazteko -->Gure produktuak adibidez
-	 * FileWrite arraylisteko poduktuak (Datu baseko produktuak) idatzi
+	 * File bat sortuko dugu -->kategoria.csv
+	 * FileWrite objetua sortu kategoria.csv idazteko -->Gure kategoriak adibidez
+	 * FileWrite arraylisteko kategoriak (Datu baseko produktuak) idatzi
 	 */
 	@PreDestroy
 	public void destroy() {
