@@ -2,8 +2,9 @@ com/example/txipakfondo/BuildConfig.java
  com.example.txipakfondo.BuildConfig
 com/example/txipakfondo/ProductSample.java
  com.example.txipakfondo.ProductSample
+com/example/txipakfondo/BanakakoDatuak.java
+ com.example.txipakfondo.BanakakoDatuak
 com/example/txipakfondo/MainActivity.java
  com.example.txipakfondo.MainActivity
  com.example.txipakfondo.MainActivity$1
-com/example/txipakfondo/BanakakoDatuak.java
- com.example.txipakfondo.BanakakoDatuak
+ com.example.txipakfondo.MainActivity$2

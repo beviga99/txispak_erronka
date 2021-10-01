@@ -57,6 +57,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array spinnerItems
 attr ConstraintRotate
 attr SharedValue
 attr SharedValueId
@@ -1781,6 +1782,10 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dragon_fondo
+drawable f1
+drawable f2
+drawable f3
+drawable f4
 drawable fondo
 drawable frame_1
 drawable group1
@@ -2208,6 +2213,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -2255,9 +2261,11 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2461,6 +2469,7 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw kategoriak
 raw produktuak
 string abc_action_bar_home_description
 string abc_action_bar_up_description

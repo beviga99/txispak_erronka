@@ -1,6 +1,6 @@
 ID PRODUKTU ; DESKRIPZIOA 
-1;Radeon RX 580 6GB;5.0;10.0;kaixooo
-2;RAM txartela 8GB 2400Ghz DDR5 HYPERx;75.0;10.0;null
-3;Txartel Grafikoa NVIDIA GeForce RTX 2080 8GB DDR6;500.0;10.0;null
-4;Intel i7 10th generazioa;250.0;13.0;null
-5;Potato;45.0;10.0;null
+5;Potato;45.0;10.0;null;Saleable
+3;Txartel Grafikoa NVIDIA GeForce RTX 2080 8GB DDR6;500.0;10.0;NVIDIA GeForce® RTX 2080 enblematiko berria planetako joko GPU aurreratuena da, errendimendu handiko NVIDIA Turing ™ arkitekturarekin elikatua.;Txartel Grafikoa
+4;Intel i7 10th generazioa;250.0;13.0;Intel® Core ™ 10 Geneko prozesadore berriek errendimendu hobekuntza nabarmenak eskaintzen dituzte produktibitatea hobetzeko eta entretenimendu ikusgarria lortzeko, besteak beste, 5,3 GHz arte, Intel® Wi-Fi 6 (Gig +), Thunderbolt ™ 3 teknologia, 4K HDR, sistemaren optimizazio adimenduna eta askoz gehiago .;Prozesadorea
+1;Radeon RX 580 6GB;5.0;10.0;GloFo 14nm FinFET-erako diseinatutako AMDren azken GCN 4 arkitekturan oinarritzen da, VR gaitasun handiagoa, errendimendu maila altuagoa, VR leuna, bateragarritasun etengabea hurrengo belaunaldiko joko monitoreekin eta CPUrik gabeko joko erreprodukzio edo grabazioarekin.;Txartel Grafikoa
+2;RAM txartela 8GB 2400Ghz DDR5 HYPERx;75.0;10.0;Memoria moduluak Intel plataforma berrienetan oinarritutako irtenbidea dira. Errendimendu eta egonkortasun handiena espero duten erabiltzaile zorrotzenentzat diseinatu dira.;RAM Txartela

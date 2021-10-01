@@ -84,17 +84,18 @@ public class CSV implements ItemDao {
 	@PostConstruct
 	public void init() {
 
-		String sql = "SELECT product_template.id, product_template.name, product_template.list_price, SUM(stock_move.product_qty) as product_qty, product_template.description "
-				+ "FROM product_template "
-				+ "INNER JOIN stock_move ON product_template.id = stock_move.product_id "
-				+ "GROUP BY product_template.id";
+		String sql = "SELECT product_template.id, product_template.name, product_template.list_price, SUM(stock_move.product_qty) as product_qty, product_template.description, product_category.name as categName "
+				+ "FROM ((product_template "
+				+ "INNER JOIN stock_move ON product_template.id = stock_move.product_id)"
+				+ "INNER JOIN product_category ON product_template.categ_id=product_category.id)"
+				+ "GROUP BY product_template.id, product_category.name";
 		
 
 		try (Connection conn = connect();
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery(sql)) {
 			while (rs.next()) {
-				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getDouble("product_qty"), rs.getString("description"));
+				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getDouble("product_qty"), rs.getString("description"),rs.getString("categName"));
 				produktuak.add(m);
 			}
 		} catch (Exception ex) {
@@ -110,7 +111,7 @@ public class CSV implements ItemDao {
 	 */
 	@PreDestroy
 	public void destroy() {
-		String filename = "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
+		String filename = "C:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
 
 		try {
 			File myObj = new File("produktuak.csv");
@@ -124,7 +125,7 @@ public class CSV implements ItemDao {
 			writer.write("ID PRODUKTU ; DESKRIPZIOA \n");
 
 			for (Item p : produktuak) {
-				writer.write(p.getId() + ";" + p.getName() +";"+ p.getPrice() +";"+ p.getQty()+ ";"+ p.getDescript()+"\n");
+				writer.write(p.getId() + ";" + p.getName() +";"+ p.getPrice() +";"+ p.getQty()+ ";"+ p.getDescript()+";"+p.getCateg()+"\n");
 			}
 
 			writer.close();

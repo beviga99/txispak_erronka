@@ -6,15 +6,17 @@ public class ProductSample {
     private double price;
     private double qty;
     private String desk;
+    private String category;
 
 
 
-    public ProductSample(int id, String name, double price, double qty, String desk) {
+    public ProductSample(int id, String name, double price, double qty, String desk, String category) {
         this.id = id;
         this.name = name;
         this.price=price;
         this.qty=qty;
         this.desk = desk;
+        this.category = category;
     }
 
     public ProductSample() {
@@ -60,9 +62,19 @@ public class ProductSample {
         this.desk = desk;
     }
 
+    public String getCategory() { return category; }
+
+    public void setCategory(String kategory) { this.category = kategory; }
+
     @Override
     public String toString() {
-        return "Item [id=" + id + ", name=" + name + ", price="+price+ ", qty="+qty+", deskripzioa="+desk+"]";
+        return "ProductSample{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", qty=" + qty +
+                ", desk='" + desk + '\'' +
+                ", kategory='" + category + '\'' +
+                '}';
     }
-
 }
