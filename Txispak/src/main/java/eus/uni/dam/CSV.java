@@ -64,18 +64,20 @@ public class CSV implements ItemDao {
 	@PostConstruct
 	public void init() {
 
-		String sql = "SELECT product_template.id, product_template.name, product_template.list_price, SUM(stock_move.product_qty) as product_qty, product_template.description, product_category.name as categname "
-				+ "FROM product_template "
-				+ "INNER JOIN stock_move ON product_template.id = stock_move.product_id "
-				+ "INNER JOIN product_category ON product_template.id = product_category.id "
-				+ "GROUP BY product_template.id, product_category.name";
+		String sql = "select product_product.id , product_template.name, product_template.list_price , stock_quant.quantity , product_template.description,  product_category.name as c "
+				+ "from product_product "
+				+ "inner join product_template on product_product.id = product_template.id "
+				+ "inner join stock_quant on product_product.id = stock_quant.product_id "
+				+ "inner join product_category on product_template.categ_id =product_category.id "
+				+ "where stock_quant.quantity>=0 "
+				+ "order by product_product.id";
 		
 
 		try (Connection conn = connect();
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery(sql)) {
 			while (rs.next()) {
-				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getDouble("product_qty"), rs.getString("description"),rs.getString("categname"));
+				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getInt("quantity"), rs.getString("description"),rs.getString("c"));
 				produktuak.add(m);
 			}
 		} catch (Exception ex) {

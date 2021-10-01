@@ -4,10 +4,10 @@ public class Item {
 	private int id;
 	private String name;
 	private Double price;
-	private Double qty;
+	private int qty;
 	private String descript;
 	private String categ;
-	public Item(int id, String name,double price, double qty, String descript, String categ) {
+	public Item(int id, String name,double price, int qty, String descript, String categ) {
 		this.id = id;
 		this.name = name;
 		this.price=price;
@@ -29,11 +29,13 @@ public class Item {
 		this.descript = descript;
 	}
 
-	public Double getQty() {
+	
+
+	public int getQty() {
 		return qty;
 	}
 
-	public void setQty(Double qty) {
+	public void setQty(int qty) {
 		this.qty = qty;
 	}
 
