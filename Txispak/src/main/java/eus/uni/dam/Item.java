@@ -6,12 +6,14 @@ public class Item {
 	private Double price;
 	private Double qty;
 	private String descript;
-	public Item(int id, String name,double price, double qty, String descript) {
+	private String categ;
+	public Item(int id, String name,double price, double qty, String descript, String categ) {
 		this.id = id;
 		this.name = name;
 		this.price=price;
 		this.qty=qty;
 		this.descript=descript;
+		this.categ=categ;
 	}
 	
 	public Item() {
@@ -37,6 +39,14 @@ public class Item {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	public String getCateg() {
+		return categ;
+	}
+
+	public void setCateg(String categ) {
+		this.categ = categ;
 	}
 
 	public double getPrice() {
@@ -67,7 +77,7 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item [id=" + id + ", name=" + name + "price="+price+"qty="+qty+"descript="+descript+"]";
+		return "Item [id=" + id + ", name=" + name + "price="+price+"qty="+qty+"descript="+descript+"categ="+categ+"]";
 	}
 	
 	

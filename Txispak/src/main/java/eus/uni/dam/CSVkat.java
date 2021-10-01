@@ -25,18 +25,18 @@ import javax.swing.JOptionPane;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class CSV implements ItemDao {
+public class CSVkat implements CategoryDao {
 	//File izena produktuak.csv
-	String filename = "Produktuak.csv";
+	String filename = "Kategoria.csv";
 	// Array list bat non produktuak gordeko ditugun
-	public ArrayList<Item> produktuak = new ArrayList<>();
+	public ArrayList<Category> kategoriak = new ArrayList<>();
 
-	CSV() {
+	CSVkat() {
 
 	};
 
-	public Collection<Item> getItems() {
-		return produktuak;
+	public Collection<Category> getCategory() {
+		return kategoriak;
 	};
 	/**
 	 * Datu basearekin konektatzeko
@@ -64,19 +64,15 @@ public class CSV implements ItemDao {
 	@PostConstruct
 	public void init() {
 
-		String sql = "SELECT product_template.id, product_template.name, product_template.list_price, SUM(stock_move.product_qty) as product_qty, product_template.description, product_category.name as categname "
-				+ "FROM product_template "
-				+ "INNER JOIN stock_move ON product_template.id = stock_move.product_id "
-				+ "INNER JOIN product_category ON product_template.id = product_category.id "
-				+ "GROUP BY product_template.id, product_category.name";
+		String sql = "SELECT name FROM product_category";
 		
 
 		try (Connection conn = connect();
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery(sql)) {
 			while (rs.next()) {
-				Item m = new Item(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"),rs.getDouble("product_qty"), rs.getString("description"),rs.getString("categname"));
-				produktuak.add(m);
+				Category c = new Category(rs.getString("name"));
+				kategoriak.add(c);
 			}
 		} catch (Exception ex) {
 			JOptionPane.showMessageDialog(null, ex.getMessage());
@@ -91,10 +87,10 @@ public class CSV implements ItemDao {
 	 */
 	@PreDestroy
 	public void destroy() {
-		String filename = "C:/Users/arambarri.oihana/Desktop/txispakOndo/txispak_erronka/TxipakFondo/app/src/main/res/raw/produktuak.csv";
+		String filename = "C:/Users/arambarri.oihana/Desktop/txispakOndo/txispak_erronka/TxipakFondo/app/src/main/res/raw/kategoria.csv";
 
 		try {
-			File myObj = new File("produktuak.csv");
+			File myObj = new File("kategoria.csv");
 			myObj.createNewFile();
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
@@ -102,10 +98,10 @@ public class CSV implements ItemDao {
 		}
 		try {
 			FileWriter writer = new FileWriter(filename);
-			writer.write("ID; PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA \n");
+			writer.write("IZENA \n");
 
-			for (Item p : produktuak) {
-				writer.write(p.getId() + ";" + p.getName() +";"+ p.getPrice() +";"+ p.getQty()+ ";"+ p.getDescript()+"\n");
+			for (Category p : kategoriak) {
+				writer.write( p.getName()+"\n");
 			}
 
 			writer.close();
@@ -118,19 +114,19 @@ public class CSV implements ItemDao {
 	}
 
 	@Override
-	public Collection<Item> findAll() {
+	public Collection<Category> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void insert(Item produktua) {
+	public void insert(Category kategoria) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void edit(Item produktua) {
+	public void edit(Category kategoria) {
 		// TODO Auto-generated method stub
 
 	}
