@@ -3,7 +3,7 @@ package eus.uni.dam;
 public class Item {
 	private int id;
 	private String name;
-	private Double price;
+	private double price;
 	private int qty;
 	private String descript;
 	private String categ;
@@ -39,9 +39,7 @@ public class Item {
 		this.qty = qty;
 	}
 
-	public void setPrice(Double price) {
-		this.price = price;
-	}
+
 
 	public String getCateg() {
 		return categ;
