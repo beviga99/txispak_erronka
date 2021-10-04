@@ -2,12 +2,16 @@ package com.example.txipakfondo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         readProductData(aukeratua);
     }
 
+    @SuppressLint("ResourceType")
     private void readProductData(String aukeratua) {
         spin = findViewById(R.id.spinner);
         InputStream is = getResources().openRawResource(R.raw.produktuak);
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 new InputStreamReader(is, Charset.forName("UTF-8"))
         );
 
-        InputStream cat = getResources().openRawResource(R.raw.kategoriak);
+        InputStream cat = getResources().openRawResource(R.raw.kategoria);
         BufferedReader readerCat = new BufferedReader(
                 new InputStreamReader(cat, Charset.forName("UTF-8"))
         );
@@ -61,17 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> nireadapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, kategoriak);
 
-        spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String aukeratua = String.valueOf(spin.getSelectedItem());
-                readProductData(aukeratua);
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
         spin.setAdapter(nireadapter);
         line = "";
 
@@ -114,12 +109,13 @@ public class MainActivity extends AppCompatActivity {
                 sample.setCategory((tokens[5]));
                 if (tokens[5].length() > 0) {
                     sample.setCategory(tokens[5]);
-                    if (aukeratua.equals(tokens[5])) {
+                    if (aukeratua.equals(tokens[5]) || aukeratua.equals("All")) {
                         Button bot = new Button(this);
 
+                        LinearLayout hlayour = new LinearLayout(this);
                         LinearLayout linearLayout = findViewById(R.id.linear_1);
 
-                        LinearLayout hlayour = new LinearLayout(this);
+
 
                         hlayour.setOrientation(LinearLayout.HORIZONTAL);
                         bot.setOnClickListener(new View.OnClickListener() {
@@ -144,6 +140,29 @@ public class MainActivity extends AppCompatActivity {
                         ));
                         hlayour.addView(bot);
                         linearLayout.addView(hlayour);
+                        spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                                if (!(aukeratua.equals(String.valueOf(spin.getSelectedItem())))){
+                                    linearLayout.removeAllViews();
+                                    String aukeratua = String.valueOf(spin.getSelectedItem());
+                                    readProductData(aukeratua);
+                                    selectValue(spin, aukeratua);
+                                }
+                            }
+                            private void selectValue(Spinner spinner, Object value) {
+                                for (int i = 0; i < spinner.getCount(); i++) {
+                                    if (spinner.getItemAtPosition(i).equals(value)) {
+                                        spinner.setSelection(i);
+                                        break;
+                                    }
+                                }
+                            }
+                            @Override
+                            public void onNothingSelected(AdapterView<?> adapterView) {
+                                return;
+                            }
+
+                        });
                     }
 
                 } else {

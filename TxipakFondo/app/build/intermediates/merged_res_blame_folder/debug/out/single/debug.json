@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\drawable_f1.jpg.flat",
@@ -24,10 +24,6 @@
         "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\raw_kategoriak.csv.flat",
-        "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\raw\\kategoriak.csv"
-    },
-    {
         "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
@@ -38,6 +34,10 @@
     {
         "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\raw_kategoria.csv.flat",
+        "source": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\raw\\kategoria.csv"
     },
     {
         "merged": "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",

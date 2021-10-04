@@ -2469,7 +2469,7 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
-raw kategoriak
+raw kategoria
 raw produktuak
 string abc_action_bar_home_description
 string abc_action_bar_up_description

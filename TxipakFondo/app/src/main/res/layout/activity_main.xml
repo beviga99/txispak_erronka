@@ -19,9 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linear_1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -50,6 +49,15 @@
             </LinearLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/linear_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </LinearLayout>
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
