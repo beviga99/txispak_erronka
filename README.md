@@ -16,7 +16,7 @@ Hemen duzu errepositorioko link-a:
 Hau da gure java aplikazioaren diagrama, bertan klase desberdinak ikusi ahal dira  
 baita bere metodoak eta atributoak.
 
-![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/jon/Diagrama.svg)
+![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/benat/Diagrama.svg)
 
 ## Android
 Gure programan lehenik eta behin menu nagusia ikusten da. Menu nagusia honetan,
