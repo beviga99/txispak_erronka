@@ -16,6 +16,6 @@ Hemen duzu errepositorioko link-a:
 Hau da gure lanaren diagrama, bertan klase desberdinak ikusi ahal dira  
 baita bere metodoak eta propietateak.
 
-![Diagrama]()
+![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/jon/Diagrama.svg)
 
 ## Android
