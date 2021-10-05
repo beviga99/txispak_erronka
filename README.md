@@ -9,8 +9,13 @@ Hemen duzu errepositorioko link-a:
 
 ## Odoo
 
+
 ## Spring
 
 ## Diagrama
+Hau da gure lanaren diagrama, bertan klase desberdinak ikusi ahal dira  
+baita bere metodoak eta propietateak.
+
+![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/jon/Txispak.svg)
 
 ## Android
