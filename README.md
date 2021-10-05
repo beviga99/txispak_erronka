@@ -1,8 +1,7 @@
 # TXISPAK ERRONKA
 ## GitHub
-Gure taldeak GitHub erabili du lanaren aldaketak eta progresioa   
-ikusteko. Bakoitzak branch desberdinetan lan egin du eta atal 
-guztiak bukatzerakoan main branch-era igo ditugu.
+Gure taldeak GitHub erabili du lanaren aldaketak eta progresioa ikusteko. 
+Bakoitzak branch desberdinetan lan egin du eta atal guztiak bukatzerakoan main branch-era igo ditugu.
 
 Hemen duzu errepositorioko link-a:  
 [GitHub](https://github.com/beviga99/txispak_erronka)
