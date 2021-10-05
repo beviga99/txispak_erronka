@@ -13,8 +13,8 @@ Hemen duzu errepositorioko link-a:
 ## Spring
 
 ## Diagrama
-Hau da gure lanaren diagrama, bertan klase desberdinak ikusi ahal dira  
-baita bere metodoak eta propietateak.
+Hau da gure java aplikazioaren diagrama, bertan klase desberdinak ikusi ahal dira  
+baita bere metodoak eta atributoak.
 
 ![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/jon/Diagrama.svg)
 
