@@ -102,7 +102,7 @@ public class CSVkat implements CategoryDao {
 			writer.write("IZENA \n");
 
 			for (Category p : kategoriak) {
-				writer.write( p.getName()+"\n");
+				writer.write( p.getName()+";false \n");
 			}
 
 			writer.close();
