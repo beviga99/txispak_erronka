@@ -68,11 +68,12 @@ public class CSV implements ItemDao {
 	@PostConstruct
 	public void init() {
 
-		String sql = "select product_product.id , product_template.name, product_template.list_price , stock_quant.quantity , product_template.description,  product_category.name as c "
-				+ "from product_product " + "inner join product_template on product_product.id = product_template.id "
-				+ "inner join stock_quant on product_product.id = stock_quant.product_id "
-				+ "inner join product_category on product_template.categ_id =product_category.id "
-				+ "where stock_quant.quantity>=0 " + "order by product_product.id";
+		String sql = "select product_template.id, product_template.name, product_template.list_price, stock_quant.quantity, product_template.description, product_category.name as c "
+				+ "from product_template "
+				+ "inner join stock_quant on product_template.id = stock_quant.product_id "
+				+ "inner join product_category on product_template.categ_id = product_category.id "
+				+ "where stock_quant.location_id = 8 "
+				+ "order by product_template.id ";
 
 		try (Connection conn = connect();
 				Statement stmt = conn.createStatement();
@@ -96,22 +97,21 @@ public class CSV implements ItemDao {
 	 */
 	@PreDestroy
 	public void destroy() {
-		String filename = "C:\\Users\\arambarri.oihana\\Desktop\\txispakOndo\\txispak_erronka\\Txispak\\produktuak.csv";
+		String filename = "C:\\Users\\arambarri.oihana\\Desktop\\txispakOndo\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\raw\\produktuak.csv";
 
-		try {
+		/*try {
 			File myObj = new File("produktuak.csv");
 			myObj.createNewFile();
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
 			e.printStackTrace();
-		}
+		}*/
 		try {
 			FileWriter writer = new FileWriter(filename);
-			writer.write("ID; PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA \n");
+			writer.write("PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA; KATEGORIA; ID \n");
 
 			for (Item p : produktuak) {
-				writer.write(p.getId() + ";" + p.getName() + ";" + p.getPrice() + ";" + p.getQty() + ";"
-						+ p.getDescript() + ";" + p.getCateg() + "\n");
+				writer.write(p.getName() +"; "+ p.getPrice() +"; "+ p.getQty()+ "; "+ p.getDescript()+"; "+ p.getCateg()+"; "+p.getId()+"\n");
 			}
 
 			writer.close();
@@ -122,7 +122,6 @@ public class CSV implements ItemDao {
 			e.printStackTrace();
 		}
 	}
-
 	@Override
 	public Collection<Item> findAll() {
 		// TODO Auto-generated method stub
