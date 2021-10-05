@@ -88,7 +88,7 @@ public class CSVkat implements CategoryDao {
 	 */
 	@PreDestroy
 	public void destroy() {
-		String filename = "C:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/raw/kategoria.csv";
+		String filename = "C:\\Users\\arambarri.oihana\\Desktop\\txispakOndo\\txispak_erronka\\Txispak\\kategoria.csv";
 
 		try {
 			File myObj = new File("kategoria.csv");
