@@ -19,3 +19,7 @@ baita bere metodoak eta propietateak.
 ![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/jon/Diagrama.svg)
 
 ## Android
+Gure programan lehendabiziz menu printzipala ikusten da non produktu  
+guztiak ikusi ahal dira. Produktu guzti honek kategoriatan bananduta dagoz  
+eta scroll baten bidez kategoria bat aukeratu ahal duzu horren kategoriako  
+produktuak ikusteko.
