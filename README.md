@@ -8,7 +8,7 @@ Hemen duzu errepositorioko link-a:
 [GitHub](https://github.com/beviga99/txispak_erronka)
 
 ## Odoo
-
+Odoo-n web orria eta produktuak aurkitu egin ditzakegu. 
 
 
 ## Diagrama
@@ -24,6 +24,8 @@ Java-n programatutako klaseak eta metodoak goiko diagrama oinarrita,
 eta diagrama, bakoitza bere metodoekin (getter, setter...). 2 klase honetan oinarrituta,  
 beste bi egin dituguz non datu basearekin konektatuta egin ahal diren exekuzioak daude.  
 Azkenik, csv eta csvKat klaseak ditugu, honek, datu basera konektatzeko metodoak daukate definituta  
+bata produktu bakoitzan lan egiteko eta bestea kategorietan. Metodo exekutable honek insertatzea,  
+ezabatzea, denak irakurtzea eta editatzean datza.
 
 
 ## Android
