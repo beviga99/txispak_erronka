@@ -10,13 +10,11 @@ Hemen duzu errepositorioko link-a:
 ## Odoo
 Odoo-n web orria eta produktuak aurkitu egin ditzakegu. 
 
-
 ## Diagrama
 Hau da gure lanaren diagrama, bertan klase desberdinak ikusi ahal dira  
 baita bere metodoak eta propietateak.
 
 ![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/jon/Diagrama.svg)
-
 
 ## Spring/Maven
 Java-n programatutako klaseak eta metodoak goiko diagrama oinarrita,  
@@ -25,11 +23,12 @@ eta diagrama, bakoitza bere metodoekin (getter, setter...). 2 klase honetan oina
 beste bi egin dituguz non datu basearekin konektatuta egin ahal diren exekuzioak daude.  
 Azkenik, csv eta csvKat klaseak ditugu, honek, datu basera konektatzeko metodoak daukate definituta  
 bata produktu bakoitzan lan egiteko eta bestea kategorietan. Metodo exekutable honek insertatzea,  
-ezabatzea, denak irakurtzea eta editatzean datza.
-
+ezabatzea, denak irakurtzea eta editatzean datza. Honetarako, metodo hauek datu basearekin  
+konektatzen dira eta hemen egindako aldaketak eta exekuzioak egin beharko litzateke.
 
 ## Android
 Gure programan lehendabiziz menu printzipala ikusten da non produktu  
 guztiak ikusi ahal dira. Produktu guzti honek kategoriatan bananduta dagoz  
 eta scroll baten bidez kategoria bat aukeratu ahal duzu horren kategoriako  
-produktuak ikusteko.
+produktuak ikusteko. Produktuen datu honek csv-tik irakurtzen du eta  
+bere propietateak erakusten ditu. 
