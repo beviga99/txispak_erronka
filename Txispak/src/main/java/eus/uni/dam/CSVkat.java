@@ -90,13 +90,7 @@ public class CSVkat implements CategoryDao {
 	public void destroy() {
 		String filename = "C:\\Users\\arambarri.oihana\\Desktop\\txispakOndo\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\raw\\kategoria.csv";
 
-		try {
-			File myObj = new File("kategoria.csv");
-			myObj.createNewFile();
-		} catch (IOException e) {
-			System.out.println("An error occurred.");
-			e.printStackTrace();
-		}
+		
 		try {
 			FileWriter writer = new FileWriter(filename);
 			writer.write("IZENA \n");

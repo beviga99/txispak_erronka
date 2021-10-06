@@ -99,13 +99,7 @@ public class CSV implements ItemDao {
 	public void destroy() {
 		String filename = "C:\\Users\\arambarri.oihana\\Desktop\\txispakOndo\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\raw\\produktuak.csv";
 
-		/*try {
-			File myObj = new File("produktuak.csv");
-			myObj.createNewFile();
-		} catch (IOException e) {
-			System.out.println("An error occurred.");
-			e.printStackTrace();
-		}*/
+		
 		try {
 			FileWriter writer = new FileWriter(filename);
 			writer.write("PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA; KATEGORIA; ID \n");
