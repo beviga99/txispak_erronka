@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Layout;
 import android.util.Log;
@@ -15,8 +16,10 @@ import android.view.ViewManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -57,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         try {
             readerCat.readLine();
             while (((line = readerCat.readLine()) != null)) {
-                Log.d("","line");
                 kategoriak.add(line);
             }
         } catch (IOException e) {
@@ -71,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
         line = "";
 
         try {
+            boolean badago = true;
             reader.readLine();
-
             while (((line = reader.readLine()) != null)) {
                 String[] tokens = line.split(";");
                 ProductSample sample = new ProductSample();
@@ -111,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
                     sample.setCategory(tokens[5]);
                     if (aukeratua.equals(tokens[5]) || aukeratua.equals("All")) {
                         Button bot = new Button(this);
+                        ImageView irudi = new ImageView(this);
 
                         LinearLayout hlayour = new LinearLayout(this);
                         LinearLayout linearLayout = findViewById(R.id.linear_1);
@@ -134,11 +137,21 @@ public class MainActivity extends AppCompatActivity {
                         bot.setText(sample.getName());
                         bot.setWidth(1400);
                         bot.setGravity(Gravity.LEFT);
+                        String image = "@drawable/f"+tokens[0];
+                        int imageResource = getResources().getIdentifier(image, null, getPackageName());
+                        Drawable res = getResources().getDrawable(imageResource);
+                        irudi.setImageDrawable(res);
 
                         bot.setLayoutParams(new LinearLayout.LayoutParams(
                                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT
                         ));
+
+                        irudi.setLayoutParams(new LinearLayout.LayoutParams(
+                                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT
+                        ));
                         hlayour.addView(bot);
+                        hlayour.addView(irudi);
+                        badago = false;
                         linearLayout.addView(hlayour);
                         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -171,6 +184,14 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
+            if (badago) {
+                LinearLayout linearLayout = findViewById(R.id.linear_1);
+                TextView ezdago = new TextView(this);
+                ezdago.setText("Ez dago kategoria horretako produkturik.");
+                linearLayout.addView(ezdago);
+
+            }
+            badago = true;
         } catch (IOException e) {
             Log.wtf("My activity", "Falla en la linea: " + line, e);
             e.printStackTrace();

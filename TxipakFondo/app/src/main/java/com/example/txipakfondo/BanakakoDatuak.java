@@ -3,6 +3,7 @@ package com.example.txipakfondo;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Html;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,14 +34,18 @@ public class BanakakoDatuak extends AppCompatActivity {
         image1.setImageDrawable(res);
         TextView text1 = findViewById(R.id.textView);
         text1.setText(name);
-        TextView text2 = findViewById(R.id.textView3);
-        text2.setText("Produktua" + prize);
-        TextView text3 = findViewById(R.id.textView4);
-        text3.setText("Produktua" + qty);
-        TextView text4 = findViewById(R.id.textView5);
-        text4.setText("Produktua" + desk);
-        TextView text6 = findViewById(R.id.textView6);
-        text4.setText("Produktua" + category);
+        TextView text2 = findViewById(R.id.prize);
+        String sourceString = "<b> Prezioa: </b>\n " + prize;
+        text2.setText((Html.fromHtml(sourceString)));
+        TextView text3 = findViewById(R.id.qty);
+        sourceString = "<b> Kantitatea: </b>\n " + qty;
+        text3.setText(Html.fromHtml(sourceString));
+        TextView text4 = findViewById(R.id.desk);
+        sourceString = "<b> Deskribapena: </b>\n " + desk;
+        text4.setText(Html.fromHtml(sourceString));
+        TextView text6 = findViewById(R.id.category);
+        sourceString = "<b> Kategoria: </b>\n " + category;
+        text6.setText(Html.fromHtml(sourceString));
 
     }
 }

@@ -1,38 +1,32 @@
 ID; PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA 
-1;Radeon RX 580 6GB;5.0;10.0;GloFo 14nm FinFET-erako diseinatutako AMDren azken GCN 4 arkitekturan oinarritzen da, VR gaitasun handiagoa, errendimendu maila altuagoa, VR leuna, bateragarritasun etengabea hurrengo belaunaldiko joko monitoreekin eta CPUrik gabeko joko erreprodukzio edo grabazioarekin.;Txartel Grafikoa
-2;RAM txartela 8GB 2400Ghz DDR5 HYPERx;75.0;10.0;Memoria moduluak Intel plataforma berrienetan oinarritutako irtenbidea dira. Errendimendu eta egonkortasun handiena espero duten erabiltzaile zorrotzenentzat diseinatu dira.;RAM Txartela
-3;Txartel Grafikoa NVIDIA GeForce RTX 2080 8GB DDR6;500.0;10.0;NVIDIA GeForce® RTX 2080 enblematiko berria planetako joko GPU aurreratuena da, errendimendu handiko NVIDIA Turing ™ arkitekturarekin elikatua.;Txartel Grafikoa
-4;Intel i7 10th generazioa;250.0;13.0;Intel® Core ™ 10 Geneko prozesadore berriek errendimendu hobekuntza nabarmenak eskaintzen dituzte produktibitatea hobetzeko eta entretenimendu ikusgarria lortzeko, besteak beste, 5,3 GHz arte, Intel® Wi-Fi 6 (Gig +), Thunderbolt ™ 3 teknologia, 4K HDR, sistemaren optimizazio adimenduna eta askoz gehiago.;Prozesadorea
-5;Potato;45.0;10.0;null;Saleable
-6;MSI portatila;1500.0;1.0;Ryzen 5 3700X, RTX 3060 TI, 500GB SSD, 16 gb ram ddr5.;Portatila
-7;MSI STREAMING BASIC;1200.0;1.0;AMD RYZEN™ 7 3700X / GTX 1660 TI / 32GB / SSD 480GB + HDD 1TB;Ordenagailua
-8;SALTMIRROR;1400.0;1.0;INTEL® CORE™ I3-10100/ GEFORCE® 1660 SUPER / 8GB / NVME M.2 500GB;Ordenagailua
+1;Radeon RX 580 6GB;5.0;10.0;GloFo 14nm FinFET-erako diseinatutako AMDren azken GCN 4 arkitekturan oinarritzen da VR gaitasun handiagoa errendimendu maila altuagoa VR leuna bateragarritasun etengabea hurrengo belaunaldiko joko monitoreekin eta CPUrik gabeko joko erreprodukzio edo grabazioarekin;Txartel Grafikoa
+2;RAM txartela 8GB 2400Ghz DDR5 HYPERx;75.0;10.0;Memoria moduluak Intel plataforma berrienetan oinarritutako irtenbidea dira. Errendimendu eta egonkortasun handiena espero duten erabiltzaile zorrotzenentzat diseinatu dira;RAM Txartela
+3;Txartel Grafikoa NVIDIA GeForce RTX 2080 8GB DDR6;500.0;10.0;NVIDIA GeForce RTX 2080 enblematiko berria planetako joko GPU aurreratuena da errendimendu handiko NVIDIA Turing arkitekturarekin elikatua;Txartel Grafikoa
+4;Intel i7 10th generazioa;250.0;13.0;Intel® Core ™ 10 Geneko prozesadore berriek errendimendu hobekuntza nabarmenak eskaintzen dituzte produktibitatea hobetzeko eta entretenimendu ikusgarria lortzeko besteak beste 5.3 GHz arte Intel® Wi-Fi 6 (Gig +) Thunderbolt 3 teknologia 4K HDR sistemaren optimizazio adimenduna eta askoz gehiago;Prozesadorea
+6;MSI portatila;1500.0;1.0;Ryzen 5 3700X RTX 3060 TI 500GB SSD 16 gb ram ddr5;Portatila
+7;MSI STREAMING BASIC;1200.0;1.0;AMD RYZEN™ 7 3700X GTX 1660 TI 32GB SSD 480GB HDD 1TB;Ordenagailua
+8;SALTMIRROR;1400.0;1.0;INTEL® CORE™ I3-10100 GEFORCE® 1660 SUPER 8GB NVME M.2 500GB;Ordenagailua
 9;AMD RYZEN™ 5;250.0;1.0;RYZEN™ 5 PRO 5650GE 3.4GHZ HASTA 4.4GHZ;Prozesadorea
-10;INTEL® PENTIUM®;63.0;1.0;PENTIUM® GOLD 6405 4,10 GHZ LGA 1200 (SOCKET H5);Prozesadorea
-11;CV750;69.9;1.0;750W 80+ BRONZE / ATX;Energia hornidura
+10;INTEL® PENTIUM®;63.0;1.0;PENTIUM® GOLD 6405 4.10 GHZ LGA 1200 (SOCKET H5);Prozesadorea
+11;CV750;69.9;1.0;750W 80+ BRONZE ATX;Energia hornidura
 12;MX F1;43.9;1.0;500W PLATA ATX;Energia hornidura
-13;Z390-A PRO;113.27;1.0;INTEL 1151 Y CHIPSET Z390 PLACAS BASE MSI.;Motherboard
-14;MAG B460M MORTAR;119.9;1.0;LGA 1200 SOCKET / MICRO-ATX PLACAS BASE MSI;Motherboard
-14;MAG B460M MORTAR;119.9;5.0;LGA 1200 SOCKET / MICRO-ATX PLACAS BASE MSI;Motherboard
-15;ROG STRIX X570-E GAMING;279.9;1.0;ILUMINACIÓN AURA SYNC PLACAS BASE ASUS GAMING. Zócalo AM4 procesadores AMD Ryzen de 3.ª y 2.ª Gen.;Motherboard
-16;SSD 980;129.9;1.0;PCIE 3.0 NVME M.2 1TB PCI EXPRESS 3.0 / 3500 MB/S DISCOS DUROS SAMSUNG.;Disko gogorra
-17;SSD 860 EVO;105.0;20.0;1TB 2.5" SATA III.;Disko gogorra
-17;SSD 860 EVO;105.0;3.0;1TB 2.5" SATA III.;Disko gogorra
-18;WD NAS RED;52.9;1.0;1TB SERIAL ATA III 5400 RPM / 64 MB DISCOS DUROS WESTERN DIGITAL.;Disko gogorra
-19;WD PURPLE;96.36;1.0;4TB SERIAL ATA III 5400 RPM / 64 MB DISCOS DUROS WESTERN DIGITAL.;Disko gogorra
-20;WD GREEN;29.9;10.0;120GB SATA 3 2.5'' DISCOS DUROS WESTERN DIGITAL.;Disko gogorra
-20;WD GREEN;29.9;1.0;120GB SATA 3 2.5'' DISCOS DUROS WESTERN DIGITAL.;Disko gogorra
-21;FURY BEAST;145.13;1.0;DDR4 32GB 3600MHZ CL18 2 X 16 GB / 288-PIN DIMM MEMORIA RAM KINGSTON;RAM Txartela
-22;VENGEANCE® LPX;78.0;1.0;DDR4 16GB 3000 MHZ C15 2 X 8 GB MEMORIA RAM CORSAIR.;RAM Txartela
-23;PREMIER;57.9;1.0;DDR4 8GB 2666MHZ CL19 BULK 1 X 8 GB / 288-PIN DIMM MEMORIA RAM ADATA;RAM Txartela
+13;Z390-A PRO;113.27;1.0;INTEL 1151 Y CHIPSET Z390 PLACAS BASE MSI;Motherboard
+14;MAG B460M MORTAR;119.9;5.0;LGA 1200 SOCKET MICRO-ATX PLACAS BASE MSI;Motherboard
+15;ROG STRIX X570-E GAMING;279.9;1.0;ILUMINACIÓN AURA SYNC PLACAS BASE ASUS GAMING. ZOcalo AM4 procesadores AMD Ryzen de 3 y 2 Gen;Motherboard
+16;SSD 980;129.9;1.0;PCIE 3.0 NVME M.2 1TB PCI EXPRESS 3.0 3500 MB/S DISCOS DUROS SAMSUNG;Disko gogorra
+17;SSD 860 EVO;105.0;20.0;1TB 2.5 SATA III;Disko gogorra
+18;WD NAS RED;52.9;1.0;1TB SERIAL ATA III 5400 RPM 64 MB DISCOS DUROS WESTERN DIGITAL;Disko gogorra
+19;WD PURPLE;96.36;1.0;4TB SERIAL ATA III 5400 RPM 64 MB DISCOS DUROS WESTERN DIGITAL;Disko gogorra
+20;WD GREEN;29.9;10.0;120GB SATA 3 2.5'' DISCOS DUROS WESTERN DIGITAL;Disko gogorra
+21;FURY BEAST;145.13;1.0;DDR4 32GB 3600MHZ CL18 2 X 16 GB 288-PIN DIMM MEMORIA RAM KINGSTON;RAM Txartela
+22;VENGEANCE® LPX;78.0;1.0;DDR4 16GB 3000 MHZ C15 2 X 8 GB MEMORIA RAM CORSAIR;RAM Txartela
+23;PREMIER;57.9;1.0;DDR4 8GB 2666MHZ CL19 BULK 1 X 8 GB 288-PIN DIMM MEMORIA RAM ADATA;RAM Txartela
 24;CRUCIAL BASIC;22.9;23.0;DDR4 2400 MHZ PC4-19200 4GB CL17 1 X 4GB;RAM Txartela
-24;CRUCIAL BASIC;22.9;3.0;DDR4 2400 MHZ PC4-19200 4GB CL17 1 X 4GB;RAM Txartela
-25;GEFORCE® RTX™ 3060 GAMING X;724.79;1.0;12GB GDDR6, TRI FROZR 2 Core, Pipes refrigerados, Disipador silencioso, Software Dragon Center.;Txartel Grafikoa
-26;GEFORCE® RTX 2080 SUPER VENTUS XS OC;699.0;1.0;Arquitectura NVIDIA Turing ™ . GeForce RTX funciona con Nvidia Turing, la arquitectura de GPU más avanzada del mundo para jugadores y creadores. Obtenga un rendimiento y características verdaderamente de última generación con núcleos dedicados de inteligencia artificial y trazado de rayos para la mejor experiencia. Consigue superpoderes. La nueva serie GeForce RTX SUPER ™ tiene incluso más núcleos y relojes más altos, lo que le brinda un rendimiento hasta un 25% más rápido que la serie RTX 20 original y 6 veces más rápido que las GPU de la serie 10 de la generación anterior. Es hora de prepararse y obtener superpoderes. Experiencia GeForce. Capture y comparta videos, capturas de pantalla y transmisiones en vivo con amigos. Mantenga sus controladores actualizados y optimice la configuración de su juego. GeForce Experience ™ te permite hacerlo todo. Es el compañero esencial de su tarjeta gráfica GeForce. Diseño premium. Con un nuevo diseño de doble ventilador, VENTUS muestra con orgullo sus formas industriales en colores neutros para adaptarse a cualquier construcción. TORX FAN 2.0 . Utilizando dos de los galardonados TORX Fans 2.0, las tarjetas gráficas MSI VENTUS proporcionan años de rendimiento de refrigeración de primer nivel. Tubos de calor de contacto directo. Las tuberías de calor de cobre de hasta 6 mm de espesor en la parte inferior maximizan la transferencia de calor.;Txartel Grafikoa
-27;RADEON RX5700 MECH OC GP;379.9;1.0;8GB GDDR6 GDDR6 / 1515 MHZ / 256-BIT. Una nueva arquitectura RDNA extrema. Las GPU de la serie Radeon RX 5700 se basan en la nueva arquitectura RDNA, el corazón del proceso de tecnología avanzada de 7 nm de AMD. RDNA presenta hasta 40 unidades de cómputo completamente rediseñadas que ofrecen un rendimiento increíble y hasta 4 mejoras de IPC, nuevas instrucciones más adecuadas para efectos visuales como iluminación volumétrica, efectos de desenfoque y profundidad de campo, y jerarquía de caché de múltiples niveles para una latencia y una red muy reducidas. Juego altamente sensible. La arquitectura RDNA permite DisplayPort 1.4 con Display Stream Compression para velocidades de actualización extremas y resoluciones en pantallas de vanguardia para un juego increíblemente envolvente. TORX FAN 3.0 . Una nueva versión del emblemático ventilador MSI TORX supera aún más los límites del rendimiento térmico. Los nuevos embellecedores claramente visibles en la hoja del ventilador tradicional crean un flujo de aire enfocado que a su vez es empujado hacia la parte inferior por las paletas del ventilador de dispersión para aumentar la presión estática.;Txartel Grafikoa
-28;GEFORCE® GTX 1050 TI;259.9;1.0;4GT LP 4096 MB GDDR5 / HDMI;Txartel Grafikoa
-29;GEFORCE® GTX 1660 GAMING X;244.55;1.0;VR con MSI. Para experimentar y disfrutar del impresionante mundo de la realidad virtual, se requiere hardware de alto rendimiento. MSI, la marca líder mundial en juegos y deportes electrónicos de alta gama, brinda el asesoramiento adecuado para asegurarse de que tu sistema esté preparado para la realidad virtual. Integración de lo mejor de las tecnologías de vanguardia en el hardware de juego MSI VR recomendado para un rendimiento sin problemas.;Txartel Grafikoa
-30;Lenovo IdeaCentre 3 07ADA05;399.0;1.0;AMD Ryzen 5 3500U/8GB/512GB SSD.;Ordenagailua
-31;HP M01-F1040ns;479.0;5.0;AMD Ryzen 5 4600G/16GB/512GB SSD. Un elegante ordenador de sobremesa HP que combina un diseño moderno con tecnología probada, de una marca de confianza en la que puedes confiar. Tanto si estás trabajando en tu proyecto más reciente, viendo vídeos o completando tus tareas del día a día, podrás hacerlo con una mayor confianza gracias a un ordenador fiable.;Ordenagailua
-31;HP M01-F1040ns;479.0;1.0;AMD Ryzen 5 4600G/16GB/512GB SSD. Un elegante ordenador de sobremesa HP que combina un diseño moderno con tecnología probada, de una marca de confianza en la que puedes confiar. Tanto si estás trabajando en tu proyecto más reciente, viendo vídeos o completando tus tareas del día a día, podrás hacerlo con una mayor confianza gracias a un ordenador fiable.;Ordenagailua
-32;MSI PRO DP20Z 5M-005EU;507.58;1.0;AMD Ryzen 5 5300G/8GB/256GB SSD;Ordenagailua
+25;GEFORCE® RTX™ 3060 GAMING X;724.79;1.0;12GB GDDR6 TRI FROZR 2 Core Pipes refrigerados Disipador silencioso Software Dragon Center;Txartel Grafikoa
+26;GEFORCE® RTX 2080 SUPER VENTUS XS OC;699.0;1.0;Arquitectura NVIDIA Turing;Txartel Grafikoa
+27;RADEON RX5700 MECH OC GP;379.9;1.0;8GB GDDR6 GDDR6 1515 MHZ 256-BIT;Txartel Grafikoa
+28;GEFORCE® GTX 1050 TI;259.9;1.0;4GT LP 4096 MB GDDR5 HDMI;Txartel Grafikoa
+29;GEFORCE® GTX 1660 GAMING X;244.55;1.0;VR con MSI. Para experimentar y disfrutar del impresionante mundo de la realidad virtual se requiere hardware de alto rendimiento. MSI la marca líder mundial en juegos y deportes electrónicos de alta gama brinda el asesoramiento adecuado para asegurarse de que tu sistema esté preparado para la realidad virtual. Integración de lo mejor de las tecnologías de vanguardia en el hardware de juego MSI VR recomendado para un rendimiento sin problemas;Txartel Grafikoa
+30;Lenovo IdeaCentre 3 07ADA05;399.0;1.0;AMD Ryzen 5 3500U/8GB/512GB SSD;Ordenagailua
+31;HP M01-F1040ns;479.0;5.0;AMD Ryzen 5 4600G/16GB/512GB SSD. Un elegante ordenador de sobremesa HP que combina un diseño moderno con tecnología probada de una marca de confianza en la que puedes confiar. Tanto si estás trabajando en tu proyecto más reciente viendo vídeos o completando tus tareas del día a día podrás hacerlo con una mayor confianza gracias a un ordenador fiable;Ordenagailua
+32;MSI PRO DP20Z 5M-005EU;507.58;1.0;AMD Ryzen 5 5300G 8GB 256GB SSD;Ordenagailua

@@ -48,7 +48,9 @@
                     android:layout_height="56dp"/>
             </LinearLayout>
         </LinearLayout>
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <LinearLayout
             android:id="@+id/linear_1"
             android:layout_width="match_parent"
@@ -57,6 +59,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
         </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 

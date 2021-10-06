@@ -66,13 +66,12 @@ package eus.uni.dam;
 			@PostConstruct
 			public void init() {
 
-				String sql = "select product_product.id , product_template.name, product_template.list_price , stock_quant.quantity , product_template.description,  product_category.name as c "
-						+ "from product_product "
-						+ "inner join product_template on product_product.id = product_template.id "
-						+ "inner join stock_quant on product_product.id = stock_quant.product_id "
-						+ "inner join product_category on product_template.categ_id =product_category.id "
-						+ "where stock_quant.quantity>=0 "
-						+ "order by product_product.id";
+				String sql = "select product_template.id, product_template.name, product_template.list_price, stock_quant.quantity, product_template.description, product_category.name as c "
+						+ "from product_template "
+						+ "inner join stock_quant on product_template.id = stock_quant.product_id "
+						+ "inner join product_category on product_template.categ_id = product_category.id "
+						+ "where stock_quant.location_id = 8 "
+						+ "order by product_template.id ";
 				
 
 				try (Connection conn = connect();
