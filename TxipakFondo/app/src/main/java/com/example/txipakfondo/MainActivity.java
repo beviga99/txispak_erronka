@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Layout;
@@ -136,17 +139,21 @@ public class MainActivity extends AppCompatActivity {
                         });
                         bot.setText(sample.getName());
                         bot.setWidth(1400);
+
                         bot.setGravity(Gravity.LEFT);
+
+                        bot.setGravity(Gravity.CENTER | Gravity.LEFT);
                         String image = "@drawable/f"+tokens[0];
                         int imageResource = getResources().getIdentifier(image, null, getPackageName());
-                        Drawable res = getResources().getDrawable(imageResource);
-                        irudi.setImageDrawable(res);
+
+                        Drawable icon= getResources().getDrawable(imageResource);
+                        Bitmap bitmap = ((BitmapDrawable) icon).getBitmap();
+                        Drawable d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, 70, 70, true));
+
+                        icon.setBounds(0, 0, 0, 0);
+                        bot.setCompoundDrawablesWithIntrinsicBounds( null, null, d, null);
 
                         bot.setLayoutParams(new LinearLayout.LayoutParams(
-                                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT
-                        ));
-
-                        irudi.setLayoutParams(new LinearLayout.LayoutParams(
                                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT
                         ));
                         hlayour.addView(bot);
