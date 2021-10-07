@@ -5,12 +5,15 @@ public class Item {
 	private String name;
 	private Double price;
 	private Double qty;
-	public Item(int id, String name,double price, double qty) {
+	private String descript;
+	private String categ;
+	public Item(int id, String name,double price, double qty, String descript, String categ) {
 		this.id = id;
 		this.name = name;
 		this.price=price;
 		this.qty=qty;
-		
+		this.descript=descript;
+		this.categ=categ;
 	}
 	
 	public Item() {
@@ -18,6 +21,22 @@ public class Item {
 	}
 	
 	
+	public String getCateg() {
+		return categ;
+	}
+
+	public void setCateg(String categ) {
+		this.categ = categ;
+	}
+
+	public String getDescript() {
+		return descript;
+	}
+
+	public void setDescript(String descript) {
+		this.descript = descript;
+	}
+
 	public Double getQty() {
 		return qty;
 	}
@@ -58,8 +77,12 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item [id=" + id + ", name=" + name + "price="+price+"qty="+qty+"]";
+		return "Item [id=" + id + ", name=" + name + ", price=" + price + ", qty=" + qty + ", descript=" + descript
+				+ ", categ=" + categ + "]";
 	}
+
+	
+	
 	
 	
 	
