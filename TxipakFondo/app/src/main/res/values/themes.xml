@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.TxipakFondo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FFF69095</item>
-        <item name="colorPrimaryVariant">#F8C4C6</item>
+        <item name="colorPrimary">#ED787E</item>
+        <item name="colorPrimaryVariant">#ED787E</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
