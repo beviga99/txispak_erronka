@@ -30,4 +30,6 @@ Gure programan lehendabiziz menu printzipala ikusten da non produktu
 guztiak ikusi ahal dira. Produktu guzti honek kategoriatan bananduta dagoz  
 eta scroll baten bidez kategoria bat aukeratu ahal duzu horren kategoriako  
 produktuak ikusteko. Produktuen datu honek csv-tik irakurtzen du eta  
-bere propietateak erakusten ditu. 
+bere propietateak erakusten ditu.  
+
+![Android](https://github.com/beviga99/txispak_erronka/blob/jon/andoroid.png) ![Android2](https://github.com/beviga99/txispak_erronka/blob/jon/android.png) 
