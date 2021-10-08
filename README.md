@@ -8,7 +8,9 @@ Hemen duzu errepositorioko link-a:
 [GitHub](https://github.com/beviga99/txispak_erronka)
 
 ## Odoo
-Odoo-n web orria eta produktuak aurkitu egin ditzakegu. 
+Odoo-n web orria eta produktuak aurkitu egin ditzakegu.  
+Hemen dago erabiltzailearen gida:  
+[Erabiltzailearen gida](https://docs.google.com/document/d/1hZuDA2aeUxJUQ_e_ODOxVuYLazKnIiniSWq96mQlpik/edit#heading=h.j3jcv1yns8yr)
 
 ## Diagrama
 Hau da gure lanaren diagrama, bertan klase desberdinak ikusi ahal dira  
