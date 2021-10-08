@@ -23,8 +23,7 @@ eta diagrama, bakoitza bere metodoekin (getter, setter...). 2 klase honetan oina
 beste bi egin dituguz non datu basearekin konektatuta egin ahal diren exekuzioak daude.  
 Azkenik, csv eta csvKat klaseak ditugu, honek, datu basera konektatzeko metodoak daukate definituta  
 bata produktu bakoitzan lan egiteko eta bestea kategorietan. Metodo exekutable honek insertatzea,  
-ezabatzea, denak irakurtzea eta editatzean datza. Honetarako, metodo hauek datu basearekin  
-konektatzen dira eta hemen egindako aldaketak eta exekuzioak egin beharko litzateke. 
+ezabatzea, denak irakurtzea eta editatzean datza.
 
 ## Android
 Gure programan lehendabiziz menu printzipala ikusten da non produktu  
