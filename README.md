@@ -8,9 +8,9 @@ Hau da [Txispak.svg](https://github.com/beviga99/txispak_erronka/blob/master/Txi
 
 ## Iturriak
 https://elearning20.hezkuntza.net/012053/course/view.php?id=31<br>
-https://github.com/Ikerrom/BeesProject-IORS/blob/main/Java/AdminApp/src/model/Model.java
-https://programmerclick.com/article/8320820956/
-https://jdbc.postgresql.org/documentation/head/connect.html
+https://github.com/Ikerrom/BeesProject-IORS/blob/main/Java/AdminApp/src/model/Model.java<br>
+https://programmerclick.com/article/8320820956/<br>
+https://jdbc.postgresql.org/documentation/head/connect.html<br>
 
 
 
