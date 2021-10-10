@@ -1,1 +1,6 @@
-# txispak_erronka
+# Produktuak Esportatzeko Java Aplikazioa
+## Helburua
+
+## Abiaraztea
+
+## Klase diagrama
