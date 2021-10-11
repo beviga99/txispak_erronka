@@ -19,8 +19,19 @@ Gehitu sortutako apache-maven-3.8.3 direktorioaren bin direktorioa<br>
 Goian jarri eta "Aceptar"<br>
 ![image](https://user-images.githubusercontent.com/61787900/136816163-f6e96b20-6388-439a-9d55-9d958430c680.png)<br>
 6. cmd<br>
-cmd-en comando hau jarri mvn-v<br>
-![image](https://user-images.githubusercontent.com/61787900/136816726-4bb2a8ea-b508-4ab2-ab68-fe1a160ff7bf.png)
+cmd-en komando hau jarri mvn-v<br>
+![image](https://user-images.githubusercontent.com/61787900/136816726-4bb2a8ea-b508-4ab2-ab68-fe1a160ff7bf.png)<br>
+7.Jar sortu<br>
+komando hau jarri mvn clean package spring-boot:repackage<br>
+![image](https://user-images.githubusercontent.com/61787900/136821004-f4af4eeb-67f6-4316-b4ec-c7521338a86b.png)<br>
+8.Jar exekutatzeko<br>
+![image](https://user-images.githubusercontent.com/61787900/136821811-b19c1df0-3f20-4c29-81ea-7a6abcd3d10c.png)
+
+
+
+
+
+
 
 
 
