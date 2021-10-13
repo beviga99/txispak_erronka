@@ -26,19 +26,6 @@ komando hau jarri mvn clean package spring-boot:repackage<br>
 ![image](https://user-images.githubusercontent.com/61787900/136821004-f4af4eeb-67f6-4316-b4ec-c7521338a86b.png)<br>
 Jar exekutatzeko<br>
 ![image](https://user-images.githubusercontent.com/61787900/136821811-b19c1df0-3f20-4c29-81ea-7a6abcd3d10c.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Klase diagrama
 Hau da [Txispak.svg](https://github.com/beviga99/txispak_erronka/blob/master/Txispak.svg) diagrama.
 
