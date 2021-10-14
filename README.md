@@ -16,7 +16,7 @@ Bietan editatu PATH<br>
 ![image](https://user-images.githubusercontent.com/61787900/136815417-da161c5a-d4b9-45a8-aaf9-fb1cdddf4d72.png)<br>
 Gehitu sortutako apache-maven-3.8.3 direktorioaren bin direktorioa<br>
 ![image](https://user-images.githubusercontent.com/61787900/136800746-3739d1db-2b94-422a-a900-b098d5b649cf.png)<br>
-Goian jarri eta "Aceptar"<br>
+Goian jarri eta "Aceptar" ordenagailua berrabiarazi<br>
 ![image](https://user-images.githubusercontent.com/61787900/136816163-f6e96b20-6388-439a-9d55-9d958430c680.png)<br>
 6. cmd<br>
 cmd-en komando hau jarri mvn-v<br>
