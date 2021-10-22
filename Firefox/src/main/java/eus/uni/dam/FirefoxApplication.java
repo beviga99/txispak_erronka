@@ -16,13 +16,13 @@ public class FirefoxApplication {
 		Process p2;
 		ProcessBuilder pbuilder2;
 		
-		pbuilder1 = new ProcessBuilder("C:\\Program Files\\Mozilla Firefox\\firefox.exe",  "http://192.168.65.11:8069/");
+		pbuilder1 = new ProcessBuilder("C:\\Program Files\\Mozilla Firefox\\firefox.exe",  "http://192.168.65.11:8069/shop");
 		
-		pbuilder2 = new ProcessBuilder("java", "-jar", "C:\\Users\\arambarri.oihana\\Desktop\\txispakOndo\\txispak_erronka\\Txispak\\target\\txispak.jar");
+//		pbuilder2 = new ProcessBuilder("java", "-jar", "C:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\Txispak\\target\\txispak.jar");
 		
 		p1 = pbuilder1.start();
 		
-		p2 = pbuilder2.start();
+//		p2 = pbuilder2.start();
 		
 	}
 

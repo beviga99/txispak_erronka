@@ -10,44 +10,51 @@
 9        android:targetSdkVersion="31" />
 9-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:5:5-22:19
-12        android:allowBackup="true"
-12-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.5.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.TxipakFondo" >
-20-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:11:9-49
-21        <activity
-21-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:12:9-20:20
-22            android:name="com.example.txipakfondo.MainActivity"
-22-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:13:13-41
-23            android:exported="true" >
-23-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:14:13-36
-24            <intent-filter>
-24-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:15:13-19:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:16:17-69
-25-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:16:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:18:17-77
-27-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:18:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity android:name="com.example.txipakfondo.BanakakoDatuak" />
-30-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:21:9-61
-30-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:21:19-49
-31    </application>
-32
-33</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:5:5-79
+12-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:5:22-76
+13
+14    <application
+14-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:6:5-23:19
+15        android:allowBackup="true"
+15-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:7:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.5.0] C:\Users\tubia.ane\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:8:9-43
+19        android:label="@string/app_name"
+19-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:9:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:10:9-54
+21        android:supportsRtl="true"
+21-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:11:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.TxipakFondo" >
+23-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:12:9-49
+24        <activity
+24-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:13:9-21:20
+25            android:name="com.example.txipakfondo.MainActivity"
+25-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:14:13-41
+26            android:exported="true" >
+26-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:15:13-36
+27            <intent-filter>
+27-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:16:13-20:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:17:17-69
+28-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:17:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:19:17-77
+30-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:19:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity android:name="com.example.txipakfondo.BanakakoDatuak" />
+33-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:22:9-61
+33-->C:\Users\tubia.ane\Desktop\Txispak\txispak_erronka\TxipakFondo\app\src\main\AndroidManifest.xml:22:19-49
+34    </application>
+35
+36</manifest>

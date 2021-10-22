@@ -29,20 +29,30 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class MainActivity extends AppCompatActivity {
 
     Spinner spin;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String aukeratua = "All";
+        Konektatu con = new Konektatu();
         readProductData(aukeratua);
+
+        ArrayList<ProductSample> produktuak = con.selecta;
+        System.out.println(produktuak.size());
     }
+
 
     @SuppressLint("ResourceType")
     private void readProductData(String aukeratua) {
