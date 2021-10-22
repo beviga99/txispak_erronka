@@ -14,6 +14,7 @@ public class Konektatu {
     private Connection connection;
 
     public static ArrayList<ProductSample> selecta = new ArrayList<>();
+    public static ArrayList<String> kategoriak = new ArrayList<>();
 
     // private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com"  // For Amazon Postgresql
     private final String host = "192.168.65.11";  // For Google Cloud Postgresql
@@ -49,8 +50,10 @@ public class Konektatu {
             }
         });
         thread.start();
+
         try {
             thread.join();
+            thread.sleep(3000);
         } catch (Exception e) {
             e.printStackTrace();
             this.status = false;
@@ -75,11 +78,18 @@ public class Konektatu {
                             + "where stock_quant.location_id = 8 "
                             + "order by product_template.id;");
 
+
+
                     while (rs.next()) {
 
                         ProductSample p = new ProductSample(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"), rs.getDouble("quantity"), rs.getString("description"), rs.getString("c"));
 
                         selecta.add(p);
+                    }
+                    ResultSet rs2 = stmt.executeQuery("SELECT name FROM product_category");
+
+                    while (rs2.next()){
+                        kategoriak.add(rs2.getString("name"));
                     }
 
                 } catch (Exception e) {
