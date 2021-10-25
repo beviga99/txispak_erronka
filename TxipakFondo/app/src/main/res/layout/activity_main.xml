@@ -40,7 +40,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="69dp"
                     android:layout_weight="1"
-                    android:text="Kategoria" />
+                    android:gravity="center"
+                    android:text="Kategoria"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
                 <Spinner
                     android:id="@+id/spinner"
@@ -48,7 +51,9 @@
                     android:layout_height="56dp"/>
             </LinearLayout>
         </LinearLayout>
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <LinearLayout
             android:id="@+id/linear_1"
             android:layout_width="match_parent"
@@ -57,6 +62,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
         </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 
