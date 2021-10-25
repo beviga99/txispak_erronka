@@ -1,20 +1,21 @@
 package com.example.txipakfondo;
 
-import android.util.Log;
+import android.media.MediaCodec;
 
-import com.example.txipakfondo.ProductSample;
-
+import java.security.CryptoPrimitive;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.*;
 
 public class Konektatu {
     private Connection connection;
 
     public static ArrayList<ProductSample> selecta = new ArrayList<>();
     public static ArrayList<String> kategoriak = new ArrayList<>();
+    public static ArrayList<Login> loginak = new ArrayList<>();
 
     // private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com"  // For Amazon Postgresql
     private final String host = "192.168.65.11";  // For Google Cloud Postgresql
@@ -77,9 +78,6 @@ public class Konektatu {
                             + "inner join product_category on product_template.categ_id = product_category.id "
                             + "where stock_quant.location_id = 8 "
                             + "order by product_template.id;");
-
-
-
                     while (rs.next()) {
 
                         ProductSample p = new ProductSample(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"), rs.getDouble("quantity"), rs.getString("description"), rs.getString("c"));
@@ -91,7 +89,6 @@ public class Konektatu {
                     while (rs2.next()){
                         kategoriak.add(rs2.getString("name"));
                     }
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -108,5 +105,46 @@ public class Konektatu {
         }
 
     }
+    public void login(String user,String pass) {
+
+        Thread thread3 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+
+                    Class.forName("org.postgresql.Driver");
+
+                    Statement stmt = connection.createStatement();
+
+                    ResultSet rs = stmt.executeQuery("select login,password from res_users where login="+user+ "password="+pass);
+                    if(rs.next()){
+                         MediaCodec.CryptoInfo compare_password = CryptoPrimitive ["pbkdf2_sha512"];
+                         String user=rs.getString("login");
+                         if(){
+
+                         }else{
+
+                         }
+
+
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread3.start();
+        try {
+            thread3.join();
+            Thread.interrupted();
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.status = false;
+        }
+
+    }
+
+
 
 }
