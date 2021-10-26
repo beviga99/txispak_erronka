@@ -1,6 +1,7 @@
 package com.example.txipakfondo;
 
 import android.media.MediaCodec;
+import android.util.Log;
 
 import java.security.CryptoPrimitive;
 import java.sql.Connection;
@@ -105,46 +106,36 @@ public class Konektatu {
         }
 
     }
-    public void login(String user,String pass) {
-
+    public void login( String  user,  String pass) {
         Thread thread3 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
+                    Statement sentencia = connection.createStatement();
+                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"' AND pass= '"+pass+"'");
+                    while(rs.next()) {
+                        User u= new User(rs.getString("login"),rs.getString("pass"));
+                        users.add(u);
 
-                    Class.forName("org.postgresql.Driver");
-
-                    Statement stmt = connection.createStatement();
-
-                    ResultSet rs = stmt.executeQuery("select login,password from res_users where login="+user+ "password="+pass);
-                    if(rs.next()){
-                         MediaCodec.CryptoInfo compare_password = CryptoPrimitive ["pbkdf2_sha512"];
-                         String user=rs.getString("login");
-                         if(){
-
-                         }else{
-
-                         }
-
-
+                        Log.d("kaixo", "egin du");
                     }
+                    Log.d("kaixo", " ez egin du");
 
-                } catch (Exception e) {
+                }catch (Exception e) {
                     e.printStackTrace();
+
                 }
             }
         });
+
         thread3.start();
         try {
             thread3.join();
             Thread.interrupted();
         } catch (Exception e) {
             e.printStackTrace();
-            this.status = false;
+            status = false;
         }
 
     }
-
-
-
 }

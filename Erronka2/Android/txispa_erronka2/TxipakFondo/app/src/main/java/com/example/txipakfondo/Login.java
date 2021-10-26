@@ -19,10 +19,7 @@ public class Login extends AppCompatActivity {
         t2=findViewById(R.id.passwordlogin);
         b1=findViewById(R.id.loginbtn);
         b1.setOnClickListener(this::botoiaSakatu);
-
-
     }
-
     public void botoiaSakatu(View view) {
         c.login(t1.getText().toString(),t2.getText().toString());
     }
