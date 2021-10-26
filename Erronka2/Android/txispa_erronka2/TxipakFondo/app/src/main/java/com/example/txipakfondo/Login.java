@@ -1,38 +1,29 @@
 package com.example.txipakfondo;
 
-public class Login {
-    String login;
-    String password;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
-    public Login(String login, String password) {
-        this.login = login;
-        this.password = password;
-    }
-    public Login(){
+import androidx.appcompat.app.AppCompatActivity;
 
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
+public class Login extends AppCompatActivity {
+    Button b1;
+    EditText t1,t2;
+    Konektatu c=new Konektatu();
     @Override
-    public String toString() {
-        return "Login{" +
-                "login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        t1=findViewById(R.id.emaillogin);
+        t2=findViewById(R.id.passwordlogin);
+        b1=findViewById(R.id.loginbtn);
+        b1.setOnClickListener(this::botoiaSakatu);
+
+
+    }
+
+    public void botoiaSakatu(View view) {
+        c.login(t1.getText().toString(),t2.getText().toString());
     }
 }
