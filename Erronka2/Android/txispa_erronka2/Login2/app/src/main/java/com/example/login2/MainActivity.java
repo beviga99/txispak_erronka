@@ -1,17 +1,18 @@
 package com.example.login2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-import android.widget.Toast;
-import android.widget.Toolbar;
 
 
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button b1;
     EditText t1,t2;
     Konektatu c=new Konektatu();
-    private Toolbar tb;
+    Toolbar tb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,23 +34,25 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(tb);
     }
 
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu,menu);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.produktuak) {
+            Toast.makeText(this, "OPCION 1", Toast.LENGTH_SHORT).show();
+        }
+        return true;
     }
 
 
     public void botoiaSakatu(View view) {
         c.login(t1.getText().toString(),t2.getText().toString());
     }
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch(item.getItemId()){
-            case R.id.Item1:
-                Toast.makeText(this,"",Toast.LENGTH_SHORT).show();
-                return true;
 
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
 }
