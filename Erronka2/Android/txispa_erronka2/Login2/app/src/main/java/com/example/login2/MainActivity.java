@@ -1,12 +1,10 @@
 package com.example.login2;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -31,23 +29,20 @@ public class MainActivity extends AppCompatActivity {
         t2=findViewById(R.id.passwordlogin);
         b1=findViewById(R.id.loginbtn);
         b1.setOnClickListener(this::botoiaSakatu);
-        Toolbar tb = findViewById(R.id.toolbar);
-        setSupportActionBar(tb.findViewById(R.id.toolbar));
+        tb=(Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tb);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
 
     public void botoiaSakatu(View view) {
         c.login(t1.getText().toString(),t2.getText().toString());
     }
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case R.id.Item1:
                 Toast.makeText(this,"",Toast.LENGTH_SHORT).show();
