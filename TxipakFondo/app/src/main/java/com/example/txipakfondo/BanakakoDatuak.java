@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +19,17 @@ public class BanakakoDatuak extends AppCompatActivity {
         setContentView(R.layout.banakakodatuak);
 
         readProductData();
+
+        /*Button btnPrueba = findViewById(R.id.bot_gorde);
+
+        btnPrueba.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Konektatu connect = new Konektatu();
+                connect.insert();
+            }
+        });*/
+
     }
 
     private void readProductData() {
@@ -48,4 +61,5 @@ public class BanakakoDatuak extends AppCompatActivity {
         text6.setText(Html.fromHtml(sourceString));
 
     }
+
 }
