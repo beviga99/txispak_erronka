@@ -19,6 +19,11 @@ public class ProductSample {
         this.category = category;
     }
 
+    public ProductSample(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public ProductSample() {
     }
 

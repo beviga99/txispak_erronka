@@ -20,16 +20,6 @@ public class BanakakoDatuak extends AppCompatActivity {
 
         readProductData();
 
-        /*Button btnPrueba = findViewById(R.id.bot_gorde);
-
-        btnPrueba.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Konektatu connect = new Konektatu();
-                connect.insert();
-            }
-        });*/
-
     }
 
     private void readProductData() {
@@ -59,6 +49,19 @@ public class BanakakoDatuak extends AppCompatActivity {
         TextView text6 = findViewById(R.id.category);
         sourceString = "<b> Kategoria: </b> " + category;
         text6.setText(Html.fromHtml(sourceString));
+
+
+        /*ProductSample p = new ProductSample(Integer.parseInt(id), name);
+
+        Button btnPrueba = findViewById(R.id.btn_gorde);
+
+        btnPrueba.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Konektatu connect = new Konektatu();
+                connect.insert(p, 19, 5);
+            }
+        });*/
 
     }
 

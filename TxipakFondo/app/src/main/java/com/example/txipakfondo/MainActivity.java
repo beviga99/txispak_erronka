@@ -42,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<ProductSample> produktuak;
     ArrayList<String> kategoriak;
     Spinner spin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Konektatu con = new Konektatu();
+        con.select();
         produktuak = con.selecta;
         kategoriak = con.kategoriak;
-        System.out.println("AAAAAAAAAAAAAA"+produktuak.size());
-        System.out.println("AAAAAAAAAAAAAA22222"+kategoriak.size());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String aukeratua = "All";
