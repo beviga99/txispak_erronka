@@ -112,14 +112,13 @@ public class Konektatu {
             public void run() {
                 try {
                     Statement sentencia = connection.createStatement();
-                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"' AND  group= 2");
+                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"' AND  grupo= 2");
                     while(rs.next()) {
                         User u= new User(rs.getString("login"),rs.getString("pass"));
                         users.add(u);
 
                         Log.d("kaixo", "egin du");
                     }
-                    Log.d("kaixo", " ez egin du");
 
                 }catch (Exception e) {
                     e.printStackTrace();
