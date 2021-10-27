@@ -1,21 +1,24 @@
 package com.example.txipakfondo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
+
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.Layout;
-import android.util.Log;
+
 import android.view.Gravity;
-import android.view.MotionEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewManager;
+
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -23,25 +26,17 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
+
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<ProductSample> produktuak;
     ArrayList<String> kategoriak;
     Spinner spin;
+    Toolbar tb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Konektatu con = new Konektatu();
@@ -53,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String aukeratua = "All";
         readProductData(aukeratua);
+        tb=(Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tb);
 
     }
 
@@ -186,6 +183,20 @@ public class MainActivity extends AppCompatActivity {
         }
         badago = true;
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.salmenta) {
+            Toast.makeText(this, "OPCION 1", Toast.LENGTH_SHORT).show();
+        }
+        return true;
     }
 
 }
