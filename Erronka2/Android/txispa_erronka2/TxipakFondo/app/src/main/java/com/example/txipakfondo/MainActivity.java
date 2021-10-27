@@ -12,6 +12,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -171,18 +172,14 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 sample.setCategory("");
             }
-
-
         }
         if (badago) {
             LinearLayout linearLayout = findViewById(R.id.linear_1);
             TextView ezdago = new TextView(this);
             ezdago.setText("Ez dago kategoria horretako produkturik.");
             linearLayout.addView(ezdago);
-
         }
         badago = true;
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -193,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.salmenta) {
+        if (id == R.id.login) {
             Toast.makeText(this, "OPCION 1", Toast.LENGTH_SHORT).show();
         }
         return true;

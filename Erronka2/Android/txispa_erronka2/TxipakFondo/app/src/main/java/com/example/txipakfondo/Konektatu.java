@@ -112,7 +112,7 @@ public class Konektatu {
             public void run() {
                 try {
                     Statement sentencia = connection.createStatement();
-                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"' AND pass= '"+pass+"'");
+                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"', pass= '"+pass+"' AND  group= 2");
                     while(rs.next()) {
                         User u= new User(rs.getString("login"),rs.getString("pass"));
                         users.add(u);
