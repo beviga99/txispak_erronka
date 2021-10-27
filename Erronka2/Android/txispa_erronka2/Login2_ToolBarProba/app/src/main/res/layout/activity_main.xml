@@ -4,46 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@drawable/frame_1"
     android:orientation="vertical"
-    >
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/cardview_light_background"
-        android:id="@+id/toolbar">
+    tools:context=".MainActivity">
 
-    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dragon_fondo" />
+
     <EditText
+        android:id="@+id/emaillogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
         android:hint="Email"
-        android:id="@+id/emaillogin"/>
+        android:inputType="textEmailAddress" />
 
     <EditText
+        android:id="@+id/passwordlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
         android:hint="Password"
-        android:id="@+id/passwordlogin"/>
+        android:inputType="textPassword" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:gravity="center"
-        >
+        android:orientation="horizontal">
 
         <Button
+            android:id="@+id/loginbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:id="@+id/loginbtn"
-            android:textSize="25dp"
-            />
+            android:textSize="25dp" />
     </LinearLayout>
+
 
 </LinearLayout>
