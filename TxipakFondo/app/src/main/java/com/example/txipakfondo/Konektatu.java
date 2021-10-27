@@ -18,13 +18,13 @@ public class Konektatu {
     public static ArrayList<String> bezeroak = new ArrayList<>();
     private int id;
 
-    // private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com"  // For Amazon Postgresql
-    private final String host = "192.168.65.11";  // For Google Cloud Postgresql
-    private final String database = "Admin";
+    //PostgreSQL's information.
+    private final String host = "192.168.65.11"; //server instance.
+    private final String database = "Admin"; //the database which has the data.
     private final int port = 5432;
-    private final String user = "openpg";
-    private final String pass = "openpgpwd";
-    private String url = "jdbc:postgresql://%s:%d/%s";
+    private final String user = "openpg"; //the user who is allowd to keep the connection.
+    private final String pass = "openpgpwd"; //user's password.
+    private String url = "jdbc:postgresql://%s:%d/%s"; //jdbc driver, server instance ip, port and database.
     private boolean status;
 
     public Konektatu() {
@@ -32,7 +32,9 @@ public class Konektatu {
         connect();
     }
 
+    // The connection to database, it keeps the connection due to the thread.
     public void connect() {
+        //Here we are creating the thread inside the method.
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -58,6 +60,7 @@ public class Konektatu {
         }
     }
 
+    //This method takes the info from database and it inserts into arraylists.
     public void select() {
 
         Thread thread2 = new Thread(new Runnable() {
@@ -118,6 +121,7 @@ public class Konektatu {
 
     }
 
+    //This method returns the id of the inserted user's name. We only need name and id, as a result, we dont need to create a class.
     public int bezeroId(String name) {
 
         Thread thread4 = new Thread(new Runnable() {
@@ -159,6 +163,7 @@ public class Konektatu {
 
     }
     
+    //This method inserts the data into selected table, however, there is another insert, this one needs to be executed before the next one due to the fact that it needs the information introducen over here, though.
     public void insert(ProductSample p, int bezeroa, int cant, double price) {
         Thread thread3 = new Thread(new Runnable() {
             @Override
@@ -193,6 +198,7 @@ public class Konektatu {
         try {
             thread3.join();
             //Thread.interrupted();
+            //here we are calling to the second insert.
             insert2(p, cant, price);
         } catch (Exception e) {
             e.printStackTrace();
