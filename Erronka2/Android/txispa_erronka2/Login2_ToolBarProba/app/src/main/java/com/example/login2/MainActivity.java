@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         t2=findViewById(R.id.passwordlogin);
         b1=findViewById(R.id.loginbtn);
         b1.setOnClickListener(this::botoiaSakatu);
-        /*tb=(Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(tb);*/
+        tb=(Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tb);
     }
 
     @Override
