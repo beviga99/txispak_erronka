@@ -16,6 +16,7 @@ public class Konektatu {
     public static ArrayList<ProductSample> selecta = new ArrayList<>();
     public static ArrayList<String> kategoriak = new ArrayList<>();
     public static ArrayList<String> bezeroak = new ArrayList<>();
+    private int id;
 
     // private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com"  // For Amazon Postgresql
     private final String host = "192.168.65.11";  // For Google Cloud Postgresql
@@ -116,8 +117,49 @@ public class Konektatu {
         }
 
     }
+
+    public int bezeroId(String name) {
+
+        Thread thread4 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+
+                    String id2 = "";
+
+                    Class.forName("org.postgresql.Driver");
+
+                    Statement stmt = connection.createStatement();
+
+                    ResultSet rs = stmt.executeQuery("select res_partner.id from res_partner " +
+                            "where res_partner.name = '"+name+"';");
+
+                    while (rs.next()){
+                        id2 = rs.getString("id");
+                    }
+
+                    id = Integer.parseInt(id2);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+        thread4.start();
+        try {
+            thread4.join();
+            Thread.interrupted();
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.status = false;
+        }
+
+        return id;
+
+    }
     
-    public void insert(ProductSample p, int bezeroa, int cant) {
+    public void insert(ProductSample p, int bezeroa, int cant, double price) {
         Thread thread3 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -127,21 +169,22 @@ public class Konektatu {
 
                     Statement stmt = connection.createStatement();
 
-                    ResultSet rs = stmt.executeQuery("SELECT MAX(order_id) as order_id from sale_order_line;");
+                    ResultSet rs = stmt.executeQuery("SELECT MAX(id) as order_id from sale_order;");
 
-                    String last_order = "";
+                    int last_order = 0;
 
                     while (rs.next()){
-                        last_order = rs.getString("order_id");
+                        last_order = rs.getInt("order_id");
                     }
 
-                    stmt.executeQuery("INSERT INTO public.sale_order (name, date_order, user_id, partner_id, partner_invoice_id, partner_shipping_id, pricelist_id, company_id, picking_policy, warehouse_id) " +
-                            "VALUES('SM00"+ Integer.parseInt(last_order)+1 +"', '2021-10-25 06:22:23.000', 7, "+ bezeroa +", "+ bezeroa +", "+ bezeroa +", 1, 1, 'direct', 1);");
+                    last_order = last_order + 1;
+                    
+                    Double amount = price * cant;
 
-                    stmt.executeQuery("INSERT INTO public.sale_order_line (order_id, name, sequence, invoice_status, price_unit, price_subtotal, price_tax, price_total, product_id, product_uom_qty, product_uom, qty_delivered_method, salesman_id, currency_id, company_id, order_partner_id, state, customer_lead, create_uid, write_uid) " +
-                            "VALUES("+ Integer.parseInt(last_order)+1 +", '"+ p.getName() +"', 10, 'no', "+ p.getPrice() +", "+ p.getPrice() +", 4.81, "+ p.getPrice()+4.81 +", "+p.getId()+", "+ cant +", 1, 'stock_move', 7, 1, 1, 14, 'draft', 0, 7, 7);");
+                    ResultSet rs2 = stmt.executeQuery("INSERT INTO public.sale_order (name, date_order, user_id, partner_id, partner_invoice_id, partner_shipping_id, pricelist_id, company_id, picking_policy, warehouse_id, amount_total, state) " +
+                            "VALUES('SM00"+ last_order +"', '2021-10-25 06:22:23.000', 7, "+ bezeroa +", "+ bezeroa +", "+ bezeroa +", 1, 1, 'direct', 1, "+amount+", 'draft');");
 
-                } catch (Exception e) {
+                    } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -149,7 +192,46 @@ public class Konektatu {
         thread3.start();
         try {
             thread3.join();
-            Thread.interrupted();
+            //Thread.interrupted();
+            insert2(p, cant, price);
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.status = false;
+        }
+
+    }
+
+    public void insert2(ProductSample p, int cant, double price) {
+        Thread thread5 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+
+                    Class.forName("org.postgresql.Driver");
+
+                    Statement stmt = connection.createStatement();
+
+                    ResultSet rs = stmt.executeQuery("SELECT MAX(id) as order_id from sale_order;");
+
+                    int last_order = 0;
+
+                    while (rs.next()){
+                        last_order = rs.getInt("order_id");
+                    }
+
+                    ResultSet rs3 = stmt.executeQuery("INSERT INTO public.sale_order_line (order_id, name, sequence, invoice_status, price_unit, price_subtotal, price_tax, price_total, product_id, product_uom_qty, product_uom, qty_delivered_method, salesman_id, currency_id, company_id, order_partner_id, state, customer_lead, create_uid, write_uid) " +
+                            "VALUES(" + last_order + ", '" + p.getName() + "', 10, 'no', " + price + ", " + price + ", 4.81, " + price + ", " + p.getId() + ", " + cant + ", 1, 'stock_move', 7, 1, 1, 14, 'draft', 0, 7, 7);");
+
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread5.start();
+        try {
+            thread5.join();
+            //Thread.interrupted();
         } catch (Exception e) {
             e.printStackTrace();
             this.status = false;

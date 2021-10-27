@@ -50,18 +50,21 @@ public class BanakakoDatuak extends AppCompatActivity {
         sourceString = "<b> Kategoria: </b> " + category;
         text6.setText(Html.fromHtml(sourceString));
 
-
-        /*ProductSample p = new ProductSample(Integer.parseInt(id), name);
-
-        Button btnPrueba = findViewById(R.id.btn_gorde);
+        Button btnPrueba = findViewById(R.id.btn_erosi);
 
         btnPrueba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Konektatu connect = new Konektatu();
-                connect.insert(p, 19, 5);
+                Intent myIntent2 = new Intent(view.getContext(), Salmentak.class);
+                ProductSample p = new ProductSample(Integer.parseInt(id), name);
+                myIntent2.putExtra("id", String.valueOf(p.getId()));
+                myIntent2.putExtra("name", p.getName());
+                myIntent2.putExtra("qty", qty);
+                myIntent2.putExtra("price", prize);
+                startActivity(myIntent2);
             }
-        });*/
+        });
+
 
     }
 
