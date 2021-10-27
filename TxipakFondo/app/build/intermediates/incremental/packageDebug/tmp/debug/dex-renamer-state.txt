@@ -1,4 +1,4 @@
-#Wed Oct 27 08:43:56 CEST 2021
+#Wed Oct 27 08:55:03 CEST 2021
 base.2=C\:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 path.2=7/classes.dex
 base.1=C\:\\Users\\tubia.ane\\Desktop\\Txispak\\txispak_erronka\\TxipakFondo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

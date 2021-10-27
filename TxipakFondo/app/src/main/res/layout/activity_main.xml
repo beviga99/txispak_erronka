@@ -30,39 +30,47 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/cardview_light_background"
-            tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="69dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Kategoria"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                <Spinner
-                    android:id="@+id/spinner"
-                    android:layout_width="200dp"
-                    android:layout_height="56dp" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="104dp"
+                        android:layout_height="69dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Kategoria"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
 
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="241dp"
+                        android:layout_height="56dp" />
+
+                </LinearLayout>
             </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_light_background"
+                android:paddingTop="5dp"
+                android:gravity="right"
+                tools:ignore="MissingConstraints" />
         </LinearLayout>
 
         <ScrollView
@@ -75,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+                app:layout_constraintTop_toTopOf="parent" />
         </ScrollView>
 
     </LinearLayout>
