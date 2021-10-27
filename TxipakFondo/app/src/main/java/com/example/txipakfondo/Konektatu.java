@@ -12,12 +12,12 @@ import java.util.ArrayList;
 
 public class Konektatu {
     private Connection connection;
+    ArrayList<User>users=new ArrayList<>();
 
     public static ArrayList<ProductSample> selecta = new ArrayList<>();
     public static ArrayList<String> kategoriak = new ArrayList<>();
 
-    // private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com"  // For Amazon Postgresql
-    private final String host = "192.168.65.11";  // For Google Cloud Postgresql
+    private final String host = "192.168.65.11";
     private final String database = "Admin";
     private final int port = 5432;
     private final String user = "openpg";
@@ -53,7 +53,7 @@ public class Konektatu {
 
         try {
             thread.join();
-            thread.sleep(3000);
+//            thread.sleep(1000);
         } catch (Exception e) {
             e.printStackTrace();
             this.status = false;
@@ -101,11 +101,46 @@ public class Konektatu {
         thread2.start();
         try {
             thread2.join();
+            Thread.interrupted();
         } catch (Exception e) {
             e.printStackTrace();
             this.status = false;
         }
 
     }
+
+    public void login( String  user,  String pass) {
+        Thread thread3 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Statement sentencia = connection.createStatement();
+                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"' AND pass= '"+pass+"'");
+                    while(rs.next()) {
+                        User u= new User(rs.getString("login"),rs.getString("pass"));
+                        users.add(u);
+
+                        Log.d("kaixo", "egin du");
+                    }
+                    Log.d("kaixo", " ez egin du");
+
+                }catch (Exception e) {
+                    e.printStackTrace();
+
+                }
+            }
+        });
+
+        thread3.start();
+        try {
+            thread3.join();
+            Thread.interrupted();
+        } catch (Exception e) {
+            e.printStackTrace();
+            status = false;
+        }
+
+    }
+
 
 }

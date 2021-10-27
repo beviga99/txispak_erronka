@@ -1,21 +1,16 @@
 package com.example.txipakfondo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.Layout;
-import android.util.Log;
 import android.view.Gravity;
-import android.view.MotionEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -24,24 +19,16 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<ProductSample> produktuak;
     ArrayList<String> kategoriak;
     Spinner spin;
+    Toolbar myToolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Konektatu con = new Konektatu();
@@ -53,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String aukeratua = "All";
         readProductData(aukeratua);
+        myToolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
 
     }
 
@@ -67,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         boolean badago = true;
 
         for(ProductSample p : produktuak) {
-            System.out.println(p.getId());
+            System.out.println("IDIDIDID : "+p.getId());
             ProductSample sample = new ProductSample();
             sample.setId(p.getId());
 
@@ -116,10 +105,10 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                             Intent myIntent = new Intent(view.getContext(), BanakakoDatuak.class);
-                            myIntent.putExtra("id", p.getId());
+                            myIntent.putExtra("id", String.valueOf(p.getId()));
                             myIntent.putExtra("name", p.getName());
-                            myIntent.putExtra("prize", p.getPrice());
-                            myIntent.putExtra("qty", p.getQty());
+                            myIntent.putExtra("prize", String.valueOf(p.getPrice()));
+                            myIntent.putExtra("qty", String.valueOf(p.getQty()));
                             myIntent.putExtra("desk", p.getDesk());
                             myIntent.putExtra("category", p.getCategory());
                             startActivity(myIntent);
@@ -187,6 +176,27 @@ public class MainActivity extends AppCompatActivity {
         badago = true;
 
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

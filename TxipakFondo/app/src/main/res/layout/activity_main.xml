@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +9,7 @@
     tools:context=".MainActivity">
 
     <!-- Dragon_fondo -->
+
     <RelativeLayout
         android:id="@+id/dragon_fond"
         android:layout_width="411dp"
@@ -16,7 +18,9 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/dragon_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" >
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,6 +28,14 @@
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,21 +60,24 @@
                 <Spinner
                     android:id="@+id/spinner"
                     android:layout_width="200dp"
-                    android:layout_height="56dp"/>
+                    android:layout_height="56dp" />
+
             </LinearLayout>
         </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <LinearLayout
-            android:id="@+id/linear_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></LinearLayout>
         </ScrollView>
+
     </LinearLayout>
 
 

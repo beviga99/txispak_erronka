@@ -1929,6 +1929,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -2036,6 +2037,7 @@ id easeOut
 id east
 id edit_query
 id elastic
+id emaillogin
 id end
 id endToStart
 id enterAlways
@@ -2099,6 +2101,7 @@ id linear
 id linear_1
 id listMode
 id list_item
+id loginbtn
 id masked
 id match_constraint
 id match_parent
@@ -2183,6 +2186,7 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id password_toggle
+id passwordlogin
 id path
 id pathRelative
 id peekHeight
@@ -2307,6 +2311,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -2425,6 +2430,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout login
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2493,6 +2499,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
