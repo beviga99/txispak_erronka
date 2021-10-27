@@ -191,7 +191,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.login) {
-            Toast.makeText(this, "OPCION 1", Toast.LENGTH_SHORT).show();
+            Intent i=new Intent(MainActivity.this,Login.class);
+            startActivity(i);
         }
         return true;
     }
