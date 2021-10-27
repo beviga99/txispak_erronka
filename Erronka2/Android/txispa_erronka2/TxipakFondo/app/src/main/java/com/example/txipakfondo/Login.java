@@ -22,6 +22,7 @@ public class Login extends AppCompatActivity {
     }
     public void botoiaSakatu(View view) {
         c.login(t1.getText().toString(),t2.getText().toString());
+
     }
 
 }

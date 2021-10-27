@@ -1,5 +1,6 @@
 package com.example.txipakfondo;
 
+import android.content.Intent;
 import android.media.MediaCodec;
 import android.util.Log;
 
@@ -116,8 +117,7 @@ public class Konektatu {
                     while(rs.next()) {
                         User u= new User(rs.getString("login"),rs.getString("pass"));
                         users.add(u);
-
-                        Log.d("kaixo", "egin du");
+                       
                     }
 
                 }catch (Exception e) {
