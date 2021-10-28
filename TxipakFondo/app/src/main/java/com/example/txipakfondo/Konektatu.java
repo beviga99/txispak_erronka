@@ -9,7 +9,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.concurrent.Semaphore;
 
 public class Konektatu {
     private Connection connection;
@@ -18,7 +17,6 @@ public class Konektatu {
     public static ArrayList<String> kategoriak = new ArrayList<>();
     public static ArrayList<String> bezeroak = new ArrayList<>();
     private int id;
-    private Semaphore s1 = new Semaphore(1);
 
     // private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com"  // For Amazon Postgresql
     private final String host = "192.168.65.11";  // For Google Cloud Postgresql
@@ -39,9 +37,6 @@ public class Konektatu {
             @Override
             public void run() {
                 try {
-                    selecta = new ArrayList<>();
-                    kategoriak = new ArrayList<>();
-                    bezeroak = new ArrayList<>();
                     Class.forName("org.postgresql.Driver");
                     connection = DriverManager.getConnection(url, user, pass);
                     status = true;
@@ -151,7 +146,6 @@ public class Konektatu {
 
             }
         });
-
         thread4.start();
         try {
             thread4.join();
@@ -171,81 +165,79 @@ public class Konektatu {
             public void run() {
                 try {
 
-                    s1.acquire();
-
                     Class.forName("org.postgresql.Driver");
 
-                     try {
-                         Statement stmt = connection.createStatement();
+                    Statement stmt = connection.createStatement();
 
-                         ResultSet rs = stmt.executeQuery("SELECT MAX(id) as order_id from sale_order;");
+                    ResultSet rs = stmt.executeQuery("SELECT MAX(id) as order_id from sale_order;");
 
-                         int last_order = 0;
+                    int last_order = 0;
 
-                         while (rs.next()) {
-                             last_order = rs.getInt("order_id");
-                         }
-
-                         last_order = last_order + 1;
-
-                         Double amount = price * cant;
-
-                         ResultSet rs2 = stmt.executeQuery("INSERT INTO public.sale_order (name, date_order, user_id, partner_id, partner_invoice_id, partner_shipping_id, pricelist_id, company_id, picking_policy, warehouse_id, amount_total, state) " +
-                                 "VALUES('SM00" + last_order + "', '2021-10-25 06:22:23.000', 7, " + bezeroa + ", " + bezeroa + ", " + bezeroa + ", 1, 1, 'direct', 1, " + amount + ", 'draft');");
-
-
-                     }finally{
-                        // calling release() after a successful acquire()
-                        System.out.println("baimena askatzen...");
-                        s1.release();
-                        System.out.println("eskuragarri dauden Semaforoak orain bertan: " + s1.availablePermits());
+                    while (rs.next()){
+                        last_order = rs.getInt("order_id");
                     }
 
-                } catch (Exception e) {
+                    last_order = last_order + 1;
+                    
+                    Double amount = price * cant;
+
+                    ResultSet rs2 = stmt.executeQuery("INSERT INTO public.sale_order (name, date_order, user_id, partner_id, partner_invoice_id, partner_shipping_id, pricelist_id, company_id, picking_policy, warehouse_id, amount_total, state) " +
+                            "VALUES('SM00"+ last_order +"', '2021-10-25 06:22:23.000', 7, "+ bezeroa +", "+ bezeroa +", "+ bezeroa +", 1, 1, 'direct', 1, "+amount+", 'draft');");
+
+                    } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         });
+        thread3.start();
+        try {
+            thread3.join();
+            //Thread.interrupted();
+            insert2(p, cant, price);
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.status = false;
+        }
 
+    }
+
+    public void insert2(ProductSample p, int cant, double price) {
         Thread thread5 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
 
-                    s1.acquire();
-
                     Class.forName("org.postgresql.Driver");
 
-                    select();
+                    Statement stmt = connection.createStatement();
 
-                    try {
-                        Statement stmt = connection.createStatement();
+                    ResultSet rs = stmt.executeQuery("SELECT MAX(id) as order_id from sale_order;");
 
-                        ResultSet rs = stmt.executeQuery("SELECT MAX(id) as order_id from sale_order;");
+                    int last_order = 0;
 
-                        int last_order = 0;
-
-                        while (rs.next()){
-                            last_order = rs.getInt("order_id");
-                        }
-
-                        ResultSet rs3 = stmt.executeQuery("INSERT INTO public.sale_order_line (order_id, name, sequence, invoice_status, price_unit, price_subtotal, price_tax, price_total, product_id, product_uom_qty, product_uom, qty_delivered_method, salesman_id, currency_id, company_id, order_partner_id, state, customer_lead, create_uid, write_uid) " +
-                                "VALUES(" + last_order + ", '" + p.getName() + "', 10, 'no', " + price + ", " + price + ", 4.81, " + price + ", " + p.getId() + ", " + cant + ", 1, 'stock_move', 7, 1, 1, 14, 'draft', 0, 7, 7);");
-
-                    } finally {
-                        s1.release();
+                    while (rs.next()){
+                        last_order = rs.getInt("order_id");
                     }
+
+                    ResultSet rs3 = stmt.executeQuery("INSERT INTO public.sale_order_line (order_id, name, sequence, invoice_status, price_unit, price_subtotal, price_tax, price_total, product_id, product_uom_qty, product_uom, qty_delivered_method, salesman_id, currency_id, company_id, order_partner_id, state, customer_lead, create_uid, write_uid) " +
+                            "VALUES(" + last_order + ", '" + p.getName() + "', 10, 'no', " + price + ", " + price + ", 4.81, " + price + ", " + p.getId() + ", " + cant + ", 1, 'stock_move', 7, 1, 1, 14, 'draft', 0, 7, 7);");
+
 
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         });
-        thread3.setPriority(10);
-        thread5.setPriority(1);
-        thread3.start();
         thread5.start();
+        try {
+            thread5.join();
+            //Thread.interrupted();
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.status = false;
+        }
 
     }
+    
 
 }
