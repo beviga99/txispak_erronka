@@ -1,12 +1,14 @@
 package com.example.txipakfondo;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,15 +36,22 @@ public class Salmentak extends AppCompatActivity {
 
         Konektatu con = new Konektatu();
 
+        con.select();
+
         produktuak = con.selecta;
 
         bezeroak = con.bezeroak;
 
         Intent myIntent = getIntent();
         String id = myIntent.getStringExtra("id");
+        String image = "@drawable/f"+id;
+        int imageResource = getResources().getIdentifier(image, null, getPackageName());
         String name = myIntent.getStringExtra("name");
         String price = myIntent.getStringExtra("price");
         String qty = myIntent.getStringExtra("qty");
+        ImageView image1 = findViewById(R.id.imageView);
+        Drawable res = getResources().getDrawable(imageResource);
+        image1.setImageDrawable(res);
 
         txt = findViewById(R.id.txt_product);
         txt.setText(id + ": "+ name + ", " + price+"€, qty: "+ qty);
