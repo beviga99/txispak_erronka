@@ -15,6 +15,7 @@ import java.*;
 public class Konektatu {
     private Connection connection;
 
+
     public static ArrayList<ProductSample> selecta = new ArrayList<>();
     public static ArrayList<String> kategoriak = new ArrayList<>();
     public static ArrayList<User> users = new ArrayList<>();
@@ -27,7 +28,7 @@ public class Konektatu {
     private final String pass = "openpgpwd";
     private String url = "jdbc:postgresql://%s:%d/%s";
     private boolean status;
-
+    private boolean logeatu;
     public Konektatu() {
         this.url = String.format(this.url, this.host, this.port, this.database);
         connect();
@@ -56,7 +57,7 @@ public class Konektatu {
 
         try {
             thread.join();
-            thread.sleep(3000);
+            Thread.interrupted();
         } catch (Exception e) {
             e.printStackTrace();
             this.status = false;
@@ -107,7 +108,8 @@ public class Konektatu {
         }
 
     }
-    public void login( String  user,  String pass) {
+    public boolean login( String  user,  String pass) {
+
         Thread thread3 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -117,7 +119,7 @@ public class Konektatu {
                     while(rs.next()) {
                         User u= new User(rs.getString("login"),rs.getString("pass"));
                         users.add(u);
-                       
+                        logeatu=true;
                     }
 
                 }catch (Exception e) {
@@ -135,6 +137,7 @@ public class Konektatu {
             e.printStackTrace();
             status = false;
         }
+        return logeatu;
 
     }
 

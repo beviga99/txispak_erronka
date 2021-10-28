@@ -1,5 +1,6 @@
 package com.example.txipakfondo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Login extends AppCompatActivity {
     Button b1;
     EditText t1,t2;
-    Konektatu c=new Konektatu();
+    Konektatu c;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        c=new Konektatu();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         t1=findViewById(R.id.emaillogin);
@@ -21,7 +24,12 @@ public class Login extends AppCompatActivity {
         b1.setOnClickListener(this::botoiaSakatu);
     }
     public void botoiaSakatu(View view) {
-        c.login(t1.getText().toString(),t2.getText().toString());
+        if (c.login(t1.getText().toString(), t2.getText().toString())) {
+
+
+
+        }
+
 
     }
 
