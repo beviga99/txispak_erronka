@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,8 +26,12 @@ public class Login extends AppCompatActivity {
     }
     public void botoiaSakatu(View view) {
         if (c.login(t1.getText().toString(), t2.getText().toString())) {
-
-
+            intent=new Intent(Login.this,MainActivity.class);
+            startActivity(intent);
+        }else{
+            Toast.makeText(getApplicationContext(), "Ez zara salmenten arduraduna.", Toast.LENGTH_SHORT);
+            intent=new Intent(Login.this,Login.class);
+            startActivity(intent);
 
         }
 
