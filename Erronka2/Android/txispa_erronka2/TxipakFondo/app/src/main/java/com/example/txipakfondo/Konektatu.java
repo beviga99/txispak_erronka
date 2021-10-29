@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.media.MediaCodec;
 import android.util.Log;
 
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.core.content.ContextCompat;
+
 import java.security.CryptoPrimitive;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,6 +17,7 @@ import java.*;
 
 public class Konektatu {
     private Connection connection;
+    private boolean eginda;
 
 
     public static ArrayList<ProductSample> selecta = new ArrayList<>();
@@ -109,7 +113,7 @@ public class Konektatu {
 
     }
     public boolean login( String  user,  String pass) {
-
+        logeatu = false;
         Thread thread3 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -121,14 +125,12 @@ public class Konektatu {
                         users.add(u);
                         logeatu=true;
                     }
-
                 }catch (Exception e) {
                     e.printStackTrace();
 
                 }
             }
         });
-
         thread3.start();
         try {
             thread3.join();
@@ -140,6 +142,7 @@ public class Konektatu {
         return logeatu;
 
     }
+
 
 
 

@@ -12,7 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Login extends AppCompatActivity {
     Button b1;
     EditText t1,t2;
+<<<<<<< Updated upstream
     Konektatu c;
+=======
+    Konektatu c=new Konektatu();
+>>>>>>> Stashed changes
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,7 @@ public class Login extends AppCompatActivity {
         b1.setOnClickListener(this::botoiaSakatu);
     }
     public void botoiaSakatu(View view) {
+<<<<<<< Updated upstream
         if (c.login(t1.getText().toString(), t2.getText().toString())) {
             intent=new Intent(Login.this,MainActivity.class);
             startActivity(intent);
@@ -35,6 +40,12 @@ public class Login extends AppCompatActivity {
 
         }
 
+=======
+            if(c.login(t1.getText().toString(),t2.getText().toString())){
+                intent = new Intent(Login.this,MainActivity.class);
+                startActivity(intent);
+            }
+>>>>>>> Stashed changes
 
     }
 

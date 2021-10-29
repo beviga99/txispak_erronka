@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> kategoriak;
     Spinner spin;
     Toolbar tb;
+    Intent i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Konektatu con = new Konektatu();
@@ -191,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.login) {
-            Intent i=new Intent(MainActivity.this,Login.class);
+            i=new Intent(MainActivity.this,Login.class);
             startActivity(i);
         }
         return true;
