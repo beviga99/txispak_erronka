@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spin;
     Toolbar tb;
     Intent i;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Konektatu con = new Konektatu();
@@ -58,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("ResourceType")
     private void readProductData(String aukeratua) {
+
+        LinearLayout hlayour = new LinearLayout(this);
+        LinearLayout linearLayout = findViewById(R.id.linear_1);
+        linearLayout.removeAllViews();
         spin = findViewById(R.id.spinner);
 
         ArrayAdapter<String> nireadapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, kategoriak);
@@ -105,8 +110,6 @@ public class MainActivity extends AppCompatActivity {
                     Button bot = new Button(this);
                     ImageView irudi = new ImageView(this);
 
-                    LinearLayout hlayour = new LinearLayout(this);
-                    LinearLayout linearLayout = findViewById(R.id.linear_1);
 
 
 
@@ -147,10 +150,10 @@ public class MainActivity extends AppCompatActivity {
                     hlayour.addView(irudi);
                     badago = false;
                     linearLayout.addView(hlayour);
+
                     spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                             if (!(aukeratua.equals(String.valueOf(spin.getSelectedItem())))){
-                                linearLayout.removeAllViews();
                                 String aukeratua = String.valueOf(spin.getSelectedItem());
                                 readProductData(aukeratua);
                                 selectValue(spin, aukeratua);
@@ -175,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (badago) {
-            LinearLayout linearLayout = findViewById(R.id.linear_1);
+            linearLayout = findViewById(R.id.linear_1);
             TextView ezdago = new TextView(this);
             ezdago.setText("Ez dago kategoria horretako produkturik.");
             linearLayout.addView(ezdago);
