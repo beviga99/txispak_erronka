@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Konektatu con = new Konektatu();
+        con.select();
         produktuak = con.selecta;
         kategoriak = con.kategoriak;
         super.onCreate(savedInstanceState);
@@ -60,16 +61,16 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("ResourceType")
     private void readProductData(String aukeratua) {
         linearLayout = findViewById(R.id.linear_1);
+        System.out.println(produktuak);
         spin = findViewById(R.id.spinner);
+        linearLayout.removeAllViews();
 
         ArrayAdapter<String> nireadapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, kategoriak);
         spin.setAdapter(nireadapter);
 
         boolean badago = true;
 
-        if (linearLayout.getChildCount() > 0) {
-            linearLayout.removeAllViews();
-        }else {
+
             for(ProductSample p : produktuak) {
                 System.out.println(p.getId());
                 ProductSample sample = new ProductSample();
@@ -177,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                     sample.setCategory("");
                 }
             }
-        }
+
 
         if (badago) {
             TextView ezdago = new TextView(this);

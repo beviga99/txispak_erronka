@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".BanakakoDatuak"/>
+        <activity android:name=".Salmentak"></activity>
 
         <activity android:name=".Login"/>
 

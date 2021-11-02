@@ -13,6 +13,7 @@ public class Login extends AppCompatActivity {
     Button b1;
     EditText t1,t2;
     Konektatu c;
+    static boolean login = false;
 
     Intent intent;
     @Override
@@ -28,6 +29,7 @@ public class Login extends AppCompatActivity {
     public void botoiaSakatu(View view) {
 
         if (c.login(t1.getText().toString(), t2.getText().toString())) {
+            login = true;
             intent=new Intent(Login.this,MainActivity.class);
             startActivity(intent);
         }else{
