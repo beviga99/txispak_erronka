@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     Spinner spin;
     Toolbar tb;
     Intent i;
+    LinearLayout linearLayout;
+    LinearLayout hlayour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,9 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("ResourceType")
     private void readProductData(String aukeratua) {
-
-        LinearLayout hlayour = new LinearLayout(this);
-        LinearLayout linearLayout = findViewById(R.id.linear_1);
+        linearLayout = findViewById(R.id.linear_1);
         linearLayout.removeAllViews();
         spin = findViewById(R.id.spinner);
 
@@ -110,9 +110,8 @@ public class MainActivity extends AppCompatActivity {
                     Button bot = new Button(this);
                     ImageView irudi = new ImageView(this);
 
-
-
-
+                    hlayour = new LinearLayout(this);
+                    linearLayout = findViewById(R.id.linear_1);
                     hlayour.setOrientation(LinearLayout.HORIZONTAL);
                     bot.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -154,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
                     spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                             if (!(aukeratua.equals(String.valueOf(spin.getSelectedItem())))){
+                                linearLayout.removeAllViews();
                                 String aukeratua = String.valueOf(spin.getSelectedItem());
                                 readProductData(aukeratua);
                                 selectValue(spin, aukeratua);
@@ -171,19 +171,22 @@ public class MainActivity extends AppCompatActivity {
                         public void onNothingSelected(AdapterView<?> adapterView) {
                             return;
                         }
+
                     });
                 }
             } else {
                 sample.setCategory("");
             }
+
         }
         if (badago) {
-            linearLayout = findViewById(R.id.linear_1);
+            LinearLayout linearLayout = findViewById(R.id.linear_1);
             TextView ezdago = new TextView(this);
             ezdago.setText("Ez dago kategoria horretako produkturik.");
             linearLayout.addView(ezdago);
         }
         badago = true;
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
