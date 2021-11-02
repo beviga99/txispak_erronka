@@ -23,7 +23,10 @@ public class BanakakoDatuak extends AppCompatActivity {
         Intent myIntent = getIntent();
         String id = myIntent.getStringExtra("id");
         String image = "@drawable/f"+id;
+<<<<<<< HEAD
         System.out.println("id --> "+id);
+=======
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
         int imageResource = getResources().getIdentifier(image, null, getPackageName());
         String name = myIntent.getStringExtra("name");
         String prize = myIntent.getStringExtra("prize");

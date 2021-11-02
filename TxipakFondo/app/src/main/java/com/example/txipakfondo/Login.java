@@ -1,5 +1,6 @@
 package com.example.txipakfondo;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -37,4 +38,41 @@ public class Login extends AppCompatActivity {
 
 
 
+=======
+public class Login {
+    String login;
+    String password;
+
+    public Login(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+    public Login(){
+
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Login{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
 }

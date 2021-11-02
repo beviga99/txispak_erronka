@@ -1,5 +1,6 @@
 package com.example.txipakfondo;
 
+<<<<<<< HEAD
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,6 +12,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.text.Layout;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewManager;
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,17 +37,37 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+<<<<<<< HEAD
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
+=======
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<ProductSample> produktuak;
     ArrayList<String> kategoriak;
     Spinner spin;
+<<<<<<< HEAD
     Toolbar myToolbar;
+=======
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Konektatu con = new Konektatu();
@@ -40,8 +79,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String aukeratua = "All";
         readProductData(aukeratua);
+<<<<<<< HEAD
         myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
+=======
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
 
     }
 
@@ -54,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         spin.setAdapter(nireadapter);
 
         boolean badago = true;
+<<<<<<< HEAD
 
         for(ProductSample p : produktuak) {
             System.out.println("IDIDIDID : "+p.getId());
@@ -64,6 +107,18 @@ public class MainActivity extends AppCompatActivity {
             if (p.getName().length() > 0) {
                 sample.setName(p.getName());
 
+=======
+
+        for(ProductSample p : produktuak) {
+            System.out.println(p.getId());
+            ProductSample sample = new ProductSample();
+            sample.setId(p.getId());
+
+            sample.setName(p.getName());
+            if (p.getName().length() > 0) {
+                sample.setName(p.getName());
+
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
             } else {
                 sample.setName("");
             }
@@ -165,6 +220,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+<<<<<<< HEAD
         }
         if (badago) {
             LinearLayout linearLayout = findViewById(R.id.linear_1);
@@ -173,10 +229,21 @@ public class MainActivity extends AppCompatActivity {
             linearLayout.addView(ezdago);
 
         }
+=======
+        }
+        if (badago) {
+            LinearLayout linearLayout = findViewById(R.id.linear_1);
+            TextView ezdago = new TextView(this);
+            ezdago.setText("Ez dago kategoria horretako produkturik.");
+            linearLayout.addView(ezdago);
+
+        }
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
         badago = true;
 
 
     }
+<<<<<<< HEAD
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -198,5 +265,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+=======
+>>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
 
 }
