@@ -1,33 +1,28 @@
 package com.example.txipakfondo;
 
-import android.content.Intent;
-import android.media.MediaCodec;
 import android.util.Log;
 
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.core.content.ContextCompat;
+import com.example.txipakfondo.ProductSample;
 
-import java.security.CryptoPrimitive;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.*;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.Semaphore;
 
 public class Konektatu {
     private Connection connection;
-    private boolean eginda;
-
 
     public static ArrayList<ProductSample> selecta = new ArrayList<>();
     public static ArrayList<String> kategoriak = new ArrayList<>();
-    public static ArrayList<User> users = new ArrayList<>();
     public static ArrayList<String> bezeroak = new ArrayList<>();
+    public static ArrayList<User> users = new ArrayList<>();
     private int id;
     private Semaphore s1 = new Semaphore(1);
-
 
     // private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com"  // For Amazon Postgresql
     private final String host = "192.168.65.11";  // For Google Cloud Postgresql
@@ -38,23 +33,25 @@ public class Konektatu {
     private String url = "jdbc:postgresql://%s:%d/%s";
     private boolean status;
     private boolean logeatu;
+
+
     public Konektatu() {
         this.url = String.format(this.url, this.host, this.port, this.database);
         connect();
-        //this.disconnect();
-        System.out.println("connection status:" + status);
     }
 
-    private void connect() {
+    public void connect() {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
+                    selecta = new ArrayList<>();
+                    kategoriak = new ArrayList<>();
+                    bezeroak = new ArrayList<>();
                     Class.forName("org.postgresql.Driver");
                     connection = DriverManager.getConnection(url, user, pass);
                     status = true;
                     System.out.println("connected:" + status);
-                    select();
                 } catch (Exception e) {
                     status = false;
                     System.out.print(e.getMessage());
@@ -66,7 +63,6 @@ public class Konektatu {
 
         try {
             thread.join();
-            Thread.interrupted();
         } catch (Exception e) {
             e.printStackTrace();
             this.status = false;
@@ -84,23 +80,32 @@ public class Konektatu {
 
                     Statement stmt = connection.createStatement();
 
+                    //Produktuak eta informazioa ikusteko.
                     ResultSet rs = stmt.executeQuery("select product_template.id, product_template.name, product_template.list_price, stock_quant.quantity, product_template.description, product_category.name as c "
                             + "from product_template "
                             + "inner join stock_quant on product_template.id = stock_quant.product_id "
                             + "inner join product_category on product_template.categ_id = product_category.id "
                             + "where stock_quant.location_id = 8 "
                             + "order by product_template.id;");
-                    while (rs.next()) {
 
-                        ProductSample p = new ProductSample(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"), rs.getDouble("quantity"), rs.getString("description"), rs.getString("c"));
 
-                        selecta.add(p);
+                    if (selecta.size() == 0){
+                        while (rs.next()) {
+
+                            ProductSample p = new ProductSample(rs.getInt("id"), rs.getString("name"), rs.getDouble("list_price"), rs.getDouble("quantity"), rs.getString("description"), rs.getString("c"));
+
+                            selecta.add(p);
+                        }
+                        //Produktuen kategoriak ikusteko.
+                        ResultSet rs2 = stmt.executeQuery("SELECT name FROM product_category");
+
+                        while (rs2.next()){
+                            kategoriak.add(rs2.getString("name"));
+                        }
                     }
-                    ResultSet rs2 = stmt.executeQuery("SELECT name FROM product_category");
 
-                    while (rs2.next()){
-                        kategoriak.add(rs2.getString("name"));
-                    }
+
+                    //Bezeroak ikusteko.
                     ResultSet rs3 = stmt.executeQuery("select res_partner.name from res_partner " +
                             "inner join res_partner_res_partner_category_rel on res_partner_res_partner_category_rel.partner_id = res_partner.id " +
                             "where res_partner_res_partner_category_rel.category_id = 1;");
@@ -126,35 +131,7 @@ public class Konektatu {
         }
 
     }
-    public boolean login( String  user,  String pass) {
-        logeatu = false;
-        Thread thread3 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Statement sentencia = connection.createStatement();
-                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"' AND  grupo= 2");
-                    while(rs.next()) {
-                        User u= new User(rs.getString("login"),rs.getString("pass"));
-                        users.add(u);
-                        logeatu=true;
-                    }
-                }catch (Exception e) {
-                    e.printStackTrace();
 
-                }
-            }
-        });
-        thread3.start();
-        try {
-            thread3.join();
-            Thread.interrupted();
-        } catch (Exception e) {
-            e.printStackTrace();
-            status = false;
-        }
-        return logeatu;
-    }
     public int bezeroId(String name) {
 
         Thread thread4 = new Thread(new Runnable() {
@@ -221,9 +198,13 @@ public class Konektatu {
                         last_order = last_order + 1;
 
                         Double amount = price * cant;
+                        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+                        Date currentTime = Calendar.getInstance().getTime();
 
+                        String date = formatter.format(currentTime);
+                        System.out.println(date);
                         ResultSet rs2 = stmt.executeQuery("INSERT INTO public.sale_order (name, date_order, user_id, partner_id, partner_invoice_id, partner_shipping_id, pricelist_id, company_id, picking_policy, warehouse_id, amount_total, state) " +
-                                "VALUES('SM00" + last_order + "', '2021-10-25 06:22:23.000', 7, " + bezeroa + ", " + bezeroa + ", " + bezeroa + ", 1, 1, 'direct', 1, " + amount + ", 'draft');");
+                                "VALUES('SM00" + last_order + "', '" + date + "', 7, " + bezeroa + ", " + bezeroa + ", " + bezeroa + ", 1, 1, 'direct', 1, " + amount + ", 'draft');");
 
 
                     }finally{
@@ -277,8 +258,40 @@ public class Konektatu {
         thread5.setPriority(1);
         thread3.start();
         thread5.start();
-    }
 
+
+
+    }
+    public boolean login( String  user,  String pass) {
+        logeatu = false;
+        Thread thread3 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Statement sentencia = connection.createStatement();
+                    ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"' AND  grupo= 2");
+                    while(rs.next()) {
+                        User u= new User(rs.getString("login"),rs.getString("pass"));
+                        users.add(u);
+                        logeatu=true;
+                    }
+                }catch (Exception e) {
+                    e.printStackTrace();
+
+                }
+            }
+        });
+        thread3.start();
+        try {
+            thread3.join();
+            Thread.interrupted();
+        } catch (Exception e) {
+            e.printStackTrace();
+            status = false;
+        }
+        return logeatu;
+
+    }
 
 
 

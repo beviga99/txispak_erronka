@@ -19,6 +19,7 @@ public class BanakakoDatuak extends AppCompatActivity {
         setContentView(R.layout.banakakodatuak);
 
         readProductData();
+
     }
 
     private void readProductData() {
@@ -49,12 +50,16 @@ public class BanakakoDatuak extends AppCompatActivity {
         sourceString = "<b> Kategoria: </b> " + category;
         text6.setText(Html.fromHtml(sourceString));
 
-        Button btnPrueba = findViewById(R.id.btn_eros);
-
+        Button btnPrueba = findViewById(R.id.btn_erosi);
+//        if(Login.login){
+            btnPrueba.setVisibility(View.VISIBLE);
+//        }else{
+//            btnPrueba.setVisibility(View.GONE);
+//        }
         btnPrueba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent2 = new Intent(view.getContext(), Salmenta.class);
+                Intent myIntent2 = new Intent(view.getContext(), Salmentak.class);
                 ProductSample p = new ProductSample(Integer.parseInt(id), name);
                 myIntent2.putExtra("id", String.valueOf(p.getId()));
                 myIntent2.putExtra("name", p.getName());
@@ -64,5 +69,7 @@ public class BanakakoDatuak extends AppCompatActivity {
             }
         });
 
+
     }
+
 }

@@ -68,7 +68,7 @@
                 android:background="@color/cardview_light_background"
                 android:paddingTop="5dp"
                 android:gravity="right"
-                tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
+                tools:ignore="MissingConstraints" />
         </LinearLayout>
 
         <ScrollView
@@ -81,7 +81,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+                app:layout_constraintTop_toTopOf="parent">
+
+            </LinearLayout>
         </ScrollView>
 
     </LinearLayout>

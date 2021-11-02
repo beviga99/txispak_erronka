@@ -18,6 +18,7 @@ public class ProductSample {
         this.desk = desk;
         this.category = category;
     }
+
     public ProductSample(int id, String name) {
         this.id = id;
         this.name = name;
