@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
     <!-- Dragon_fondo -->
-
     <RelativeLayout
         android:id="@+id/dragon_fond"
         android:layout_width="411dp"
@@ -55,20 +54,21 @@
 
                     <Spinner
                         android:id="@+id/spinner"
-                        android:layout_width="241dp"
+                        android:layout_width="195dp"
                         android:layout_height="56dp" />
 
                 </LinearLayout>
             </LinearLayout>
 
-            <androidx.appcompat.widget.Toolbar
+            <Button
                 android:id="@+id/toolbar"
-                android:layout_width="30dp"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_light_background"
-                android:paddingTop="5dp"
-                android:gravity="right"
-                tools:ignore="MissingConstraints" />
+                android:layout_width="102dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Login"
+                tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="309dp" />
         </LinearLayout>
 
         <ScrollView
@@ -87,6 +87,5 @@
         </ScrollView>
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

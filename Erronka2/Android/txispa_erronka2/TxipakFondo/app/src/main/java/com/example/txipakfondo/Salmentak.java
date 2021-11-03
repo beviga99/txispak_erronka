@@ -28,18 +28,14 @@ public class Salmentak extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.salmentak);
-
         readProductData();
     }
 
     private void readProductData() {
 
         Konektatu con = new Konektatu();
-
         con.select();
-
         produktuak = con.selecta;
-
         bezeroak = con.bezeroak;
 
         Intent myIntent = getIntent();
@@ -60,15 +56,13 @@ public class Salmentak extends AppCompatActivity {
         ArrayAdapter<String> nireadapter2 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, bezeroak);
         spin_b.setAdapter(nireadapter2);
 
-        Button btnPrueba = findViewById(R.id.btn_eros);
+        Button btnerosi = findViewById(R.id.btn_eros);
 
-        btnPrueba.setOnClickListener(new View.OnClickListener() {
+        btnerosi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String bezeroa = (String) spin_b.getSelectedItem();
-
                 int bezeroaId = con.bezeroId(bezeroa);
-
                 double price_d = Double.parseDouble(price);
 
                 EditText kant = findViewById(R.id.txt_kant);
