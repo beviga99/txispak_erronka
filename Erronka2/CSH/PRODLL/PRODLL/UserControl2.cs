@@ -15,6 +15,7 @@ namespace PRODLL
         public UserControl2()
         {
             InitializeComponent();
+            this.produktuakTableAdapter.Fill(this.txpDataSet.Produktuak);
         }
     }
 }

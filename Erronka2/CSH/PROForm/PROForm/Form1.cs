@@ -16,5 +16,12 @@ namespace PROForm
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'txispakDataSet.Produktuak' Puede moverla o quitarla según sea necesario.
+            this.produktuakTableAdapter.Fill(this.txispakDataSet.Produktuak);
+
+        }
     }
 }

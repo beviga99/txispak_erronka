@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="txpDataSet" targetNamespace="http://tempuri.org/txpDataSet.xsd" xmlns:mstns="http://tempuri.org/txpDataSet.xsd" xmlns="http://tempuri.org/txpDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="txispakDataSet" targetNamespace="http://tempuri.org/txispakDataSet.xsd" xmlns:mstns="http://tempuri.org/txispakDataSet.xsd" xmlns="http://tempuri.org/txispakDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="txpConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="txpConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AGINTEPRO.Properties.Settings.GlobalReference.Default.txpConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="txkConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="txkConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PROForm.Properties.Settings.GlobalReference.Default.txkConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BezeroakTableAdapter" GeneratorDataComponentClassName="BezeroakTableAdapter" Name="Bezeroak" UserDataComponentName="BezeroakTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="txpConnectionString (Settings)" DbObjectName="txispak.dbo.Bezeroak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="txkConnectionString (Settings)" DbObjectName="txispak.dbo.Bezeroak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Bezeroak] WHERE (([id] = @Original_id) AND ((@IsNull_Client_Name = 1 AND [Client_Name] IS NULL) OR ([Client_Name] = @Original_Client_Name)))</CommandText>
@@ -55,22 +55,11 @@ SELECT id, Client_Name FROM Bezeroak WHERE (id = @id)</CommandText>
               <Mapping SourceColumn="id" DataSetColumn="id" />
               <Mapping SourceColumn="Client_Name" DataSetColumn="Client_Name" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="txpConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT        Bezeroak.Client_Name, Salmentak.id
-FROM            Bezeroak INNER JOIN
-                         Salmentak ON Bezeroak.id = Salmentak.client_id</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProduktuakTableAdapter" GeneratorDataComponentClassName="ProduktuakTableAdapter" Name="Produktuak" UserDataComponentName="ProduktuakTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="txpConnectionString (Settings)" DbObjectName="txispak.dbo.Produktuak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="txkConnectionString (Settings)" DbObjectName="txispak.dbo.Produktuak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Produktuak] WHERE (([id] = @Original_id) AND ((@IsNull_Product_Name = 1 AND [Product_Name] IS NULL) OR ([Product_Name] = @Original_Product_Name)))</CommandText>
@@ -116,22 +105,11 @@ SELECT id, Product_Name FROM Produktuak WHERE (id = @id)</CommandText>
               <Mapping SourceColumn="id" DataSetColumn="id" />
               <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="txpConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT        Produktuak.Product_Name, Salmentak.id
-FROM            Produktuak INNER JOIN
-                         Salmentak ON Produktuak.id = Salmentak.product_id</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SalmentakTableAdapter" GeneratorDataComponentClassName="SalmentakTableAdapter" Name="Salmentak" UserDataComponentName="SalmentakTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="txpConnectionString (Settings)" DbObjectName="txispak.dbo.Salmentak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="txkConnectionString (Settings)" DbObjectName="txispak.dbo.Salmentak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Salmentak] WHERE (([id] = @Original_id) AND ((@IsNull_client_id = 1 AND [client_id] IS NULL) OR ([client_id] = @Original_client_id)) AND ((@IsNull_product_id = 1 AND [product_id] IS NULL) OR ([product_id] = @Original_product_id)))</CommandText>
@@ -191,10 +169,10 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="txpDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="txpDataSet" msprop:Generator_UserDSName="txpDataSet">
+  <xs:element name="txispakDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="txispakDataSet" msprop:Generator_UserDSName="txispakDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Bezeroak" msprop:Generator_TableClassName="BezeroakDataTable" msprop:Generator_TableVarName="tableBezeroak" msprop:Generator_RowChangedName="BezeroakRowChanged" msprop:Generator_TablePropName="Bezeroak" msprop:Generator_RowDeletingName="BezeroakRowDeleting" msprop:Generator_RowChangingName="BezeroakRowChanging" msprop:Generator_RowEvHandlerName="BezeroakRowChangeEventHandler" msprop:Generator_RowDeletedName="BezeroakRowDeleted" msprop:Generator_RowClassName="BezeroakRow" msprop:Generator_UserTableName="Bezeroak" msprop:Generator_RowEvArgName="BezeroakRowChangeEvent">
+        <xs:element name="Bezeroak" msprop:Generator_TableClassName="BezeroakDataTable" msprop:Generator_TableVarName="tableBezeroak" msprop:Generator_TablePropName="Bezeroak" msprop:Generator_RowDeletingName="BezeroakRowDeleting" msprop:Generator_RowChangingName="BezeroakRowChanging" msprop:Generator_RowEvHandlerName="BezeroakRowChangeEventHandler" msprop:Generator_RowDeletedName="BezeroakRowDeleted" msprop:Generator_UserTableName="Bezeroak" msprop:Generator_RowChangedName="BezeroakRowChanged" msprop:Generator_RowEvArgName="BezeroakRowChangeEvent" msprop:Generator_RowClassName="BezeroakRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -208,7 +186,7 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Produktuak" msprop:Generator_TableClassName="ProduktuakDataTable" msprop:Generator_TableVarName="tableProduktuak" msprop:Generator_RowChangedName="ProduktuakRowChanged" msprop:Generator_TablePropName="Produktuak" msprop:Generator_RowDeletingName="ProduktuakRowDeleting" msprop:Generator_RowChangingName="ProduktuakRowChanging" msprop:Generator_RowEvHandlerName="ProduktuakRowChangeEventHandler" msprop:Generator_RowDeletedName="ProduktuakRowDeleted" msprop:Generator_RowClassName="ProduktuakRow" msprop:Generator_UserTableName="Produktuak" msprop:Generator_RowEvArgName="ProduktuakRowChangeEvent">
+        <xs:element name="Produktuak" msprop:Generator_TableClassName="ProduktuakDataTable" msprop:Generator_TableVarName="tableProduktuak" msprop:Generator_TablePropName="Produktuak" msprop:Generator_RowDeletingName="ProduktuakRowDeleting" msprop:Generator_RowChangingName="ProduktuakRowChanging" msprop:Generator_RowEvHandlerName="ProduktuakRowChangeEventHandler" msprop:Generator_RowDeletedName="ProduktuakRowDeleted" msprop:Generator_UserTableName="Produktuak" msprop:Generator_RowChangedName="ProduktuakRowChanged" msprop:Generator_RowEvArgName="ProduktuakRowChangeEvent" msprop:Generator_RowClassName="ProduktuakRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -222,7 +200,7 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Salmentak" msprop:Generator_TableClassName="SalmentakDataTable" msprop:Generator_TableVarName="tableSalmentak" msprop:Generator_RowChangedName="SalmentakRowChanged" msprop:Generator_TablePropName="Salmentak" msprop:Generator_RowDeletingName="SalmentakRowDeleting" msprop:Generator_RowChangingName="SalmentakRowChanging" msprop:Generator_RowEvHandlerName="SalmentakRowChangeEventHandler" msprop:Generator_RowDeletedName="SalmentakRowDeleted" msprop:Generator_RowClassName="SalmentakRow" msprop:Generator_UserTableName="Salmentak" msprop:Generator_RowEvArgName="SalmentakRowChangeEvent">
+        <xs:element name="Salmentak" msprop:Generator_TableClassName="SalmentakDataTable" msprop:Generator_TableVarName="tableSalmentak" msprop:Generator_TablePropName="Salmentak" msprop:Generator_RowDeletingName="SalmentakRowDeleting" msprop:Generator_RowChangingName="SalmentakRowChanging" msprop:Generator_RowEvHandlerName="SalmentakRowChangeEventHandler" msprop:Generator_RowDeletedName="SalmentakRowDeleted" msprop:Generator_UserTableName="Salmentak" msprop:Generator_RowChangedName="SalmentakRowChanged" msprop:Generator_RowEvArgName="SalmentakRowChangeEvent" msprop:Generator_RowClassName="SalmentakRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -248,8 +226,8 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FKbckr4b0er062f8ea0s3b304h1" msdata:parent="Bezeroak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="client_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKbckr4b0er062f8ea0s3b304h1" msprop:Generator_RelationVarName="relationFKbckr4b0er062f8ea0s3b304h1" msprop:Generator_UserParentTable="Bezeroak" msprop:Generator_ParentPropName="BezeroakRow" />
-      <msdata:Relationship name="FKglflrv4gyoce2ig2dr7qivo16" msdata:parent="Produktuak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="product_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_RelationVarName="relationFKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_UserParentTable="Produktuak" msprop:Generator_ParentPropName="ProduktuakRow" />
+      <msdata:Relationship name="FKbckr4b0er062f8ea0s3b304h1" msdata:parent="Bezeroak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="client_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKbckr4b0er062f8ea0s3b304h1" msprop:Generator_ParentPropName="BezeroakRow" msprop:Generator_RelationVarName="relationFKbckr4b0er062f8ea0s3b304h1" msprop:Generator_UserParentTable="Bezeroak" />
+      <msdata:Relationship name="FKglflrv4gyoce2ig2dr7qivo16" msdata:parent="Produktuak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="product_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_ParentPropName="ProduktuakRow" msprop:Generator_RelationVarName="relationFKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_UserParentTable="Produktuak" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -32,12 +32,13 @@ namespace PRODLL
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txpDataSet = new PRODLL.txpDataSet();
-            this.bezeroakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.produktuakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.produktuakTableAdapter = new PRODLL.txpDataSetTableAdapters.ProduktuakTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bezeroakBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -46,9 +47,9 @@ namespace PRODLL
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
-            this.clientNameDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.bezeroakBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(62, 99);
+            this.productNameDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.produktuakBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(45, 43);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 0;
@@ -58,10 +59,14 @@ namespace PRODLL
             this.txpDataSet.DataSetName = "txpDataSet";
             this.txpDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // bezeroakBindingSource
+            // produktuakBindingSource
             // 
-            this.bezeroakBindingSource.DataMember = "Bezeroak";
-            this.bezeroakBindingSource.DataSource = this.txpDataSet;
+            this.produktuakBindingSource.DataMember = "Produktuak";
+            this.produktuakBindingSource.DataSource = this.txpDataSet;
+            // 
+            // produktuakTableAdapter
+            // 
+            this.produktuakTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -69,11 +74,11 @@ namespace PRODLL
             this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
-            // clientNameDataGridViewTextBoxColumn
+            // productNameDataGridViewTextBoxColumn
             // 
-            this.clientNameDataGridViewTextBoxColumn.DataPropertyName = "Client_Name";
-            this.clientNameDataGridViewTextBoxColumn.HeaderText = "Client_Name";
-            this.clientNameDataGridViewTextBoxColumn.Name = "clientNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "Product_Name";
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "Product_Name";
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
             // 
             // UserControl2
             // 
@@ -81,10 +86,10 @@ namespace PRODLL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(381, 430);
+            this.Size = new System.Drawing.Size(325, 254);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bezeroakBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -93,8 +98,9 @@ namespace PRODLL
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clientNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource bezeroakBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource produktuakBindingSource;
         private txpDataSet txpDataSet;
+        private txpDataSetTableAdapters.ProduktuakTableAdapter produktuakTableAdapter;
     }
 }

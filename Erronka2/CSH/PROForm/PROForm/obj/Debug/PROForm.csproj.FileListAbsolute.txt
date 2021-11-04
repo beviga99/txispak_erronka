@@ -11,3 +11,4 @@ C:\Users\arambarri.oihana\Desktop\PROForm\PROForm\obj\Debug\PROForm.csproj.Gener
 C:\Users\arambarri.oihana\Desktop\PROForm\PROForm\obj\Debug\PROForm.csproj.CoreCompileInputs.cache
 C:\Users\arambarri.oihana\Desktop\PROForm\PROForm\obj\Debug\PROForm.exe
 C:\Users\arambarri.oihana\Desktop\PROForm\PROForm\obj\Debug\PROForm.pdb
+C:\Users\arambarri.oihana\Desktop\PROForm\PROForm\obj\Debug\PROForm.csproj.CopyComplete

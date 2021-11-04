@@ -29,32 +29,72 @@ namespace PROForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.userControl11 = new PRODLL.UserControl1();
+            this.components = new System.ComponentModel.Container();
+            this.txispakDataSet = new PROForm.txispakDataSet();
+            this.produktuakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.produktuakTableAdapter = new PROForm.txispakDataSetTableAdapters.ProduktuakTableAdapter();
+            this.userControl12 = new PRODLL.UserControl1();
+            this.produktuakTableAdapter1 = new PRODLL.txpDataSetTableAdapters.ProduktuakTableAdapter();
+            this.userControl21 = new PRODLL.UserControl2();
+            ((System.ComponentModel.ISupportInitialize)(this.txispakDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // userControl11
+            // txispakDataSet
             // 
-            this.userControl11.Location = new System.Drawing.Point(110, 49);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(355, 247);
-            this.userControl11.TabIndex = 0;
-            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
+            this.txispakDataSet.DataSetName = "txispakDataSet";
+            this.txispakDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // produktuakBindingSource
+            // 
+            this.produktuakBindingSource.DataMember = "Produktuak";
+            this.produktuakBindingSource.DataSource = this.txispakDataSet;
+            // 
+            // produktuakTableAdapter
+            // 
+            this.produktuakTableAdapter.ClearBeforeFill = true;
+            // 
+            // userControl12
+            // 
+            this.userControl12.Location = new System.Drawing.Point(23, 41);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(275, 213);
+            this.userControl12.TabIndex = 1;
+            // 
+            // produktuakTableAdapter1
+            // 
+            this.produktuakTableAdapter1.ClearBeforeFill = true;
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(379, 74);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(351, 213);
+            this.userControl21.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.userControl11);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl12);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.txispakDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private PRODLL.UserControl1 userControl11;
+        private txispakDataSet txispakDataSet;
+        private System.Windows.Forms.BindingSource produktuakBindingSource;
+        private txispakDataSetTableAdapters.ProduktuakTableAdapter produktuakTableAdapter;
+        private PRODLL.txpDataSetTableAdapters.ProduktuakTableAdapter produktuakTableAdapter1;
+        private PRODLL.UserControl1 userControl12;
+        private PRODLL.UserControl2 userControl21;
     }
 }
 

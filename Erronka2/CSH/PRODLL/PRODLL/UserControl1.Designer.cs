@@ -36,9 +36,12 @@ namespace PRODLL
             this.bezeroakTableAdapter = new PRODLL.txpDataSetTableAdapters.BezeroakTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produktuakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.produktuakTableAdapter = new PRODLL.txpDataSetTableAdapters.ProduktuakTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bezeroakBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -80,6 +83,15 @@ namespace PRODLL
             this.clientNameDataGridViewTextBoxColumn.HeaderText = "Client_Name";
             this.clientNameDataGridViewTextBoxColumn.Name = "clientNameDataGridViewTextBoxColumn";
             // 
+            // produktuakBindingSource
+            // 
+            this.produktuakBindingSource.DataMember = "Produktuak";
+            this.produktuakBindingSource.DataSource = this.txpDataSet;
+            // 
+            // produktuakTableAdapter
+            // 
+            this.produktuakTableAdapter.ClearBeforeFill = true;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,6 +102,7 @@ namespace PRODLL
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bezeroakBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -102,5 +115,7 @@ namespace PRODLL
         private System.Windows.Forms.BindingSource bezeroakBindingSource;
         private txpDataSet txpDataSet;
         private txpDataSetTableAdapters.BezeroakTableAdapter bezeroakTableAdapter;
+        private System.Windows.Forms.BindingSource produktuakBindingSource;
+        private txpDataSetTableAdapters.ProduktuakTableAdapter produktuakTableAdapter;
     }
 }
