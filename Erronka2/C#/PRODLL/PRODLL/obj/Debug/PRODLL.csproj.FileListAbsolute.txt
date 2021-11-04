@@ -1,0 +1,9 @@
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\bin\Debug\PRODLL.dll.config
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\bin\Debug\PRODLL.dll
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\bin\Debug\PRODLL.pdb
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\obj\Debug\PRODLL.csproj.AssemblyReference.cache
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\obj\Debug\PRODLL.UserControl1.resources
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\obj\Debug\PRODLL.csproj.GenerateResource.cache
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\obj\Debug\PRODLL.csproj.CoreCompileInputs.cache
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\obj\Debug\PRODLL.dll
+C:\Users\arambarri.oihana\Desktop\PRODLL\PRODLL\obj\Debug\PRODLL.pdb
