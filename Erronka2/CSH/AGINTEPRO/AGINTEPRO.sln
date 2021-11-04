@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGINTEPRO", "AGINTEPRO\AGINTEPRO.csproj", "{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {924F9DFE-8B45-4B30-A576-BE297EA7C075}
+	EndGlobalSection
+EndGlobal

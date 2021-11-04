@@ -1,0 +1,14 @@
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.csproj.AssemblyReference.cache
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.Form1.resources
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.Properties.Resources.resources
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.csproj.GenerateResource.cache
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.csproj.CoreCompileInputs.cache
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\bin\Debug\AGINTEPRO.exe.config
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\bin\Debug\AGINTEPRO.exe
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\bin\Debug\AGINTEPRO.pdb
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.exe
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.pdb
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\bin\Debug\PRODLL.dll
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\bin\Debug\PRODLL.pdb
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\bin\Debug\PRODLL.dll.config
+C:\Users\arambarri.oihana\Desktop\AGINTEPRO\AGINTEPRO\obj\Debug\AGINTEPRO.csproj.CopyComplete
