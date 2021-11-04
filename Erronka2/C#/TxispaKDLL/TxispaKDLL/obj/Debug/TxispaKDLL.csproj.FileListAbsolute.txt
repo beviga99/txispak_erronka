@@ -1,0 +1,13 @@
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\bin\Debug\TxispaKDLL.dll.config
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\bin\Debug\TxispaKDLL.dll
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\bin\Debug\TxispaKDLL.pdb
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\bin\Debug\EntityFramework.dll
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\bin\Debug\EntityFramework.xml
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\obj\Debug\TxispaKDLL.Control.resources
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\obj\Debug\TxispaKDLL.csproj.GenerateResource.cache
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\obj\Debug\TxispaKDLL.csproj.CoreCompileInputs.cache
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\obj\Debug\TxispaKDLL.dll
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispaKDLL\TxispaKDLL\obj\Debug\TxispaKDLL.pdb
+C:\Users\arambarri.oihana\Desktop\txispakOndo\txispak_erronka\Erronka2\C#\TxispakDLL\TxispaKDLL\obj\Debug\TxispaKDLL.csproj.CopyComplete
