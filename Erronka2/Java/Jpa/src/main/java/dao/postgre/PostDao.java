@@ -1,4 +1,4 @@
-package dao.PostreSql;
+package dao.postgre;
 
 import java.util.List;
 import javax.persistence.EntityManager;
