@@ -58,7 +58,7 @@ SELECT id, Client_Name FROM Bezeroak WHERE (id = @id)</CommandText>
             <Sources>
               <DbSource ConnectionRef="txpConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        Bezeroak.Client_Name, Salmentak.id
 FROM            Bezeroak INNER JOIN
                          Salmentak ON Bezeroak.id = Salmentak.client_id</CommandText>
@@ -119,10 +119,11 @@ SELECT id, Product_Name FROM Produktuak WHERE (id = @id)</CommandText>
             <Sources>
               <DbSource ConnectionRef="txpConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT        Produktuak.Product_Name, Salmentak.id
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Produktuak.Product_Name, Salmentak.id, Salmentak.client_id
 FROM            Produktuak INNER JOIN
-                         Salmentak ON Produktuak.id = Salmentak.product_id</CommandText>
+                         Salmentak ON Produktuak.id = Salmentak.product_id
+</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -194,7 +195,7 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
   <xs:element name="txpDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="txpDataSet" msprop:Generator_UserDSName="txpDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Bezeroak" msprop:Generator_TableClassName="BezeroakDataTable" msprop:Generator_TableVarName="tableBezeroak" msprop:Generator_RowChangedName="BezeroakRowChanged" msprop:Generator_TablePropName="Bezeroak" msprop:Generator_RowDeletingName="BezeroakRowDeleting" msprop:Generator_RowChangingName="BezeroakRowChanging" msprop:Generator_RowEvHandlerName="BezeroakRowChangeEventHandler" msprop:Generator_RowDeletedName="BezeroakRowDeleted" msprop:Generator_RowClassName="BezeroakRow" msprop:Generator_UserTableName="Bezeroak" msprop:Generator_RowEvArgName="BezeroakRowChangeEvent">
+        <xs:element name="Bezeroak" msprop:Generator_TableClassName="BezeroakDataTable" msprop:Generator_TableVarName="tableBezeroak" msprop:Generator_TablePropName="Bezeroak" msprop:Generator_RowDeletingName="BezeroakRowDeleting" msprop:Generator_RowChangingName="BezeroakRowChanging" msprop:Generator_RowEvHandlerName="BezeroakRowChangeEventHandler" msprop:Generator_RowDeletedName="BezeroakRowDeleted" msprop:Generator_UserTableName="Bezeroak" msprop:Generator_RowChangedName="BezeroakRowChanged" msprop:Generator_RowEvArgName="BezeroakRowChangeEvent" msprop:Generator_RowClassName="BezeroakRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -208,7 +209,7 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Produktuak" msprop:Generator_TableClassName="ProduktuakDataTable" msprop:Generator_TableVarName="tableProduktuak" msprop:Generator_RowChangedName="ProduktuakRowChanged" msprop:Generator_TablePropName="Produktuak" msprop:Generator_RowDeletingName="ProduktuakRowDeleting" msprop:Generator_RowChangingName="ProduktuakRowChanging" msprop:Generator_RowEvHandlerName="ProduktuakRowChangeEventHandler" msprop:Generator_RowDeletedName="ProduktuakRowDeleted" msprop:Generator_RowClassName="ProduktuakRow" msprop:Generator_UserTableName="Produktuak" msprop:Generator_RowEvArgName="ProduktuakRowChangeEvent">
+        <xs:element name="Produktuak" msprop:Generator_TableClassName="ProduktuakDataTable" msprop:Generator_TableVarName="tableProduktuak" msprop:Generator_TablePropName="Produktuak" msprop:Generator_RowDeletingName="ProduktuakRowDeleting" msprop:Generator_RowChangingName="ProduktuakRowChanging" msprop:Generator_RowEvHandlerName="ProduktuakRowChangeEventHandler" msprop:Generator_RowDeletedName="ProduktuakRowDeleted" msprop:Generator_UserTableName="Produktuak" msprop:Generator_RowChangedName="ProduktuakRowChanged" msprop:Generator_RowEvArgName="ProduktuakRowChangeEvent" msprop:Generator_RowClassName="ProduktuakRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -222,7 +223,7 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Salmentak" msprop:Generator_TableClassName="SalmentakDataTable" msprop:Generator_TableVarName="tableSalmentak" msprop:Generator_RowChangedName="SalmentakRowChanged" msprop:Generator_TablePropName="Salmentak" msprop:Generator_RowDeletingName="SalmentakRowDeleting" msprop:Generator_RowChangingName="SalmentakRowChanging" msprop:Generator_RowEvHandlerName="SalmentakRowChangeEventHandler" msprop:Generator_RowDeletedName="SalmentakRowDeleted" msprop:Generator_RowClassName="SalmentakRow" msprop:Generator_UserTableName="Salmentak" msprop:Generator_RowEvArgName="SalmentakRowChangeEvent">
+        <xs:element name="Salmentak" msprop:Generator_TableClassName="SalmentakDataTable" msprop:Generator_TableVarName="tableSalmentak" msprop:Generator_TablePropName="Salmentak" msprop:Generator_RowDeletingName="SalmentakRowDeleting" msprop:Generator_RowChangingName="SalmentakRowChanging" msprop:Generator_RowEvHandlerName="SalmentakRowChangeEventHandler" msprop:Generator_RowDeletedName="SalmentakRowDeleted" msprop:Generator_UserTableName="Salmentak" msprop:Generator_RowChangedName="SalmentakRowChanged" msprop:Generator_RowEvArgName="SalmentakRowChangeEvent" msprop:Generator_RowClassName="SalmentakRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -248,8 +249,8 @@ SELECT id, client_id, product_id FROM Salmentak WHERE (id = @id)</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FKbckr4b0er062f8ea0s3b304h1" msdata:parent="Bezeroak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="client_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKbckr4b0er062f8ea0s3b304h1" msprop:Generator_RelationVarName="relationFKbckr4b0er062f8ea0s3b304h1" msprop:Generator_UserParentTable="Bezeroak" msprop:Generator_ParentPropName="BezeroakRow" />
-      <msdata:Relationship name="FKglflrv4gyoce2ig2dr7qivo16" msdata:parent="Produktuak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="product_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_RelationVarName="relationFKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_UserParentTable="Produktuak" msprop:Generator_ParentPropName="ProduktuakRow" />
+      <msdata:Relationship name="FKbckr4b0er062f8ea0s3b304h1" msdata:parent="Bezeroak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="client_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKbckr4b0er062f8ea0s3b304h1" msprop:Generator_ParentPropName="BezeroakRow" msprop:Generator_RelationVarName="relationFKbckr4b0er062f8ea0s3b304h1" msprop:Generator_UserParentTable="Bezeroak" />
+      <msdata:Relationship name="FKglflrv4gyoce2ig2dr7qivo16" msdata:parent="Produktuak" msdata:child="Salmentak" msdata:parentkey="id" msdata:childkey="product_id" msprop:Generator_UserChildTable="Salmentak" msprop:Generator_ChildPropName="GetSalmentakRows" msprop:Generator_UserRelationName="FKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_ParentPropName="ProduktuakRow" msprop:Generator_RelationVarName="relationFKglflrv4gyoce2ig2dr7qivo16" msprop:Generator_UserParentTable="Produktuak" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -31,16 +31,16 @@ namespace PRODLL
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txpDataSet = new PRODLL.txpDataSet();
-            this.bezeroakBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bezeroakTableAdapter = new PRODLL.txpDataSetTableAdapters.BezeroakTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bezeroakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txpDataSet = new PRODLL.txpDataSet();
+            this.bezeroakTableAdapter = new PRODLL.txpDataSetTableAdapters.BezeroakTableAdapter();
             this.produktuakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produktuakTableAdapter = new PRODLL.txpDataSetTableAdapters.ProduktuakTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bezeroakBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,20 +57,6 @@ namespace PRODLL
             this.dataGridView1.Size = new System.Drawing.Size(235, 121);
             this.dataGridView1.TabIndex = 0;
             // 
-            // txpDataSet
-            // 
-            this.txpDataSet.DataSetName = "txpDataSet";
-            this.txpDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bezeroakBindingSource
-            // 
-            this.bezeroakBindingSource.DataMember = "Bezeroak";
-            this.bezeroakBindingSource.DataSource = this.txpDataSet;
-            // 
-            // bezeroakTableAdapter
-            // 
-            this.bezeroakTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -82,6 +68,20 @@ namespace PRODLL
             this.clientNameDataGridViewTextBoxColumn.DataPropertyName = "Client_Name";
             this.clientNameDataGridViewTextBoxColumn.HeaderText = "Client_Name";
             this.clientNameDataGridViewTextBoxColumn.Name = "clientNameDataGridViewTextBoxColumn";
+            // 
+            // bezeroakBindingSource
+            // 
+            this.bezeroakBindingSource.DataMember = "Bezeroak";
+            this.bezeroakBindingSource.DataSource = this.txpDataSet;
+            // 
+            // txpDataSet
+            // 
+            this.txpDataSet.DataSetName = "txpDataSet";
+            this.txpDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bezeroakTableAdapter
+            // 
+            this.bezeroakTableAdapter.ClearBeforeFill = true;
             // 
             // produktuakBindingSource
             // 
@@ -98,10 +98,10 @@ namespace PRODLL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(864, 512);
+            this.Size = new System.Drawing.Size(303, 236);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bezeroakBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txpDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produktuakBindingSource)).EndInit();
             this.ResumeLayout(false);
 

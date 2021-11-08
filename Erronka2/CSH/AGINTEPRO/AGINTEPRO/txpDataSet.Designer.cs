@@ -2048,9 +2048,9 @@ SELECT id, Product_Name FROM Produktuak WHERE (id = @id)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT        Produktuak.Product_Name, Salmentak.id\r\nFROM            Produktuak I" +
-                "NNER JOIN\r\n                         Salmentak ON Produktuak.id = Salmentak.produ" +
-                "ct_id";
+            this._commandCollection[1].CommandText = "SELECT        Produktuak.Product_Name, Salmentak.id, Salmentak.client_id\r\nFROM   " +
+                "         Produktuak INNER JOIN\r\n                         Salmentak ON Produktuak" +
+                ".id = Salmentak.product_id\r\n";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
