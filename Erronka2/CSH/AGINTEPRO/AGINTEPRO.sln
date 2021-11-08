@@ -5,16 +5,20 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGINTEPRO", "AGINTEPRO\AGINTEPRO.csproj", "{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AginteProSetUp", "AginteProSetUp\AginteProSetUp.vdproj", "{74613793-65AF-4147-9E54-BF5BBC7B8DA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23330B7C-3CA8-4E92-ACDA-5D6342E96EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74613793-65AF-4147-9E54-BF5BBC7B8DA4}.Debug|Any CPU.ActiveCfg = Debug
+		{74613793-65AF-4147-9E54-BF5BBC7B8DA4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
