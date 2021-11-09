@@ -4,7 +4,6 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.List;
 
 
 /**
@@ -175,10 +174,6 @@ public class ProductTemplate implements Serializable {
 
 	@Column(name="write_uid")
 	private Integer writeUid;
-
-	//bi-directional many-to-one association to SaleOrderLine
-	@OneToMany(mappedBy="productTemplate")
-	private List<SaleOrderLine> saleOrderLines;
 
 	public ProductTemplate() {
 	}
@@ -629,28 +624,6 @@ public class ProductTemplate implements Serializable {
 
 	public void setWriteUid(Integer writeUid) {
 		this.writeUid = writeUid;
-	}
-
-	public List<SaleOrderLine> getSaleOrderLines() {
-		return this.saleOrderLines;
-	}
-
-	public void setSaleOrderLines(List<SaleOrderLine> saleOrderLines) {
-		this.saleOrderLines = saleOrderLines;
-	}
-
-	public SaleOrderLine addSaleOrderLine(SaleOrderLine saleOrderLine) {
-		getSaleOrderLines().add(saleOrderLine);
-		saleOrderLine.setProductTemplate(this);
-
-		return saleOrderLine;
-	}
-
-	public SaleOrderLine removeSaleOrderLine(SaleOrderLine saleOrderLine) {
-		getSaleOrderLines().remove(saleOrderLine);
-		saleOrderLine.setProductTemplate(null);
-
-		return saleOrderLine;
 	}
 
 }
