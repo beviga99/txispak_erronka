@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BezeroakDLL", "BezeroakDLL\BezeroakDLL.csproj", "{4305ECB1-D510-48BB-979F-4D4FF4A142BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4305ECB1-D510-48BB-979F-4D4FF4A142BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4305ECB1-D510-48BB-979F-4D4FF4A142BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4305ECB1-D510-48BB-979F-4D4FF4A142BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4305ECB1-D510-48BB-979F-4D4FF4A142BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01DBAE99-8A9A-475A-8F25-3C8D99D179CE}
+	EndGlobalSection
+EndGlobal
