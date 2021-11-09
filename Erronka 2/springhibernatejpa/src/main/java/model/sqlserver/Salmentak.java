@@ -1,5 +1,7 @@
 package model.sqlserver;
 
+import java.math.BigDecimal;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -29,6 +31,28 @@ public class Salmentak {
 	@ManyToOne
 	@JoinColumn(name="client_id")
 	private Bezeroak b_id;
+	
+	@Column(name="product_qty")
+	private BigDecimal qty;
+	
+	@Column(name="total_price")
+	private BigDecimal total;
+
+	public BigDecimal getTotal() {
+		return total;
+	}
+
+	public void setTotal(BigDecimal total) {
+		this.total = total;
+	}
+
+	public BigDecimal getQty() {
+		return qty;
+	}
+
+	public void setQty(BigDecimal bigDecimal) {
+		this.qty = bigDecimal;
+	}
 
 	public int getId() {
 		return id;
