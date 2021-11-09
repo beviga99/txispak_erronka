@@ -52,9 +52,7 @@ public class ResPartner implements Serializable {
 
 	@Column(name="create_uid")
 	private Integer createUid;
-
-	@Column(name="credit_limit")
-	private double creditLimit;
+	
 
 	@Column(name="customer_rank")
 	private Integer customerRank;
@@ -319,13 +317,6 @@ public class ResPartner implements Serializable {
 		this.createUid = createUid;
 	}
 
-	public double getCreditLimit() {
-		return this.creditLimit;
-	}
-
-	public void setCreditLimit(double creditLimit) {
-		this.creditLimit = creditLimit;
-	}
 
 	public Integer getCustomerRank() {
 		return this.customerRank;
