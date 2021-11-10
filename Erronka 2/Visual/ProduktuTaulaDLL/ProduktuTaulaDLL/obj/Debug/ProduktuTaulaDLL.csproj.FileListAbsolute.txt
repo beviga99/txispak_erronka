@@ -1,0 +1,9 @@
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\bin\Debug\ProduktuTaulaDLL.dll.config
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\bin\Debug\ProduktuTaulaDLL.dll
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\bin\Debug\ProduktuTaulaDLL.pdb
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\obj\Debug\ProduktuTaulaDLL.csproj.AssemblyReference.cache
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\obj\Debug\ProduktuTaulaDLL.Kontrola.resources
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\obj\Debug\ProduktuTaulaDLL.csproj.GenerateResource.cache
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\obj\Debug\ProduktuTaulaDLL.csproj.CoreCompileInputs.cache
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\obj\Debug\ProduktuTaulaDLL.dll
+C:\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\obj\Debug\ProduktuTaulaDLL.pdb
