@@ -1,6 +1,5 @@
 package model.xml;
 
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -35,7 +34,7 @@ public class Option {
 		return name;
 	}
 	
-	@XmlElement(name = "Izena")
+	@XmlElement(name = "Taulen_Izena")
 	public void setName(String name) {
 		this.name = name;
 	}

@@ -9,7 +9,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import model.postgre.ProductTemplate;
 
 @Entity
 @Table(name="Salmentak")
