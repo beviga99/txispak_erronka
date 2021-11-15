@@ -8,8 +8,6 @@ public class ProductSample {
     private String desk;
     private String category;
 
-
-
     public ProductSample(int id, String name, double price, double qty, String desk, String category) {
         this.id = id;
         this.name = name;
@@ -23,7 +21,6 @@ public class ProductSample {
         this.id = id;
         this.name = name;
     }
-
     public ProductSample() {
     }
 
@@ -73,6 +70,7 @@ public class ProductSample {
 
     @Override
     public String toString() {
-        return id + "- " + name + ", qty=" + qty;
+        return "ProductSample{" + "id=" + id + ", name='" + name + '\'' + ", price=" + price + ", qty=" +
+                qty + ", desk='" + desk + '\'' + ", kategory='" + category + '\'' + '}';
     }
 }

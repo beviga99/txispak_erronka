@@ -1,7 +1,5 @@
 package com.example.txipakfondo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -19,15 +17,23 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<ProductSample> produktuak;
     ArrayList<String> kategoriak;
     Spinner spin;
+    Button log;
+    Intent i;
+    LinearLayout hlayour;
+    LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        Datu basera konexioa sortu
         Konektatu con = new Konektatu();
         con.select();
         produktuak = con.selecta;
@@ -36,65 +42,61 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String aukeratua = "All";
         readProductData(aukeratua);
+        log = findViewById(R.id.toolbar);
+        if (Login.login){
+            log.setText("LOG OUT");
+        }else{
+            log.setText("LOGIN");
+        }
+        log.setOnClickListener(this::login);
 
     }
 
-
     @SuppressLint("ResourceType")
     private void readProductData(String aukeratua) {
-        spin = findViewById(R.id.spinner);
+        linearLayout = findViewById(R.id.linear_1);
+        linearLayout.removeAllViews();
 
+        spin = findViewById(R.id.spinner);
         ArrayAdapter<String> nireadapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, kategoriak);
         spin.setAdapter(nireadapter);
 
         boolean badago = true;
 
-        for(ProductSample p : produktuak) {
-            System.out.println(p.getId());
+//        Produktuak bistaratu
+        for (ProductSample p : produktuak) {
             ProductSample sample = new ProductSample();
             sample.setId(p.getId());
-
             sample.setName(p.getName());
+
             if (p.getName().length() > 0) {
                 sample.setName(p.getName());
+            } else { sample.setName(""); }
 
-            } else {
-                sample.setName("");
-            }
             sample.setPrice(p.getPrice());
             if (String.valueOf(p.getPrice()).length() > 0) {
                 sample.setPrice(p.getPrice());
+            } else { sample.setPrice(0); }
 
-            } else {
-                sample.setPrice(0);
-            }
             sample.setQty(p.getQty());
             if (String.valueOf(p.getQty()).length() > 0) {
                 sample.setQty(p.getQty());
+            } else { sample.setQty(0); }
 
-            } else {
-                sample.setQty(0);
-            }
             sample.setDesk(p.getDesk());
             if (p.getDesk().length() > 0) {
                 sample.setDesk(p.getDesk());
+            } else { sample.setDesk(""); }
 
-            } else {
-                sample.setDesk("");
-            }
             sample.setCategory(p.getCategory());
             if (p.getCategory().length() > 0) {
                 sample.setCategory(p.getCategory());
+
+//                Datuak BanakakoDatuak layout-era pasatu
                 if (aukeratua.equals(p.getCategory()) || aukeratua.equals("All")) {
                     Button bot = new Button(this);
                     ImageView irudi = new ImageView(this);
-
-                    LinearLayout hlayour = new LinearLayout(this);
-                    LinearLayout linearLayout = findViewById(R.id.linear_1);
-
-
-
-                    hlayour.setOrientation(LinearLayout.HORIZONTAL);
+                    hlayour = new LinearLayout(this);
                     bot.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -110,36 +112,33 @@ public class MainActivity extends AppCompatActivity {
                     });
                     bot.setText(sample.getName());
                     bot.setWidth(1400);
-
                     bot.setGravity(Gravity.LEFT);
-
                     bot.setGravity(Gravity.CENTER | Gravity.LEFT);
-                    String image = "@drawable/f"+p.getId();
-                    int imageResource = getResources().getIdentifier(image, null, getPackageName());
 
-                    Drawable icon= getResources().getDrawable(imageResource);
+                    String image = "@drawable/f" + p.getId();
+                    int imageResource = getResources().getIdentifier(image, null, getPackageName());
+                    Drawable icon = getResources().getDrawable(imageResource);
                     Bitmap bitmap = ((BitmapDrawable) icon).getBitmap();
                     Drawable d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, 70, 70, true));
 
                     icon.setBounds(0, 0, 0, 0);
-                    bot.setCompoundDrawablesWithIntrinsicBounds( null, null, d, null);
-
-                    bot.setLayoutParams(new LinearLayout.LayoutParams(
-                            ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT
-                    ));
+                    bot.setCompoundDrawablesWithIntrinsicBounds(null, null, d, null);
+                    bot.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                     hlayour.addView(bot);
                     hlayour.addView(irudi);
                     badago = false;
                     linearLayout.addView(hlayour);
+
+//                Kategoriaren arabera agertu produktuak
                     spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                            if (!(aukeratua.equals(String.valueOf(spin.getSelectedItem())))){
-                                linearLayout.removeAllViews();
+                            if (!(aukeratua.equals(String.valueOf(spin.getSelectedItem())))) {
                                 String aukeratua = String.valueOf(spin.getSelectedItem());
                                 readProductData(aukeratua);
                                 selectValue(spin, aukeratua);
                             }
                         }
+
                         private void selectValue(Spinner spinner, Object value) {
                             for (int i = 0; i < spinner.getCount(); i++) {
                                 if (spinner.getItemAtPosition(i).equals(value)) {
@@ -148,28 +147,32 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         }
+
                         @Override
                         public void onNothingSelected(AdapterView<?> adapterView) {
                             return;
                         }
                     });
                 }
-            } else {
-                sample.setCategory("");
-            }
-
-
+            } else { sample.setCategory(""); }
         }
+
         if (badago) {
-            LinearLayout linearLayout = findViewById(R.id.linear_1);
             TextView ezdago = new TextView(this);
             ezdago.setText("Ez dago kategoria horretako produkturik.");
             linearLayout.addView(ezdago);
-
         }
-        badago = true;
+    }
 
-
+    private void login(View view) {
+        if(!Login.login){
+            i = new Intent(MainActivity.this, Login.class);
+            startActivity(i);
+        }else{
+            Login.login = false;
+            log.setText("LOGIN");
+            Konektatu.users.clear();
+        }
     }
 
 }

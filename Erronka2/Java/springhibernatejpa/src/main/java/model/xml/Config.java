@@ -12,7 +12,7 @@ import javax.xml.bind.Unmarshaller;
 
 public class Config {
 
-    public static void optionBerria(String name, int qty) {
+    public static void optionBerria(String name, int qty, int option) {
 
         JAXBContext jaxbContext = null;
         try {
@@ -28,6 +28,7 @@ public class Config {
             Option o = new Option();
             o.setDate(now.toString());
             o.setQty(qty);
+            o.setOption(option);
             o.setName(name);
             
             jaxbMarshaller.marshal(o, new File("options.xml"));

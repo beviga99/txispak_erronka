@@ -15,38 +15,38 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_000799489B5FD455FC7308B0E955C6D3"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_02E829ECD1258AD23F10A1C51780ECB5"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_21DA7EE0A049E984B3337BF9DB5963EF"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_2C81763466B2D0518119BCE902DE4F28"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3DEE4BA5AF3FC3D0A8DDC23F14E5033F"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_57A9B9BA6CF217160719B939AF8BA917"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_448AA879C537283AFFAFEE74EA23C7F5"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_59BB531D48FEF1A9F38E7CBC19C24B4C"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4678D0ADAF0F17E12B9250FBE555CCCA"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_64F7A4DBBE15DD0446440D9E8D1E6EBB"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_70EECE63379349DDB96187049C6CF874"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -57,80 +57,92 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_92C641049C373367A4A23D415006904E"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_AE6C7CC857B9E54B11005BDDFC1C6EE2"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_99E126B0A8911EAC2EB8FB3FD9F0D7A3"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_BA44BEE7D1FC5D0D49E10E707F7C9807"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_BD1856400B22C225F068151E51682A3A"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E8C9D585263E0E08456BB7E0E125790B"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_C8F4B271175AF1BFA481E940C2D311F0"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_21DA7EE0A049E984B3337BF9DB5963EF"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CDEA171ADC4341E78F82371F68199A34"
+        "MsmKey" = "8:_FBE13C4E0BB1B4C8BD603AA476858861"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E8C9D585263E0E08456BB7E0E125790B"
+        "OwnerKey" = "8:_70EECE63379349DDB96187049C6CF874"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4678D0ADAF0F17E12B9250FBE555CCCA"
+        "OwnerKey" = "8:_C8F4B271175AF1BFA481E940C2D311F0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3DEE4BA5AF3FC3D0A8DDC23F14E5033F"
+        "OwnerKey" = "8:_000799489B5FD455FC7308B0E955C6D3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_92C641049C373367A4A23D415006904E"
+        "OwnerKey" = "8:_AE6C7CC857B9E54B11005BDDFC1C6EE2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_64F7A4DBBE15DD0446440D9E8D1E6EBB"
+        "OwnerKey" = "8:_BA44BEE7D1FC5D0D49E10E707F7C9807"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_99E126B0A8911EAC2EB8FB3FD9F0D7A3"
+        "OwnerKey" = "8:_59BB531D48FEF1A9F38E7CBC19C24B4C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_448AA879C537283AFFAFEE74EA23C7F5"
+        "OwnerKey" = "8:_FBE13C4E0BB1B4C8BD603AA476858861"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_57A9B9BA6CF217160719B939AF8BA917"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BD1856400B22C225F068151E51682A3A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2C81763466B2D0518119BCE902DE4F28"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -157,6 +169,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -173,6 +193,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -202,6 +230,37 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_000799489B5FD455FC7308B0E955C6D3"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProduktuTaulaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_000799489B5FD455FC7308B0E955C6D3"
+                    {
+                    "Name" = "8:ProduktuTaulaDLL.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProduktuTaulaDLL.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48973823C8E64877877237305FD2DA35"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_02E829ECD1258AD23F10A1C51780ECB5"
             {
             "AssemblyRegister" = "3:1"
@@ -233,76 +292,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_21DA7EE0A049E984B3337BF9DB5963EF"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AgendaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_21DA7EE0A049E984B3337BF9DB5963EF"
-                    {
-                    "Name" = "8:AgendaDLL.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:AgendaDLL.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_48973823C8E64877877237305FD2DA35"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3DEE4BA5AF3FC3D0A8DDC23F14E5033F"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SalmentakTaulaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_3DEE4BA5AF3FC3D0A8DDC23F14E5033F"
-                    {
-                    "Name" = "8:SalmentakTaulaDLL.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:SalmentakTaulaDLL.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_48973823C8E64877877237305FD2DA35"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_448AA879C537283AFFAFEE74EA23C7F5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2C81763466B2D0518119BCE902DE4F28"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:BezeroakDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_448AA879C537283AFFAFEE74EA23C7F5"
+                    "_2C81763466B2D0518119BCE902DE4F28"
                     {
                     "Name" = "8:BezeroakDLL.dll"
                     "Attributes" = "3:512"
@@ -326,20 +323,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4678D0ADAF0F17E12B9250FBE555CCCA"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_57A9B9BA6CF217160719B939AF8BA917"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Produktu2DLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ProduktuaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4678D0ADAF0F17E12B9250FBE555CCCA"
+                    "_57A9B9BA6CF217160719B939AF8BA917"
                     {
-                    "Name" = "8:Produktu2DLL.dll"
+                    "Name" = "8:ProduktuaDLL.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Produktu2DLL.dll"
+            "SourcePath" = "8:ProduktuaDLL.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_48973823C8E64877877237305FD2DA35"
@@ -357,20 +354,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_64F7A4DBBE15DD0446440D9E8D1E6EBB"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_59BB531D48FEF1A9F38E7CBC19C24B4C"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProduktuaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SalmentakTaulaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_64F7A4DBBE15DD0446440D9E8D1E6EBB"
+                    "_59BB531D48FEF1A9F38E7CBC19C24B4C"
                     {
-                    "Name" = "8:ProduktuaDLL.dll"
+                    "Name" = "8:SalmentakTaulaDLL.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:ProduktuaDLL.dll"
+            "SourcePath" = "8:SalmentakTaulaDLL.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_48973823C8E64877877237305FD2DA35"
@@ -408,20 +405,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_92C641049C373367A4A23D415006904E"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_AE6C7CC857B9E54B11005BDDFC1C6EE2"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProduktuPopuDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Produktu2DLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_92C641049C373367A4A23D415006904E"
+                    "_AE6C7CC857B9E54B11005BDDFC1C6EE2"
                     {
-                    "Name" = "8:ProduktuPopuDLL.dll"
+                    "Name" = "8:Produktu2DLL.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:ProduktuPopuDLL.dll"
+            "SourcePath" = "8:Produktu2DLL.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_48973823C8E64877877237305FD2DA35"
@@ -439,14 +436,45 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_99E126B0A8911EAC2EB8FB3FD9F0D7A3"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BA44BEE7D1FC5D0D49E10E707F7C9807"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AgendaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_BA44BEE7D1FC5D0D49E10E707F7C9807"
+                    {
+                    "Name" = "8:AgendaDLL.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:AgendaDLL.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48973823C8E64877877237305FD2DA35"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BD1856400B22C225F068151E51682A3A"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:BezeroakTaulaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_99E126B0A8911EAC2EB8FB3FD9F0D7A3"
+                    "_BD1856400B22C225F068151E51682A3A"
                     {
                     "Name" = "8:BezeroakTaulaDLL.dll"
                     "Attributes" = "3:512"
@@ -470,20 +498,51 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E8C9D585263E0E08456BB7E0E125790B"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C8F4B271175AF1BFA481E940C2D311F0"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProduktuTaulaDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ErosketenEgunDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E8C9D585263E0E08456BB7E0E125790B"
+                    "_C8F4B271175AF1BFA481E940C2D311F0"
                     {
-                    "Name" = "8:ProduktuTaulaDLL.dll"
+                    "Name" = "8:ErosketenEgunDLL.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:ProduktuTaulaDLL.dll"
+            "SourcePath" = "8:ErosketenEgunDLL.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48973823C8E64877877237305FD2DA35"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FBE13C4E0BB1B4C8BD603AA476858861"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProduktuPopuDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FBE13C4E0BB1B4C8BD603AA476858861"
+                    {
+                    "Name" = "8:ProduktuPopuDLL.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProduktuPopuDLL.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_48973823C8E64877877237305FD2DA35"
@@ -678,21 +737,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B4DF4745B755468D92C3C082B459B8C7"
-            {
-            "Name" = "8:TxispakGrafikoa"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_CDEA171ADC4341E78F82371F68199A34"
-            "Folder" = "8:_8A3910B82D6A4A60B533133C57271423"
-            "WorkingFolder" = "8:_48973823C8E64877877237305FD2DA35"
-            "Icon" = "8:_802F4579427C41AEB8017022B75ABC28"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E98BE7FB2CAB4937B49891F68FB17D8D"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_23BFB6ECD9244CE8A2FA96CC19188981"
             {
             "Name" = "8:Txispak"
             "Arguments" = "8:"
@@ -700,8 +745,22 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_CDEA171ADC4341E78F82371F68199A34"
+            "Target" = "8:_70EECE63379349DDB96187049C6CF874"
             "Folder" = "8:_FCFBD8AD41B94B2DAC3E86E85B47678C"
+            "WorkingFolder" = "8:_48973823C8E64877877237305FD2DA35"
+            "Icon" = "8:_802F4579427C41AEB8017022B75ABC28"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_362D34A6B62E40C9A5B2FB2F97ADB76A"
+            {
+            "Name" = "8:Txispak"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_70EECE63379349DDB96187049C6CF874"
+            "Folder" = "8:_8A3910B82D6A4A60B533133C57271423"
             "WorkingFolder" = "8:_48973823C8E64877877237305FD2DA35"
             "Icon" = "8:_802F4579427C41AEB8017022B75ABC28"
             "Feature" = "8:"
@@ -1105,7 +1164,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CDEA171ADC4341E78F82371F68199A34"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_70EECE63379349DDB96187049C6CF874"
             {
             "SourcePath" = "8:..\\TxispakGrafikoak\\obj\\Release\\TxispakGrafikoak.exe"
             "TargetName" = "8:"

@@ -19,9 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BanakakoDatuak"></activity>
-        <activity android:name=".Salmentak"></activity>
-    </application>
+        <activity android:name=".BanakakoDatuak"/>
+        <activity android:name=".Salmentak" />
 
+        <activity android:name=".Login"/>
+
+    </application>
 </manifest>
 

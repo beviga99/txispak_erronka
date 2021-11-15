@@ -6,3 +6,12 @@ C:\txispak_erronka\txispak_erronka\Erronka 2\BezeroakDLL\BezeroakDLL\obj\Debug\B
 C:\txispak_erronka\txispak_erronka\Erronka 2\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.csproj.CoreCompileInputs.cache
 C:\txispak_erronka\txispak_erronka\Erronka 2\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.dll
 C:\txispak_erronka\txispak_erronka\Erronka 2\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\bin\Debug\BezeroakDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\bin\Debug\BezeroakDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\bin\Debug\BezeroakDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.csproj.AssemblyReference.cache
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.Kontrola.resources
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.csproj.GenerateResource.cache
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.csproj.CoreCompileInputs.cache
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\BezeroakDLL\BezeroakDLL\obj\Debug\BezeroakDLL.pdb

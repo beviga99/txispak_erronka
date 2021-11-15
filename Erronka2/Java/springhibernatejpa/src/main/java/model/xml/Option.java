@@ -9,7 +9,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Option {
 
     String date;
-    int qty;
+    int option;
+    public int getOption() {
+		return option;
+	}
+	public void setOption(int option) {
+		this.option = option;
+	}
+
+	int qty;
     String name;
     
 
@@ -41,7 +49,7 @@ public class Option {
 
 	@Override
 	public String toString() {
-		return "Option Date: "+ date +"[Sartutako elementuak=" + qty + ", name=" + name + "]";
+		return "Option Date: "+ date +"[Aukeratutako zenbakia=" + option + ", Sartutako elementuak=" + qty + ", name=" + name + "]";
 	}
 
     

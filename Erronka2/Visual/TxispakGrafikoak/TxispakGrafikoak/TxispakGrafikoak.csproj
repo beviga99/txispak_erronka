@@ -42,6 +42,9 @@
     <Reference Include="BezeroakTaulaDLL">
       <HintPath>..\..\BezeroakTaulaDLL\BezeroakTaulaDLL\bin\Debug\BezeroakTaulaDLL.dll</HintPath>
     </Reference>
+    <Reference Include="ErosketenEgunDLL">
+      <HintPath>..\..\..\..\..\..\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\bin\Debug\ErosketenEgunDLL.dll</HintPath>
+    </Reference>
     <Reference Include="Produktu2DLL">
       <HintPath>..\..\Produktu2DLL\Produktu2DLL\bin\Debug\Produktu2DLL.dll</HintPath>
     </Reference>

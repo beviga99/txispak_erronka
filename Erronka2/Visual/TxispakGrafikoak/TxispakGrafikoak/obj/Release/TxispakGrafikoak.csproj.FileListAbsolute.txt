@@ -33,3 +33,34 @@ C:\txispak_erronka\txispak_erronka\Erronka 2\TxispakGrafikoak\TxispakGrafikoak\b
 C:\txispak_erronka\txispak_erronka\Erronka 2\TxispakGrafikoak\TxispakGrafikoak\bin\Release\SalmentakTaulaDLL.dll.config
 C:\txispak_erronka\txispak_erronka\Erronka 2\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.FormSalmentak.resources
 C:\txispak_erronka\txispak_erronka\Erronka 2\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.csproj.CopyComplete
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\TxispakGrafikoak.exe.config
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\TxispakGrafikoak.exe
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\TxispakGrafikoak.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\BezeroakDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\BezeroakTaulaDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ProduktuaDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ProduktuPopuDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\SalmentakTaulaDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\BezeroakDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\BezeroakDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\BezeroakTaulaDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\BezeroakTaulaDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ProduktuaDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ProduktuaDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ProduktuPopuDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ProduktuPopuDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\SalmentakTaulaDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\SalmentakTaulaDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.Form1.resources
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.FormBezeroak.resources
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.FormProduktuak.resources
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.FormSalmentak.resources
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.Properties.Resources.resources
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.csproj.GenerateResource.cache
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.csproj.CoreCompileInputs.cache
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.exe
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\obj\Release\TxispakGrafikoak.csproj.CopyComplete
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ErosketenEgunDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ErosketenEgunDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka2\Visual\TxispakGrafikoak\TxispakGrafikoak\bin\Release\ErosketenEgunDLL.dll.config

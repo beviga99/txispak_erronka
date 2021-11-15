@@ -39,10 +39,13 @@ namespace TxispakGrafikoak
             this.txispakDataSet = new TxispakGrafikoak.TxispakDataSet();
             this.salmentakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kontrola1 = new SalmentakTaulaDLL.Kontrola();
+            this.txispakDataSet1 = new ErosketenEgunDLL.TxispakDataSet();
+            this.kontrola2 = new ErosketenEgunDLL.Kontrola();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txispakDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salmentakBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txispakDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -111,10 +114,22 @@ namespace TxispakGrafikoak
             // 
             // kontrola1
             // 
-            this.kontrola1.Location = new System.Drawing.Point(286, 134);
+            this.kontrola1.Location = new System.Drawing.Point(34, 142);
             this.kontrola1.Name = "kontrola1";
             this.kontrola1.Size = new System.Drawing.Size(564, 332);
             this.kontrola1.TabIndex = 17;
+            // 
+            // txispakDataSet1
+            // 
+            this.txispakDataSet1.DataSetName = "TxispakDataSet";
+            this.txispakDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kontrola2
+            // 
+            this.kontrola2.Location = new System.Drawing.Point(672, 152);
+            this.kontrola2.Name = "kontrola2";
+            this.kontrola2.Size = new System.Drawing.Size(303, 305);
+            this.kontrola2.TabIndex = 18;
             // 
             // FormSalmentak
             // 
@@ -122,6 +137,7 @@ namespace TxispakGrafikoak
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1040, 546);
+            this.Controls.Add(this.kontrola2);
             this.Controls.Add(this.kontrola1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
@@ -134,6 +150,7 @@ namespace TxispakGrafikoak
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txispakDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salmentakBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txispakDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -149,5 +166,7 @@ namespace TxispakGrafikoak
         private TxispakDataSetTableAdapters.SalmentakTableAdapter salmentakTableAdapter;
         private TxispakDataSet txispakDataSet;
         private System.Windows.Forms.BindingSource salmentakBindingSource;
+        private ErosketenEgunDLL.TxispakDataSet txispakDataSet1;
+        private ErosketenEgunDLL.Kontrola kontrola2;
     }
 }

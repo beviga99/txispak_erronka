@@ -1,5 +1,7 @@
 package eus.uni.dam;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Scanner;
 
@@ -67,19 +69,19 @@ public class App {
 				
 				x = 0;
 				y = bBerria(partners, sd, x);				
-				Config.optionBerria("Bezeroak", y);
+				Config.optionBerria("Bezeroak", y, 1);
 				break;
 				
 			case 2:
 				x = 0;
 				y = pBerria(produktuak, sd, x);
-				Config.optionBerria("Produktuak", y);
+				Config.optionBerria("Produktuak", y, 2);
 				break;
 				
 			case 3:
 				x = 0;
 				y = sBerria(sales, sd, x);
-				Config.optionBerria("Salmentak", y);
+				Config.optionBerria("Salmentak", y, 3);
 				break;
 				
 			case 4:
@@ -87,7 +89,7 @@ public class App {
 				y = bBerria(partners, sd, x);
 				y = y + pBerria(produktuak, sd, x);
 				y = y + sBerria(sales, sd, x);
-				Config.optionBerria("Dena", y);
+				Config.optionBerria("Dena", y, 4);
 				break;
 			
 			case 5:
@@ -169,6 +171,12 @@ public class App {
 			salmenta.setQty(b.getProductUomQty());
 			
 			salmenta.setTotal(b.getPriceTotal());
+			
+			DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+			
+			String date = df.format(b.getWriteDate());
+			
+			salmenta.setDate(date);
 			
 			sd.updateSal(salmenta);
 			

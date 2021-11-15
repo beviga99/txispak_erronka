@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TxispakDataSet" targetNamespace="http://tempuri.org/TxispakDataSet.xsd" xmlns:mstns="http://tempuri.org/TxispakDataSet.xsd" xmlns="http://tempuri.org/TxispakDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TxispakConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TxispakConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ErosketenEgunDLL.Properties.Settings.GlobalReference.Default.TxispakConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SalmentakTableAdapter" GeneratorDataComponentClassName="SalmentakTableAdapter" Name="Salmentak" UserDataComponentName="SalmentakTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TxispakConnectionString (Settings)" DbObjectName="Txispak.dbo.Salmentak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT date, total_price FROM Salmentak</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="total_price" DataSetColumn="total_price" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TxispakConnectionString (Settings)" DbObjectName="Txispak.dbo.Salmentak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TOP (10) date, SUM(total_price) AS total_price
+FROM            Salmentak
+GROUP BY date
+ORDER BY date DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TxispakDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TxispakDataSet" msprop:Generator_UserDSName="TxispakDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Salmentak" msprop:Generator_TableClassName="SalmentakDataTable" msprop:Generator_TableVarName="tableSalmentak" msprop:Generator_RowChangedName="SalmentakRowChanged" msprop:Generator_TablePropName="Salmentak" msprop:Generator_RowDeletingName="SalmentakRowDeleting" msprop:Generator_RowChangingName="SalmentakRowChanging" msprop:Generator_RowEvHandlerName="SalmentakRowChangeEventHandler" msprop:Generator_RowDeletedName="SalmentakRowDeleted" msprop:Generator_RowClassName="SalmentakRow" msprop:Generator_UserTableName="Salmentak" msprop:Generator_RowEvArgName="SalmentakRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="total_price" msprop:Generator_ColumnVarNameInTable="columntotal_price" msprop:Generator_ColumnPropNameInRow="total_price" msprop:Generator_ColumnPropNameInTable="total_priceColumn" msprop:Generator_UserColumnName="total_price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
