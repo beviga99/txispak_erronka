@@ -83,6 +83,39 @@ namespace TxispakGrafikoak.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
+=======
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2021_11_09_114037 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2021-11-09 114037", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2021_11_09_114135 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2021-11-09 114135", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2021_11_09_114151 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2021-11-09 114151", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
         internal static System.Drawing.Bitmap close {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);

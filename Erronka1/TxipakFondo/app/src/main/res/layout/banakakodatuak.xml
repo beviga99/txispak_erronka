@@ -97,6 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+<<<<<<< HEAD
             <TextView
                 android:id="@+id/desk"
                 android:layout_width="match_parent"
@@ -111,5 +112,36 @@
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="367dp" />
         </ScrollView>
+=======
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/desk"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="5pt"
+                    android:paddingRight="15pt"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="62dp"
+                    tools:layout_editor_absoluteY="367dp" />
+
+                <Button
+                    android:id="@+id/btn_erosi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erosi"
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+        </ScrollView>
+
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     </RelativeLayout>
 </LinearLayout>

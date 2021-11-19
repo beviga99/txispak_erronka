@@ -1,6 +1,7 @@
 package com.example.txipakfondo;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,11 +14,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 =======
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
+<<<<<<< HEAD
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -30,6 +34,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewManager;
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -37,6 +49,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,11 +72,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+
+import java.util.ArrayList;
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<ProductSample> produktuak;
     ArrayList<String> kategoriak;
     Spinner spin;
+<<<<<<< HEAD
 <<<<<<< HEAD
     Toolbar myToolbar;
 =======
@@ -75,15 +93,27 @@ public class MainActivity extends AppCompatActivity {
         kategoriak = con.kategoriak;
         System.out.println("AAAAAAAAAAAAAA"+produktuak.size());
         System.out.println("AAAAAAAAAAAAAA22222"+kategoriak.size());
+=======
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        Konektatu con = new Konektatu();
+        con.select();
+        produktuak = con.selecta;
+        kategoriak = con.kategoriak;
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String aukeratua = "All";
         readProductData(aukeratua);
 <<<<<<< HEAD
+<<<<<<< HEAD
         myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
 =======
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
     }
 
@@ -97,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
         boolean badago = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         for(ProductSample p : produktuak) {
             System.out.println("IDIDIDID : "+p.getId());
@@ -108,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
                 sample.setName(p.getName());
 
 =======
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
         for(ProductSample p : produktuak) {
             System.out.println(p.getId());
@@ -118,7 +151,10 @@ public class MainActivity extends AppCompatActivity {
             if (p.getName().length() > 0) {
                 sample.setName(p.getName());
 
+<<<<<<< HEAD
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
             } else {
                 sample.setName("");
             }
@@ -221,6 +257,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
         }
         if (badago) {
             LinearLayout linearLayout = findViewById(R.id.linear_1);
@@ -229,6 +268,7 @@ public class MainActivity extends AppCompatActivity {
             linearLayout.addView(ezdago);
 
         }
+<<<<<<< HEAD
 =======
         }
         if (badago) {
@@ -239,10 +279,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
         badago = true;
 
 
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -267,5 +310,7 @@ public class MainActivity extends AppCompatActivity {
     }
 =======
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
 }

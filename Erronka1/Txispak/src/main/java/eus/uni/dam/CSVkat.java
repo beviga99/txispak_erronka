@@ -89,6 +89,9 @@ public class CSVkat implements CategoryDao {
 	@PreDestroy
 	public void destroy() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 		String filename = "C:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/raw/kategoria.csv";
 
 		try {
@@ -98,11 +101,14 @@ public class CSVkat implements CategoryDao {
 			System.out.println("An error occurred.");
 			e.printStackTrace();
 		}
+<<<<<<< HEAD
 =======
 		String filename = "C:\\Users\\arambarri.oihana\\Desktop\\txispakOndo\\txispak_erronka\\TxipakFondo\\app\\src\\main\\res\\raw\\kategoria.csv";
 
 		
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 		try {
 			FileWriter writer = new FileWriter(filename);
 			writer.write("IZENA \n");

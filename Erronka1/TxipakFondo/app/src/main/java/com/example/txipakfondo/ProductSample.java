@@ -19,6 +19,14 @@ public class ProductSample {
         this.category = category;
     }
 
+<<<<<<< HEAD
+=======
+    public ProductSample(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     public ProductSample() {
     }
 
@@ -68,6 +76,7 @@ public class ProductSample {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return "ProductSample{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
@@ -76,5 +85,8 @@ public class ProductSample {
                 ", desk='" + desk + '\'' +
                 ", kategory='" + category + '\'' +
                 '}';
+=======
+        return id + "- " + name + ", qty=" + qty;
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     }
 }

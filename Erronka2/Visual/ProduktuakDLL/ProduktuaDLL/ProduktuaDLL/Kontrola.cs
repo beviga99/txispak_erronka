@@ -24,7 +24,11 @@ namespace ProduktuaDLL
 
             chart1.DataSource = this.salmentakTableAdapter.GetDataBy().Select().Take(5);
 
+<<<<<<< HEAD
             chart1.Series[0].YValueMembers = "product_qty";
+=======
+            chart1.Series[0].YValueMembers = "product_qty2";
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
             chart1.Series[0].XValueMember = "Product_Name";
             chart1.DataBind();
         }

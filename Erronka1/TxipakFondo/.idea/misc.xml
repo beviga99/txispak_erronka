@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry key="..\:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/layout/banakakodatuak.xml" value="0.22239583333333332" />
@@ -20,10 +21,22 @@
         <entry key="..\:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/layout/activity_main.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/layout/banakakodatuak.xml" value="0.22239583333333332" />
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+        <entry key="..\:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/layout/activity_main.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/tubia.ane/Desktop/Txispak/txispak_erronka/TxipakFondo/app/src/main/res/layout/banakakodatuak.xml" value="0.22239583333333332" />
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
         <entry key="..\:/Users/tubia.ane/Documents/Interfaze/TxipakFondo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/tubia.ane/Documents/Interfaze/TxipakFondo/app/src/main/res/drawable/frame_1.xml" value="0.3828125" />
         <entry key="..\:/Users/tubia.ane/Documents/Interfaze/TxipakFondo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/tubia.ane/Documents/Interfaze/TxipakFondo/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+<<<<<<< HEAD
+=======
+        <entry key="..\:/Users/vilarchao.benat/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.3016304347826087" />
+        <entry key="..\:/txispak_erronka/txispak_erronka/TxipakFondo/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/txispak_erronka/txispak_erronka/TxipakFondo/app/src/main/res/layout/banakakodatuak.xml" value="0.3625" />
+        <entry key="..\:/txispak_erronka/txispak_erronka/TxipakFondo/app/src/main/res/layout/salmentak.xml" value="0.3625" />
+        <entry key="..\:/txispak_erronka/txispak_erronka/TxipakFondo/app/src/main/res/layout/salmentak_proba.xml" value="0.35052083333333334" />
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
       </map>
     </option>
   </component>

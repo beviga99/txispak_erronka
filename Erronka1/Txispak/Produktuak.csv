@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ID; PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA 
 1;Radeon RX 580 6GB;5.0;10.0;GloFo 14nm FinFET-erako diseinatutako AMDren azken GCN 4 arkitekturan oinarritzen da VR gaitasun handiagoa errendimendu maila altuagoa VR leuna bateragarritasun etengabea hurrengo belaunaldiko joko monitoreekin eta CPUrik gabeko joko erreprodukzio edo grabazioarekin;Txartel Grafikoa
 2;RAM txartela 8GB 2400Ghz DDR5 HYPERx;75.0;10.0;Memoria moduluak Intel plataforma berrienetan oinarritutako irtenbidea dira. Errendimendu eta egonkortasun handiena espero duten erabiltzaile zorrotzenentzat diseinatu dira;RAM Txartela
@@ -35,3 +36,11 @@ ID; PRODUKTU; PREZIOA; KANTITATEA; DESKRIPZIOA
 31;HP M01-F1040ns;479.0;5.0;AMD Ryzen 5 4600G/16GB/512GB SSD. Un elegante ordenador de sobremesa HP que combina un diseño moderno con tecnología probada de una marca de confianza en la que puedes confiar. Tanto si estás trabajando en tu proyecto más reciente viendo vídeos o completando tus tareas del día a día podrás hacerlo con una mayor confianza gracias a un ordenador fiable;Ordenagailua
 31;HP M01-F1040ns;479.0;1.0;AMD Ryzen 5 4600G/16GB/512GB SSD. Un elegante ordenador de sobremesa HP que combina un diseño moderno con tecnología probada de una marca de confianza en la que puedes confiar. Tanto si estás trabajando en tu proyecto más reciente viendo vídeos o completando tus tareas del día a día podrás hacerlo con una mayor confianza gracias a un ordenador fiable;Ordenagailua
 32;MSI PRO DP20Z 5M-005EU;507.58;1.0;AMD Ryzen 5 5300G 8GB 256GB SSD;Ordenagailua
+=======
+ID PRODUKTU ; DESKRIPZIOA 
+2;RAM txartela 8GB 2400Ghz DDR5 HYPERx.
+3;Txartel Grafikoa NVIDIA GeForce RTX 2080 8GB DDR6.
+4;Intel i7 10th generazioa.
+1;Radeon RX 580 6GB.
+5;Potato.
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4

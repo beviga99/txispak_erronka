@@ -8,7 +8,11 @@
   <Shapes>
     <Shape ID="DesignTable:Bezeroak" ZOrder="2" X="382" Y="63" Height="115" Width="198" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:Produktuak" ZOrder="3" X="387" Y="203" Height="115" Width="212" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
+<<<<<<< HEAD
     <Shape ID="DesignTable:Salmentak" ZOrder="1" X="70" Y="70" Height="172" Width="205" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
+=======
+    <Shape ID="DesignTable:Salmentak" ZOrder="1" X="70" Y="70" Height="134" Width="205" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
   </Shapes>
   <Connectors />
 </DiagramLayout>

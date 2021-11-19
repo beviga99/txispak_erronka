@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Produktuak Esportatzeko Java Aplikazioa
 ## Helburua
 Odoo bitartez, saldu eta erositako produktuak kudeatzen ditugu, produktu horiek Postgresql datu basean gordetzen dira. Java aplikazioarekin, datu basetik datuak exportatu eta csv fitxategi batean gordetzen ditugu.
@@ -36,3 +37,28 @@ https://jdbc.postgresql.org/documentation/head/connect.html<br>
 
 
 
+=======
+# TXISPAK ERRONKA
+## GitHub
+Gure taldeak GitHub erabili du lanaren aldaketak eta progresioa ikusteko. 
+Bakoitzak branch desberdinetan lan egin du eta atal guztiak bukatzerakoan main branch-era igo ditugu.
+
+Hemen duzu errepositorioko link-a:  
+[GitHub](https://github.com/beviga99/txispak_erronka)
+
+## Odoo
+
+
+## Spring
+
+## Diagrama
+Hau da gure java aplikazioaren diagrama, bertan klase desberdinak ikusi ahal dira baita bere metodoak eta atributoak ere.
+
+![Diagrama](https://raw.githubusercontent.com/beviga99/txispak_erronka/jon/Diagrama.svg)
+
+## Android
+Gure programan lehenik eta behin menu nagusia ikusten da. Menu nagusia honetan,
+Odoon dauden produktuen zerrenda agertzen da. Produktu bakoitzak kategori baten sailkatuta dago 
+eta scroll baten bidez, kategoria bat aukeratu ahal duzu. Kategoria bat aukeratu ondoren, 
+kategoria horretako produktuak ikusiko ditugu.
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4

@@ -128,6 +128,7 @@ FROM            Salmentak INNER JOIN
               <DbSource ConnectionRef="TxispakConnectionString (Settings)" DbObjectName="Txispak.dbo.Produktuak" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
+<<<<<<< HEAD
                     <CommandText>SELECT        Produktuak.Product_Name, SUM(Salmentak.product_qty) AS product_qty
 FROM            Salmentak INNER JOIN
                          Produktuak ON Salmentak.product_id = Produktuak.id
@@ -157,6 +158,13 @@ FROM            Salmentak INNER JOIN
                          Produktuak ON Salmentak.product_id = Produktuak.id
 GROUP BY Produktuak.Product_Name
 ORDER BY qty DESC</CommandText>
+=======
+                    <CommandText>SELECT        Produktuak.Product_Name, SUM(Salmentak.product_qty) AS product_qty2
+FROM            Salmentak INNER JOIN
+                         Produktuak ON Salmentak.product_id = Produktuak.id
+GROUP BY Produktuak.Product_Name
+ORDER BY product_qty2 DESC</CommandText>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -171,7 +179,11 @@ ORDER BY qty DESC</CommandText>
   <xs:element name="TxispakDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TxispakDataSet" msprop:Generator_UserDSName="TxispakDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
+<<<<<<< HEAD
         <xs:element name="Bezeroak" msprop:Generator_TableClassName="BezeroakDataTable" msprop:Generator_TableVarName="tableBezeroak" msprop:Generator_RowChangedName="BezeroakRowChanged" msprop:Generator_TablePropName="Bezeroak" msprop:Generator_RowDeletingName="BezeroakRowDeleting" msprop:Generator_RowChangingName="BezeroakRowChanging" msprop:Generator_RowEvHandlerName="BezeroakRowChangeEventHandler" msprop:Generator_RowDeletedName="BezeroakRowDeleted" msprop:Generator_RowClassName="BezeroakRow" msprop:Generator_UserTableName="Bezeroak" msprop:Generator_RowEvArgName="BezeroakRowChangeEvent">
+=======
+        <xs:element name="Bezeroak" msprop:Generator_TableClassName="BezeroakDataTable" msprop:Generator_TableVarName="tableBezeroak" msprop:Generator_TablePropName="Bezeroak" msprop:Generator_RowDeletingName="BezeroakRowDeleting" msprop:Generator_RowChangingName="BezeroakRowChanging" msprop:Generator_RowEvHandlerName="BezeroakRowChangeEventHandler" msprop:Generator_RowDeletedName="BezeroakRowDeleted" msprop:Generator_UserTableName="Bezeroak" msprop:Generator_RowChangedName="BezeroakRowChanged" msprop:Generator_RowEvArgName="BezeroakRowChangeEvent" msprop:Generator_RowClassName="BezeroakRow">
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -185,7 +197,11 @@ ORDER BY qty DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="Produktuak" msprop:Generator_TableClassName="ProduktuakDataTable" msprop:Generator_TableVarName="tableProduktuak" msprop:Generator_RowChangedName="ProduktuakRowChanged" msprop:Generator_TablePropName="Produktuak" msprop:Generator_RowDeletingName="ProduktuakRowDeleting" msprop:Generator_RowChangingName="ProduktuakRowChanging" msprop:Generator_RowEvHandlerName="ProduktuakRowChangeEventHandler" msprop:Generator_RowDeletedName="ProduktuakRowDeleted" msprop:Generator_RowClassName="ProduktuakRow" msprop:Generator_UserTableName="Produktuak" msprop:Generator_RowEvArgName="ProduktuakRowChangeEvent">
+=======
+        <xs:element name="Produktuak" msprop:Generator_TableClassName="ProduktuakDataTable" msprop:Generator_TableVarName="tableProduktuak" msprop:Generator_TablePropName="Produktuak" msprop:Generator_RowDeletingName="ProduktuakRowDeleting" msprop:Generator_RowChangingName="ProduktuakRowChanging" msprop:Generator_RowEvHandlerName="ProduktuakRowChangeEventHandler" msprop:Generator_RowDeletedName="ProduktuakRowDeleted" msprop:Generator_UserTableName="Produktuak" msprop:Generator_RowChangedName="ProduktuakRowChanged" msprop:Generator_RowEvArgName="ProduktuakRowChangeEvent" msprop:Generator_RowClassName="ProduktuakRow">
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -199,7 +215,11 @@ ORDER BY qty DESC</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="Salmentak" msprop:Generator_TableClassName="SalmentakDataTable" msprop:Generator_TableVarName="tableSalmentak" msprop:Generator_RowChangedName="SalmentakRowChanged" msprop:Generator_TablePropName="Salmentak" msprop:Generator_RowDeletingName="SalmentakRowDeleting" msprop:Generator_RowChangingName="SalmentakRowChanging" msprop:Generator_RowEvHandlerName="SalmentakRowChangeEventHandler" msprop:Generator_RowDeletedName="SalmentakRowDeleted" msprop:Generator_RowClassName="SalmentakRow" msprop:Generator_UserTableName="Salmentak" msprop:Generator_RowEvArgName="SalmentakRowChangeEvent">
+=======
+        <xs:element name="Salmentak" msprop:Generator_TableClassName="SalmentakDataTable" msprop:Generator_TableVarName="tableSalmentak" msprop:Generator_TablePropName="Salmentak" msprop:Generator_RowDeletingName="SalmentakRowDeleting" msprop:Generator_RowChangingName="SalmentakRowChanging" msprop:Generator_RowEvHandlerName="SalmentakRowChangeEventHandler" msprop:Generator_RowDeletedName="SalmentakRowDeleted" msprop:Generator_UserTableName="Salmentak" msprop:Generator_RowChangedName="SalmentakRowChanged" msprop:Generator_RowEvArgName="SalmentakRowChangeEvent" msprop:Generator_RowClassName="SalmentakRow">
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
           <xs:complexType>
             <xs:sequence>
               <xs:element name="product_qty" msprop:Generator_ColumnVarNameInTable="columnproduct_qty" msprop:Generator_ColumnPropNameInRow="product_qty" msprop:Generator_ColumnPropNameInTable="product_qtyColumn" msprop:Generator_UserColumnName="product_qty" type="xs:decimal" minOccurs="0" />

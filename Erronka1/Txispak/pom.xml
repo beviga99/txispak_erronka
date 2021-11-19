@@ -14,7 +14,11 @@
 	<name>ConnectProba1</name>
 	<description>Proiektu hau web aplikazio bat izango da</description>
 	<properties>
+<<<<<<< HEAD
 		<java.version>16</java.version>
+=======
+		<java.version>17</java.version>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 	</properties>
 	<dependencies>
 		<dependency>

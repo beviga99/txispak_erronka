@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
 <Option date="2021-11-09T08:04:44.939833600">
     <Izena>Salmentak</Izena>
     <Sartutako_elementuak>59</Sartutako_elementuak>
+=======
+<Option date="2021-11-15T10:29:57.672896">
+    <Taulen_Izena>Dena</Taulen_Izena>
+    <option>4</option>
+    <Sartutako_elementuak>127</Sartutako_elementuak>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 </Option>

@@ -6,4 +6,7 @@ C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\Produktu
 C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.csproj.CoreCompileInputs.cache
 C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.dll
 C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.pdb
+<<<<<<< HEAD
 C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.csproj.AssemblyReference.cache
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4

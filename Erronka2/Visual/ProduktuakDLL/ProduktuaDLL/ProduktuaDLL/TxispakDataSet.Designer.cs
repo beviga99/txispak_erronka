@@ -2224,7 +2224,11 @@ SELECT id, Product_Name FROM Produktuak WHERE (id = @id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
+<<<<<<< HEAD
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
+=======
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        Salmentak.product_qty, Produktuak.Product_Name\r\nFROM            Sal" +
@@ -2233,6 +2237,7 @@ SELECT id, Product_Name FROM Produktuak WHERE (id = @id)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
+<<<<<<< HEAD
             this._commandCollection[1].CommandText = @"SELECT        Produktuak.Product_Name, SUM(Salmentak.product_qty) AS product_qty
 FROM            Salmentak INNER JOIN
                          Produktuak ON Salmentak.product_id = Produktuak.id
@@ -2251,6 +2256,14 @@ ORDER BY product_qty DESC";
                 "         Salmentak INNER JOIN\r\n                         Produktuak ON Salmentak." +
                 "product_id = Produktuak.id\r\nGROUP BY Produktuak.Product_Name\r\nORDER BY qty DESC";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+=======
+            this._commandCollection[1].CommandText = @"SELECT        Produktuak.Product_Name, SUM(Salmentak.product_qty) AS product_qty2
+FROM            Salmentak INNER JOIN
+                         Produktuak ON Salmentak.product_id = Produktuak.id
+GROUP BY Produktuak.Product_Name
+ORDER BY product_qty2 DESC";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2300,6 +2313,7 @@ ORDER BY product_qty DESC";
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
+<<<<<<< HEAD
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -2352,6 +2366,8 @@ ORDER BY product_qty DESC";
                 return new global::System.Nullable<decimal>(((decimal)(returnValue)));
             }
         }
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     }
     
     /// <summary>

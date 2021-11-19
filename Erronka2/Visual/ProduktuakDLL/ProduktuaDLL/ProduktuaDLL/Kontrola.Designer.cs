@@ -32,6 +32,10 @@ namespace ProduktuaDLL
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+<<<<<<< HEAD
+=======
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
             this.txispakDataSet = new ProduktuaDLL.TxispakDataSet();
             this.bezeroakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bezeroakTableAdapter = new ProduktuaDLL.TxispakDataSetTableAdapters.BezeroakTableAdapter();
@@ -106,6 +110,14 @@ namespace ProduktuaDLL
             this.chart1.Size = new System.Drawing.Size(397, 236);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+<<<<<<< HEAD
+=======
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.White;
+            title1.Name = "Title1";
+            title1.Text = "GEHIEN SALDUTAKO PRODUKTUAK";
+            this.chart1.Titles.Add(title1);
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
             // 
             // Kontrola
             // 

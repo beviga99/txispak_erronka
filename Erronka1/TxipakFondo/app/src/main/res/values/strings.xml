@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name"></string>
+=======
+    <string name="app_name">TxipakFondo</string>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 </resources>

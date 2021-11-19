@@ -175,7 +175,11 @@ public class Konektatu {
 
 //                        Erosketa datu basean gorde (onartu aurretiko aurrekontua)
                         ResultSet rs2 = stmt.executeQuery("INSERT INTO public.sale_order (name, date_order, user_id, partner_id, partner_invoice_id, partner_shipping_id, pricelist_id, company_id, picking_policy, warehouse_id, amount_total, state) " +
+<<<<<<< HEAD
                                 "VALUES('SM00" + last_order + "', '" + date + "', 7, " + bezeroa + ", " + bezeroa + ", " + bezeroa + ", 1, 1, 'direct', 1, " + amount + ", 'draft');");
+=======
+                                "VALUES('SM00" + last_order + "', '" + date + "', 14, " + bezeroa + ", " + bezeroa + ", " + bezeroa + ", 1, 1, 'direct', 1, " + amount + ", 'draft');");
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
                     }finally{
                         System.out.println("baimena askatzen...");
                         s1.release();
@@ -205,7 +209,11 @@ public class Konektatu {
 
 //                        Onartutako erosketa datu basean gorde
                         ResultSet rs3 = stmt.executeQuery("INSERT INTO public.sale_order_line (order_id, name, sequence, invoice_status, price_unit, price_subtotal, price_tax, price_total, product_id, product_uom_qty, product_uom, qty_delivered_method, salesman_id, currency_id, company_id, order_partner_id, state, customer_lead, create_uid, write_uid) " +
+<<<<<<< HEAD
                                 "VALUES(" + last_order + ", '" + p.getName() + "', 10, 'no', " + price + ", " + price + ", 4.81, " + price + ", " + p.getId() + ", " + cant + ", 1, 'stock_move', 7, 1, 1, 14, 'draft', 0, 7, 7);");
+=======
+                                "VALUES(" + last_order + ", '" + p.getName() + "', 10, 'no', " + price + ", " + price + ", 4.81, " + price + ", " + p.getId() + ", " + cant + ", 1, 'stock_move', 14, 1, 1, 14, 'draft', 0, 14, 14);");
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
                     } finally {
                         s1.release();
@@ -228,7 +236,11 @@ public class Konektatu {
                     try {
                         Statement sentencia = connection.createStatement();
 //                    Saltzailearentzat login-a
+<<<<<<< HEAD
                         ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"' AND  grupo= 7");
+=======
+                        ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"' AND  grupo= 1");
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
                         while(rs.next()) {
                             User u= new User(rs.getString("login"),rs.getString("pass"));
                             users.add(u);

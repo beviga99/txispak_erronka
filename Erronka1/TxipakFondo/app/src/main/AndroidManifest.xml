@@ -20,6 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".BanakakoDatuak"></activity>
+<<<<<<< HEAD
+=======
+        <activity android:name=".Salmentak"></activity>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     </application>
 
 </manifest>

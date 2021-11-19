@@ -1,6 +1,7 @@
 package eus.uni.dam;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import java.io.BufferedReader;
 import java.io.File;
@@ -113,6 +114,10 @@ public class CSV implements ItemDao {
 
 
 <<<<<<< HEAD
+=======
+
+
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 		import java.io.BufferedReader;
 		import java.io.File;
 		import java.io.FileNotFoundException;
@@ -195,6 +200,7 @@ public class CSV implements ItemDao {
 				} catch (Exception ex) {
 					JOptionPane.showMessageDialog(null, ex.getMessage());
 				}
+<<<<<<< HEAD
 =======
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
@@ -207,6 +213,8 @@ public class CSV implements ItemDao {
 		return null;
 	}
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
 			}
 			/**
@@ -262,13 +270,20 @@ public class CSV implements ItemDao {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 			@Override
 			public void delete(long id) {
 				// TODO Auto-generated method stub
 
 			}
+<<<<<<< HEAD
 		}
 =======
 	}
 }
 >>>>>>> 2536df587d13dd35d3ef8d9ffe52a3e20af66781
+=======
+		}
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4

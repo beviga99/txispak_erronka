@@ -1,7 +1,10 @@
 package model.sqlserver;
 
 import java.math.BigDecimal;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -9,7 +12,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+<<<<<<< HEAD
 import model.postgre.ProductTemplate;
+=======
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
 @Entity
 @Table(name="Salmentak")
@@ -37,6 +43,20 @@ public class Salmentak {
 	
 	@Column(name="total_price")
 	private BigDecimal total;
+<<<<<<< HEAD
+=======
+	
+	@Column(name="date")
+	private String date;
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
 
 	public BigDecimal getTotal() {
 		return total;

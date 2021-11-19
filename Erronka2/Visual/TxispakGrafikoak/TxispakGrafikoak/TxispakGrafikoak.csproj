@@ -39,10 +39,37 @@
     <Reference Include="BezeroakDLL">
       <HintPath>..\..\BezeroakDLL\BezeroakDLL\bin\Debug\BezeroakDLL.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="ProduktuaDLL">
       <HintPath>..\..\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\bin\Debug\ProduktuaDLL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+=======
+    <Reference Include="BezeroakTaulaDLL">
+      <HintPath>..\..\BezeroakTaulaDLL\BezeroakTaulaDLL\bin\Debug\BezeroakTaulaDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="ErosketenEgunDLL">
+      <HintPath>..\..\..\..\..\..\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\bin\Debug\ErosketenEgunDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Produktu2DLL">
+      <HintPath>..\..\Produktu2DLL\Produktu2DLL\bin\Debug\Produktu2DLL.dll</HintPath>
+    </Reference>
+    <Reference Include="ProduktuaDLL">
+      <HintPath>..\..\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\bin\Debug\ProduktuaDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="ProduktuPopuDLL">
+      <HintPath>..\..\ProduktuPopuDLL\ProduktuPopuDLL\bin\Debug\ProduktuPopuDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="ProduktuTaulaDLL">
+      <HintPath>..\..\..\..\..\Users\vilarchao.benat\source\repos\ProduktuTaulaDLL\ProduktuTaulaDLL\bin\Debug\ProduktuTaulaDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="SalmentakTaulaDLL">
+      <HintPath>..\..\SalmentakTaulaDLL\SalmentakTaulaDLL\bin\Debug\SalmentakTaulaDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +89,27 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="FormBezeroak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBezeroak.Designer.cs">
+      <DependentUpon>FormBezeroak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduktuak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduktuak.Designer.cs">
+      <DependentUpon>FormProduktuak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalmentak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalmentak.Designer.cs">
+      <DependentUpon>FormSalmentak.cs</DependentUpon>
+    </Compile>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TxispakDataSet.Designer.cs">
@@ -72,6 +120,18 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="FormBezeroak.resx">
+      <DependentUpon>FormBezeroak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduktuak.resx">
+      <DependentUpon>FormProduktuak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalmentak.resx">
+      <DependentUpon>FormSalmentak.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -118,5 +178,17 @@
   <ItemGroup>
     <None Include="Resources\close.png" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2021-11-09 114037.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2021-11-09 114135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2021-11-09 114151.png" />
+  </ItemGroup>
+>>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
