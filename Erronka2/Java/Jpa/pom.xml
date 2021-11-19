@@ -14,7 +14,7 @@
 	<name>springhibernatejpa</name>
 	<description>Proiektu hau Spring proiektu bat da, Hibernate eta JPA bidez datuak persistente egiten dituena Mariadb datu-base erlazional baten.</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>16</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

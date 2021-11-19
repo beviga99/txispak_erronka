@@ -1,0 +1,14 @@
+model\postgre\ResPartnerCategory.class
+model\sqlserver\Salmentak.class
+option\Config.class
+model\postgre\ResPartner.class
+model\sqlserver\Bezeroak.class
+model\sqlserver\Produktoak.class
+option\Option.class
+dao\postgre\PostDao.class
+eus\uni\dam\Jpa\KonfigPostgreSql.class
+eus\uni\dam\Jpa\SqlKonfiguration.class
+sql\dao\SqlDao.class
+eus\uni\dam\Jpa\App.class
+model\postgre\ProductTemplate.class
+model\postgre\SaleOrderLine.class

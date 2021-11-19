@@ -60,7 +60,6 @@ public class Konektatu {
             }
         });
         thread.start();
-
         try {
             thread.join();
         } catch (Exception e) {
@@ -160,7 +159,6 @@ public class Konektatu {
 
             }
         });
-
         thread4.start();
         try {
             thread4.join();
@@ -169,17 +167,13 @@ public class Konektatu {
             e.printStackTrace();
             this.status = false;
         }
-
         return id;
-
     }
-
     public void insert(ProductSample p, int bezeroa, int cant, double price) {
         Thread thread3 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-
                     s1.acquire();
 
                     Class.forName("org.postgresql.Driver");

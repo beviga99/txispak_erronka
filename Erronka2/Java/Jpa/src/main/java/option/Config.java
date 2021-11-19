@@ -19,7 +19,7 @@ public class Config {
         try {
         	
             jaxbContext = JAXBContext.newInstance(Option.class);
-
+            
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
