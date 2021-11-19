@@ -1,0 +1,8 @@
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\bin\Debug\ProduktuaDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\bin\Debug\ProduktuaDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\bin\Debug\ProduktuaDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.Kontrola.resources
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.csproj.GenerateResource.cache
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.csproj.CoreCompileInputs.cache
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka 2\ProduktuakDLL\ProduktuaDLL\ProduktuaDLL\obj\Debug\ProduktuaDLL.pdb
