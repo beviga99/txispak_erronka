@@ -1,0 +1,8 @@
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\bin\Debug\SalmentakTaulaDLL.dll.config
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\bin\Debug\SalmentakTaulaDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\bin\Debug\SalmentakTaulaDLL.pdb
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\obj\Debug\SalmentakTaulaDLL.Kontrola.resources
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\obj\Debug\SalmentakTaulaDLL.csproj.GenerateResource.cache
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\obj\Debug\SalmentakTaulaDLL.csproj.CoreCompileInputs.cache
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\obj\Debug\SalmentakTaulaDLL.dll
+C:\txispak_erronka\txispak_erronka\Erronka 2\SalmentakTaulaDLL\SalmentakTaulaDLL\obj\Debug\SalmentakTaulaDLL.pdb

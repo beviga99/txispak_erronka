@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProduktuTaulaDLL", "ProduktuTaulaDLL\ProduktuTaulaDLL.csproj", "{1092ECDC-7858-4F8E-AA6E-0985420F9CBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1092ECDC-7858-4F8E-AA6E-0985420F9CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1092ECDC-7858-4F8E-AA6E-0985420F9CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1092ECDC-7858-4F8E-AA6E-0985420F9CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1092ECDC-7858-4F8E-AA6E-0985420F9CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42BF084B-759E-464F-996A-9C422D246835}
+	EndGlobalSection
+EndGlobal

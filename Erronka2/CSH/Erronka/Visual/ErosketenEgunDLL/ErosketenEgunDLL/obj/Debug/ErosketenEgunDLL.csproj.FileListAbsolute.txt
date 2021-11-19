@@ -1,0 +1,8 @@
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\bin\Debug\ErosketenEgunDLL.dll.config
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\bin\Debug\ErosketenEgunDLL.dll
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\bin\Debug\ErosketenEgunDLL.pdb
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\obj\Debug\ErosketenEgunDLL.Kontrola.resources
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\obj\Debug\ErosketenEgunDLL.csproj.GenerateResource.cache
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\obj\Debug\ErosketenEgunDLL.csproj.CoreCompileInputs.cache
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\obj\Debug\ErosketenEgunDLL.dll
+C:\Users\vilarchao.benat\source\repos\ErosketenEgunDLL\ErosketenEgunDLL\obj\Debug\ErosketenEgunDLL.pdb
