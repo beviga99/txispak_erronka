@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # Produktuak Esportatzeko Java Aplikazioa
 ## Helburua
 Odoo-tik behar ditugun datuak sql server-en inportatu era ordenatu batean JPA-ren laguntzaz.
-## Aplikazioaren funtzioa??????
+## Aplikazioaren funtzioa
 JPA-ren laguntzaz, Odoo-tik salmenten, bezeroen eta produktuen datuak hartu ditugu, hauek modu txukun batean taula desberdinetan banatu eta sql Server-en gordetzeko. Honetarako, taula bakoitzetik behar genituen datuak jaso eta egoki iruditu zaizkigun klase desberdinetan banatu ditugu.
 Bukatzeko menu txiki bat egin dugu, non aukeratutako datuak XML pertsonalizatu baten gordeko diren.
 
@@ -19,7 +18,4 @@ Hau da [Jpa-Xml diagrama.png](https://github.com/beviga99/txispak_erronka/blob/m
 ## Iturriak
 https://mkyong.com/java/jaxb-hello-world-example/<br>
 https://www.youtube.com/watch?v=HAobgQ-XENY<br>
-=======
-# Lehen adibidea
-Proiektu hau Spring proiektu bat da, Hibernate eta JPA bidez datuak persistente egiten dituena Mariadb datu-base erlazional baten.
->>>>>>> 524d3f839f2cfaf775fd5d1e35f18b8db78350e4
+
